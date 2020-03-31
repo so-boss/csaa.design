@@ -1,7 +1,3 @@
-# Style Dictionary Generated Files (ios)
-ios/assets
-ios/Classes/Generated
-
 # OS X
 .DS_Store
 
@@ -28,4 +24,4 @@ DerivedData
 node_modules
 config_alt.json
 yarn-error.log
-build
+
