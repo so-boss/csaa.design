@@ -12,7 +12,7 @@ const pages = [
     title: "Mobilitas",
     pages: [
       {
-        path: "mobilitas/style/color",
+        path: "/mobilitas/style/color",
         title: "Color",
         content: pageLoader(() => import("./mobilitas/style/color.md"))
       },
