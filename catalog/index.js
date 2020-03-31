@@ -42,7 +42,6 @@ ReactDOM.render(
         linkColor:"#ED1C2E"
     }}
     logoSrc="/aaa-logo.svg"
-    useBrowserHistory={true}
     pages={pages}
   />,
   document.getElementById("catalog")
