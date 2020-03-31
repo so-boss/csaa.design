@@ -25,10 +25,24 @@ const pages = [
         path: "mobilitas/style/icons",
         title: "Icons",
         content: pageLoader(() => import("./mobilitas/style/icons.md"))
+      },
+    ]
+  },
+  {
+    title: "Essentials",
+    pages: [
+      {
+        path: "essentials/dictionary/dev",
+        title: "Development",
+        content: pageLoader(() => import("./essentials/dictionary/development.md"))
+      },
+      {
+        path: "essentials/dictionary/css",
+        title: "CSS Variables",
+        content: pageLoader(() => import("./essentials/dictionary/css.md"))
       }
     ]
   }
-
 ];
 
 ReactDOM.render(
