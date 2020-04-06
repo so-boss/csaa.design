@@ -5,6 +5,8 @@ A *Design Dictionary* uses design definitions to **define styles** once and use 
 
 When you are managing user experiences, it can be quite challenging to keep styles consistent and synchronized across multiple development platforms and devices.  At the same time, designers, developers, PMs and others must be able to have consistent and up-to-date style documentation to enable effective work and communication.  Even then, mistakes inevitably happen and the design may not be implemented accurately.  StyleDictionary solves this by automatically generating style definitions across all platforms from a single source - removing roadblocks, errors, and inefficiencies across your workflow.
 
+Dictionary doesn't force your app to work within its paradigm or have opinions on how you design, develop, and structure your app's code. It simply provides you with SDKs for use in your existing codebases. Your generated Dictionary builds are **libraries not frameworks** — they are intended to complement, but not replace, your design workflow.
+
 ### Requirements
 1. Node & Npm
 2. Current version of Chrome.
