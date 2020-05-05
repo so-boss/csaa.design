@@ -156,3 +156,11 @@ plain: true
 span: 6
 src: "/styleguide/contrastfont.png"
 ```
+
+## UI Kit / 2017
+Original styles pulled from UI guide by Eunah 2017
+```image
+plain: true
+span: 6
+src: "/styleguide/mypolicy/typography.png"
+```
