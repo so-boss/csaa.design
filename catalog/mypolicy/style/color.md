@@ -5,8 +5,6 @@ The brand-level colors define the primary, neutral, & extended color palettes. T
 ## Primaries / Brand Color
 Brand color is one of the most intuitive visual elements that is used to embody product characteristics and communicate ideas. When selecting colors, it is important to understand how the brand color is used in the user interface.
 
-Uses blue as the base color. It's Hex value is **#14356F**. Use-cases include: call to action, key actions, operational status, & highlighting important information.
-
 ```color-palette
 colors:
    - {name: "01 / BLUE", value: "#00338D"}
@@ -17,8 +15,6 @@ colors:
 ```
 
 ## Functional Colors
-Base palette totals **sixty colors**, including **six primary colors** and their derivative colors.
-
 Functional color represents a clear message as well as status, such as success, error, failure, reminder, link and so on. Functional color selection need to comply with the user's basic understanding of color.
 
 We suggest that the functional colors should be kept as consistent as possible under a set of product systems. Do not have too much customization to interfere with the user's experience.
@@ -52,9 +48,8 @@ colors:
   - {name: "01 / BB8", value: "#CF4900"}
 ```
 
-
 ## Neutral Colors
-Mainly used in a large part of the text interface, in addition to the background, borders, dividing lines, and other scenes are also very common. Neutral color definition needs to consider the difference between dark background and light background, while incorporating the WCAG 2.0 standard. The neutral color of Mobilitasis based on transparency.
+Mainly used in a large part of the text interface, in addition to the background, borders, dividing lines, and other scenes are also very common. Neutral color definition needs to consider the difference between dark background and light background, while incorporating the WCAG 2.0 standard.
 
 ```color-palette|span-1
 colors:
