@@ -5,7 +5,7 @@ The brand-level colors define the primary, neutral, & extended color palettes. T
 ## Primaries / Brand Color
 Brand color is one of the most intuitive visual elements that is used to embody product characteristics and communicate ideas. When selecting colors, it is important to understand how the brand color is used in the user interface.
 
-Mobilitas uses blue as the base color. It's Hex value is **#14356F**. Use-cases include: call to action, key actions, operational status, & highlighting important information.
+Uses blue as the base color. It's Hex value is **#14356F**. Use-cases include: call to action, key actions, operational status, & highlighting important information.
 
 ```color-palette
 colors:

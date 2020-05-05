@@ -41,11 +41,11 @@ const pages = [
         title: "Color",
         content: pageLoader(() => import("./mypolicy/style/color.md"))
       },
-      // {
-      //   path: "mobilitas/style/typography",
-      //   title: "Typography",
-      //   content: pageLoader(() => import("./mobilitas/style/typography.md"))
-      // },
+      {
+        path: "mypolicy/style/typography",
+        title: "Typography",
+        content: pageLoader(() => import("./mypolicy/style/typography.md"))
+      },
       // {
       //   path: "mobilitas/style/icons",
       //   title: "Icons",
