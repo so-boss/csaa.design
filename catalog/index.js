@@ -26,6 +26,36 @@ const pages = [
         title: "Icons",
         content: pageLoader(() => import("./mobilitas/style/icons.md"))
       },
+      {
+        path: "mobilitas/style/icon-library",
+        title: "Icon Library",
+        content: pageLoader(() => import("./mobilitas/style/icon-library.js"))
+      },
+    ]
+  },
+  {
+    title: "MyPolicy",
+    pages: [
+      {
+        path: "/mypolicy/style/color",
+        title: "Color",
+        content: pageLoader(() => import("./mypolicy/style/color.md"))
+      },
+      // {
+      //   path: "mobilitas/style/typography",
+      //   title: "Typography",
+      //   content: pageLoader(() => import("./mobilitas/style/typography.md"))
+      // },
+      // {
+      //   path: "mobilitas/style/icons",
+      //   title: "Icons",
+      //   content: pageLoader(() => import("./mobilitas/style/icons.md"))
+      // },
+      // {
+      //   path: "mobilitas/style/icon-library",
+      //   title: "Icon Library",
+      //   content: pageLoader(() => import("./mobilitas/style/icon-library.js"))
+      // },
     ]
   },
   {

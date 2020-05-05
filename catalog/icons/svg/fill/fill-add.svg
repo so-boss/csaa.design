@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g id="Layer_2" display="none">
+	<g display="inline">
+		
+			<line opacity="0.35" fill="none" stroke="#666666" stroke-width="0.5" enable-background="new    " x1="69" y1="-10.6" x2="69" y2="74.6"/>
+		
+			<line opacity="0.35" fill="none" stroke="#666666" stroke-width="0.5" enable-background="new    " x1="-10.6" y1="69" x2="74.6" y2="69"/>
+		
+			<line opacity="0.35" fill="none" stroke="#666666" stroke-width="0.5" enable-background="new    " x1="74.6" y1="-10.6" x2="-10.6" y2="74.6"/>
+		
+			<line opacity="0.35" fill="none" stroke="#666666" stroke-width="0.5" enable-background="new    " x1="74.6" y1="32" x2="-10.6" y2="32"/>
+		
+			<line opacity="0.35" fill="none" stroke="#666666" stroke-width="0.5" enable-background="new    " x1="32" y1="-10.6" x2="32" y2="74.6"/>
+		
+			<line opacity="0.35" fill="none" stroke="#666666" stroke-width="0.5" enable-background="new    " x1="74.6" y1="16.2" x2="-10.6" y2="16.2"/>
+		
+			<line opacity="0.35" fill="none" stroke="#666666" stroke-width="0.5" enable-background="new    " x1="74.6" y1="47.8" x2="-10.6" y2="47.8"/>
+		
+			<line opacity="0.35" fill="none" stroke="#666666" stroke-width="0.5" enable-background="new    " x1="16.2" y1="-10.6" x2="16.2" y2="74.6"/>
+		
+			<line opacity="0.35" fill="none" stroke="#666666" stroke-width="0.5" enable-background="new    " x1="47.8" y1="-10.6" x2="47.8" y2="74.6"/>
+		
+			<line opacity="0.35" fill="none" stroke="#666666" stroke-width="0.5" enable-background="new    " x1="-5" y1="-10.6" x2="-5" y2="74.6"/>
+		
+			<line opacity="0.35" fill="none" stroke="#666666" stroke-width="0.5" enable-background="new    " x1="-10.6" y1="-5" x2="74.6" y2="-5"/>
+		
+			<line opacity="0.35" fill="none" stroke="#666666" stroke-width="0.5" enable-background="new    " x1="-10.6" y1="-10.6" x2="74.6" y2="74.6"/>
+		<rect x="-0.2" y="-0.2" fill="none" stroke="#FF0000" stroke-width="0.5" width="64.5" height="64.5"/>
+		<rect x="4.5" y="-5" fill="none" stroke="#FF0000" stroke-width="0.5" width="55" height="74"/>
+		<rect x="-5" y="4.5" fill="none" stroke="#FF0000" stroke-width="0.5" width="74" height="55"/>
+		<rect x="4.5" y="-5" fill="none" stroke="#FF0000" stroke-width="0.5" width="55" height="74"/>
+	</g>
+</g>
+<g id="icons">
+	<g>
+		<path d="M32,0C14.3,0,0,14.3,0,32s14.3,32,32,32s32-14.3,32-32S49.7,0,32,0z M49.1,31.7c0,1.5-1.2,2.8-2.8,2.8H34.8v11.6
+			c0,1.5-1.2,2.8-2.8,2.8l0,0c-1.5,0-2.8-1.2-2.8-2.8V34.5H17.6c-1.5,0-2.8-1.2-2.8-2.8l0,0c0-1.5,1.2-2.8,2.8-2.8h11.6V17.3
+			c0-1.5,1.2-2.8,2.8-2.8l0,0c1.5,0,2.8,1.2,2.8,2.8v11.6h11.6C47.9,28.9,49.1,30.2,49.1,31.7L49.1,31.7z"/>
+	</g>
+</g>
+</svg>

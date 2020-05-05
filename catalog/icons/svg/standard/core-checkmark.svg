@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="69px" height="58px" viewBox="0 0 69 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>core-checkmark</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="core-checkmark" sketch:type="MSLayerGroup" fill="#5F6062">
+            <path d="M23.8,57 L2.3,35.4 C0.5,33.6 0.5,30.8 2.3,29 L2.3,29 C4.1,27.2 6.9,27.2 8.7,29 L23.2,43.6 C24,44.4 25.3,44.3 26,43.5 L60.9,2.2 C62.5,0.3 65.4,0.1 67.3,1.7 L67.3,1.7 C69.2,3.3 69.4,6.2 67.8,8.1 L26.6,56.9 C25.9,57.7 24.6,57.8 23.8,57 L23.8,57 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

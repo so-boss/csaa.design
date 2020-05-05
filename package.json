@@ -26,5 +26,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prop-types": "^15.7.2",
+    "reicons": "^0.4.7",
+    "svgcleaner": "^0.8.1-1"
   }
 }
