@@ -12,7 +12,7 @@ const pages = [
     title: "Mobilitas",
     pages: [
       {
-        path: "/mobilitas/style/color",
+        path: "mobilitas/style/color",
         title: "Color",
         content: pageLoader(() => import("./mobilitas/style/color.md"))
       },
@@ -37,7 +37,12 @@ const pages = [
     title: "MyPolicy",
     pages: [
       {
-        path: "/mypolicy/style/color",
+        path: "mypolicy/style/about",
+        title: "About",
+        content: pageLoader(() => import("./mypolicy/style/about.md"))
+      },
+      {
+        path: "mypolicy/style/color",
         title: "Color",
         content: pageLoader(() => import("./mypolicy/style/color.md"))
       },
@@ -45,17 +50,27 @@ const pages = [
         path: "mypolicy/style/typography",
         title: "Typography",
         content: pageLoader(() => import("./mypolicy/style/typography.md"))
+      }
+    ]
+  },
+  {
+    title: "Insurance Portal",
+    pages: [
+      {
+        path: "ip/style/about",
+        title: "About",
+        content: pageLoader(() => import("./ip/style/about.md"))
       },
-      // {
-      //   path: "mobilitas/style/icons",
-      //   title: "Icons",
-      //   content: pageLoader(() => import("./mobilitas/style/icons.md"))
-      // },
-      // {
-      //   path: "mobilitas/style/icon-library",
-      //   title: "Icon Library",
-      //   content: pageLoader(() => import("./mobilitas/style/icon-library.js"))
-      // },
+      {
+        path: "ip/style/color",
+        title: "Color",
+        content: pageLoader(() => import("./ip/style/color.md"))
+      },
+      {
+        path: "ip/style/typography",
+        title: "Typography",
+        content: pageLoader(() => import("./ip/style/typography.md"))
+      }
     ]
   },
   {
