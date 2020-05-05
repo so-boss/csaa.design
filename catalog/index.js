@@ -1,6 +1,40 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Catalog, pageLoader } from "catalog";
+import {
+  // ELEMENTS
+  Block,
+  Title,
+  Button,
+  Icon,
+  Thing,
+  Field,
+
+  // WRAPPERS
+  Wrapper,
+  WrapperContext,
+  Action,
+  ActionBlock,
+  ActionButton,
+  ActionLink,
+  Flag,
+  Tag,
+  Input,
+  InputSelect,
+  Inputs,
+  Label,
+  Message,
+  Interview,
+
+  //CONTAINERS
+  Container,
+  Drawer,
+  Group,
+  Page,
+  UI
+} from "./pixel/module";
+import './pixel/module.css';
+import './pixel/sprite.63d98036.svg'
 
 const pages = [
   {
@@ -74,6 +108,16 @@ const pages = [
     ]
   },
   {
+    title: "Pixel",
+    pages:[
+      {
+        path:"pixel/wrappers/action_block",
+        title:"Action Block",
+        content: pageLoader(() => import("./pixel/wrappers/action_block.md"))
+      }
+    ]
+  },
+  {
     title: "Essentials",
     pages: [
       {
@@ -92,6 +136,41 @@ const pages = [
 
 ReactDOM.render(
   <Catalog
+    styles={[
+      "/pixel/module.css"
+    ]}
+    imports={{
+      // ELEMENTS
+      Block,
+      Title,
+      Button,
+      Icon,
+      Thing,
+      Field,
+
+      // WRAPPERS
+      Wrapper,
+      WrapperContext,
+      Action,
+      ActionBlock,
+      ActionButton,
+      ActionLink,
+      Flag,
+      Tag,
+      Input,
+      InputSelect,
+      Inputs,
+      Label,
+      Message,
+      Interview,
+
+      //CONTAINERS
+      Container,
+      Drawer,
+      Group,
+      Page,
+      UI
+    }}
     title="CSAA"
     theme={{
         pageHeadingBackground:"#00529A",

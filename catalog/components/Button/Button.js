@@ -1,5 +1,10 @@
 import React from 'react';
+import './Button.css';
 
-export default function Button() {
-    return (<div className="button"/>);
+export default function Button({children}) {
+    return (
+      <div className="button">
+          {children}
+      </div>
+    );
 }

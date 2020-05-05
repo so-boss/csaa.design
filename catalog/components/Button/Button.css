@@ -1,0 +1,14 @@
+.button {
+  background-color: #ffc425;
+  color: #333333;
+  border: none;
+  padding: 16px 50px;
+  font-size: 14px/1em;
+  text-transform: uppercase;
+  font-family: Helvetica, Arial, sans-serif; }
+  .button:hover {
+    background-color: #ffbe0e; }
+  .button:active {
+    background-color: #ffbe0e; }
+
+/*# sourceMappingURL=Button.css.map */
