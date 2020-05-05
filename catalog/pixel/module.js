@@ -25023,7 +25023,7 @@ module.exports = function () {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 function makeEmptyFunction(arg) {
@@ -79161,7 +79161,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51903" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63497" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

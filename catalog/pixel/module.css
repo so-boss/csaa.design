@@ -102,6 +102,10 @@ block > wrapper > wrapper:empty {
     display:none;
 }
 
+block > wrapper > wrapper:nth-child(1) {
+                flex-direction:row;
+}
+
 block > wrapper > wrapper:nth-child(1):empty {
     display:none;
 }
@@ -112,6 +116,7 @@ block > wrapper > wrapper:nth-child(1) > svg {
 
 block > wrapper > wrapper:nth-child(1)[hugeness] {
     display:flex;
+                flex-direction:row;
     align-items:center;
     justify-content:flex-start;
 }
@@ -187,8 +192,8 @@ block > wrapper > wrapper:nth-child(2) > thing:last-child {
 
 block > wrapper > wrapper:nth-child(3) {
     display:flex;
+                flex-direction:row;
     justify-content:flex-end;
-    align-items:flex-end;
     flex:initial;
     min-width:40px;
     margin:0 0 0 8px;

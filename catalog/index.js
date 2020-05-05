@@ -111,9 +111,39 @@ const pages = [
     title: "Pixel",
     pages:[
       {
-        path:"pixel/wrappers/action_block",
+        path:"pixel/elements/block",
+        title:"Block",
+        content: pageLoader(() => import("./pixel/elements/block.md"))
+      },
+      {
+        path:"pixel/wrappers/action",
+        title:"Action",
+        content: pageLoader(() => import("./pixel/wrappers/action.md"))
+      },
+      {
+        path:"pixel/wrappers/actionBlock",
         title:"Action Block",
-        content: pageLoader(() => import("./pixel/wrappers/action_block.md"))
+        content: pageLoader(() => import("./pixel/wrappers/actionBlock.md"))
+      },
+      {
+        path:"pixel/wrappers/actionButton",
+        title:"Action Button",
+        content: pageLoader(() => import("./pixel/wrappers/actionButton.md"))
+      },
+      {
+        path:"pixel/wrappers/actionLink",
+        title:"Action Link",
+        content: pageLoader(() => import("./pixel/wrappers/actionLink.md"))
+      },
+      {
+        path:"pixel/containers/drawer",
+        title:"Drawer",
+        content: pageLoader(() => import("./pixel/containers/drawer.md"))
+      },
+      {
+        path:"pixel/containers/page",
+        title:"Page",
+        content: pageLoader(() => import("./pixel/containers/page.md"))
       }
     ]
   },
