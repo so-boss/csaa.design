@@ -144,6 +144,11 @@ const pages = [
         path:"pixel/containers/page",
         title:"Page",
         content: pageLoader(() => import("./pixel/containers/page.md"))
+      },
+      {
+        path:"pixel/style/tokens",
+        title:"Tokens",
+        content: pageLoader(() => import("./pixel/style/tokens.md"))
       }
     ]
   },
