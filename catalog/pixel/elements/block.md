@@ -15,7 +15,21 @@ A core element for displaying informational records & headers. The **<Block>** h
   ]}
 />
 ```
-```code|lang-html,span-3
+```react|span-3
+noSource: true
+---
+<Block
+  lines={[
+    'CAAS100383547',
+    'Policy Period 12/31/2018 to 12/31/2019',
+    'This policy has ONE vehicle insured.',
+  ]}
+/>
+```
+
+```code|lang-html,span-6
+collapsed: true
+---
 <block>
   <wrapper>
     <wrapper></wrapper>
@@ -29,10 +43,23 @@ A core element for displaying informational records & headers. The **<Block>** h
 </block>
 ```
 
+
 ## Variants
 **Additional Lines**
 Add up to four lines of text. Multi-line text should go on line 4.
-```code|lang-jsx,span-6
+```code|lang-jsx,span-3
+<Block
+  lines={[
+    'CAAS100383547',
+    'Policy Period 12/31/2018 to 12/31/2019',
+    'This policy has ONE vehicle insured.',
+    'Line 4 is for multi-line text except if line 4 is two lines it should be on line 3.',
+  ]}
+/>
+```
+```react|span-3
+noSource: true
+---
 <Block
   lines={[
     'CAAS100383547',
@@ -63,6 +90,8 @@ Add an icon for additional visual relevance but specifying:
 />
 ```
 ```react|span-3
+noSource: true
+---
 <Block
   icon={{
     id:'core-auto',
@@ -93,6 +122,8 @@ Add Flag to the third column by specifying
 />
 ```
 ```react|span-3
+noSource: true
+---
 <Block
   lines={[
     'CAAS100383547',
@@ -126,6 +157,8 @@ Add one or more **Flags** to line three OR four by passing an array instead of a
 />
 ```
 ```react|span-3
+noSource: true
+---
 <Block
   lines={[
     '2015 Lexus ES',
@@ -163,6 +196,8 @@ Add one or more **Tags** to line three OR line four by passing an array instead 
 />
 ```
 ```react|span-3
+noSource: true
+---
 <Block
   lines={[
     '2015 Lexus ES',
@@ -209,6 +244,8 @@ Add a mixture of **Flags** & **Tags** to line three OR four. Currently there are
 />
 ```
 ```react|span-3
+noSource: true
+---
 <Block
   lines={[
     '2015 Lexus ES',
@@ -239,7 +276,7 @@ Blocks are very capable and were designed to function with minimal amount of inf
 ```code|lang-jsx,span-3
 <Block
   icon={{
-    id:'pixel-core-auto',
+    id:'core-auto',
     size:'m',
   }}
   lines={[
@@ -261,9 +298,11 @@ Blocks are very capable and were designed to function with minimal amount of inf
 />
 ```
 ```react|span-3
+noSource: true
+---
 <Block
   icon={{
-    id:'pixel-core-auto',
+    id:'core-auto',
     size:'m',
   }}
   lines={[
