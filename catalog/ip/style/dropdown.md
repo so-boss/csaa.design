@@ -15,19 +15,19 @@ When you have huge list one should not use dropdowns because they will have to s
    <div style="width: 400px; height: 280px; background: #fff; border: 1px solid #D4D4D5; border-radius: 3.5px; margin-top: 13px; color: #0096D6;" >
    <!-- <div style="width: 0; height: 0; border-left: 15px solid transparent; border-right: 15px solid transparent; border-bottom: 10px solid #fff; position: absolute; top: 74px; right: 543px;">
   </div> -->
-    <div style="height: 56px; border-bottom: 1px solid #D4D4D5; padding:20px;">
+    <div style="height: 56px; border-bottom: 1px solid #D4D4D5; padding:20px; cursor: pointer">
             Checking Account
         </div>
-        <div style="height: 56px; border-bottom: 1px solid #D4D4D5; padding:20px;">
+        <div style="height: 56px; border-bottom: 1px solid #D4D4D5; padding:20px; cursor: pointer">
             Saving Account
         </div>
-        <div style="height: 56px; border-bottom: 1px solid #D4D4D5; padding:20px;">
+        <div style="height: 56px; border-bottom: 1px solid #D4D4D5; padding:20px; cursor: pointer">
             Debit Card
         </div>
-        <div style="height: 56px; border-bottom: 1px solid #D4D4D5; padding:20px;">
+        <div style="height: 56px; border-bottom: 1px solid #D4D4D5; padding:20px; cursor: pointer">
             Credit Card
         </div>
-         <div style="height: 55px; background: #F8F9FB; border-bottom: 1px solid #D4D4D5; padding:20px;">
+         <div style="height: 55px; background: #F8F9FB; border-bottom: 1px solid #D4D4D5; padding:20px; cursor: pointer">
             Checking
         </div>
         
