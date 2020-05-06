@@ -116,6 +116,11 @@ const pages = [
         content: pageLoader(() => import("./pixel/elements/block.md"))
       },
       {
+        path:"pixel/elements/block2",
+        title:"Block2",
+        content: pageLoader(() => import('./pixel/elements/block.js'))
+      },
+      {
         path:"pixel/wrappers/action",
         title:"Action",
         content: pageLoader(() => import("./pixel/wrappers/action.md"))
