@@ -1,0 +1,2 @@
+webpackJsonp([20],{784:function(e,n,t){var a=t(15),r=t(45),o=t(294).PageRenderer;o.__esModule&&(o=o.default);var i=r({displayName:"WrappedPageRenderer",getInitialState:function(){return{content:t(806)}},componentWillMount:function(){},render:function(){return a.createElement(o,Object.assign({},this.props,{content:this.state.content}))}});i.__catalog_loader__=!0,e.exports=i},806:function(e,n){e.exports='#### Hi & hello there!\n\n## UX Team 2020\n```image\nplain: true\nsrc: "/uxteam.png"\n```\n\n'}});
+//# sourceMappingURL=20.eb5c40de.chunk.js.map

@@ -1,3 +1,12 @@
+### Sucessful Message
+```html
+frame: true
+---
+<div style='width:100vw; background:#00844D;color:#FFF; text-align:center; position: absolute;'>
+    <p style="position:relative;">Policy Type [###-###-####] has been successfully added to your account.</p>
+</div>
+```
+
 ### Warning Message
 
 ```html
@@ -5,15 +14,6 @@ frame: true
 ---
 <div style='width:100vw; background:#CF4900;color:#FFF; text-align:center; position: absolute;'>
     <p style="position:relative;">We are unable to locate that policy. Contact customer service at [###-###-####] to add the policy.</p>
-</div>
-```
-
-### Sucessful Message
-```html
-frame: true
----
-<div style='width:100vw; background:#00844D;color:#FFF; text-align:center; position: absolute;'>
-    <p style="position:relative;">Policy Type [###-###-####] has been successfully added to your account.</p>
 </div>
 ```
 

@@ -110,11 +110,11 @@ const pages = [
         title: "Messages",
         content: pageLoader(() => import("./ip/style/messages.md"))
       },
-      // TODO FIND OUT HOW TO WRITE COMPONENT IN CATALOGUE {
-      //   path: "ip/style/components/dropdown",
-      //   title: "Dropdown",
-      //   content: pageLoader(() => import("./ip/style/dropdown.md"))
-      // }
+      {
+        path: "ip/style/components/dropdown",
+        title: "Dropdown",
+        content: pageLoader(() => import("./ip/style/dropdown.md"))
+      }
     ]
   },
   {
