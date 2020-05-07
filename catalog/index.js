@@ -334,7 +334,7 @@ const pages = [
     ]
   },
   {
-    title: "Styleprincip",
+    title: "Style",
     pages: [
       {
         path:"pixel/style/tokens",
