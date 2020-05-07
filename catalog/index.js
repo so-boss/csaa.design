@@ -114,6 +114,16 @@ const pages = [
         path: "ip/style/components/dropdown",
         title: "Dropdown",
         content: pageLoader(() => import("./ip/style/dropdown.md"))
+      },
+      {
+        path: "ip/style/components/buttons",
+        title: "Button",
+        content: pageLoader(() => import("./ip/style/buttons.md"))
+      },
+      {
+        path: "ip/style/components/badges",
+        title: "Badges",
+        content: pageLoader(() => import("./ip/style/badges.md"))
       }
     ]
   },
