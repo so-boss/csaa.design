@@ -1,0 +1,24 @@
+/*
+  {
+    title: "CON",
+    pages: [
+      {
+        path: "hideme",
+        title: "hideme",
+        content: pageLoader(() => import("./ip/style/about.md"))
+      }
+    ]
+  },
+
+ */
+li > div > [href="/hideme"] {
+  color: black;
+  font-size: 14px;
+  line-height: 1.5715;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 5px; }
+  li > div > [href="/hideme"]:hover {
+    color: rgba(0, 0, 0, 0.45); }
+
+/*# sourceMappingURL=globals.css.map */
