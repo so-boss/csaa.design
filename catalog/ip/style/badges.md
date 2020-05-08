@@ -1,5 +1,2 @@
-### Badges
+### Flags and Tags
 
-```react
-<MyCoolComponent>My cool component</MyCoolComponent>
-```

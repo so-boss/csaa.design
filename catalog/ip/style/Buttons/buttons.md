@@ -1,5 +1,6 @@
-### To Take Action
+### When to use Buttons
 
+#### Users need to know instantly what is ‘clickable’ and what’s not
 ```html
 
 
@@ -12,7 +13,7 @@
     <div class="btn-default">
             Default
     </div>
-      <div class="btn-default">Hover</span>
+      <div class="btn-default-hover">Hover</span>
     </div>
     <div class="btn-default">
            Active
@@ -36,6 +37,20 @@
     <div class="btn-disable-small">Diabled</span>
     </div>
     </div>
+    <div class="side-option" style="float:right;">
+            <ul>
+         <li> Primary </li>
+            <li>Secondary</li>
+            <li>Success</li>
+            <li>Loading</li>
+            <li>Danger</li>
+            <li>Disabled</li>
+            <li>Links</li>
+            <li>Text</li>
+            <li>Grouped</li>
+            <li>With Icons</li>
+            </ul>
+            </div>
 </div>
 ```
 ### Secondary Buttons
@@ -65,3 +80,7 @@
     </div>
 </div>
 ```
+
+
+### Accessibility
+#### The contrast ratio is the ratio of the luminance of the text color to the background color. According to the World Wide Web Consortium (W3C), the suggested contrast ratio is at least 4.5:1.
