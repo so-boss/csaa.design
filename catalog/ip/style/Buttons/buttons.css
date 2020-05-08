@@ -1,0 +1,90 @@
+.btn-container {
+    float:left; 
+    width: 100%;
+}
+.btn-wrapper-left {
+    float: left;
+    width: 40%;
+}
+    .btn-type{
+    font-family: 'helvetica, sans-serif';
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 2px solid #0096D6;
+    margin-bottom: 20px;
+    width: 60%;
+   
+    }
+    
+.btn-type-text {
+    max-width:140px; 
+    width: 140px;
+    height:40px;
+    border-radius: 4px; 
+    color: #292929; 
+    line-height: 30px; 
+    text-align: center; 
+    margin-bottom: 30px;
+    font-family: Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.btn-default {
+    max-width:140px; 
+    height:40px; 
+    background: #0991CB; 
+    border-radius: 4px; 
+    color: #fff; 
+    line-height: 40px; 
+    text-align: center; 
+    margin-bottom: 30px;
+    font-size: 14px; 
+    font-family: helvetica;
+    cursor: pointer;
+}
+
+.btn-default ::after {
+    border: 4px solid #292929;
+    max-width:140px; 
+
+}
+
+.btn-disable{
+    background: #CCCCCC;
+    max-width:140px; 
+    height:40px; 
+    border-radius: 4px; 
+    color: #fff; 
+    line-height: 40px; 
+    text-align: center; 
+    margin-bottom: 30px;
+    font-size: 14px; 
+    font-family: helvetica;
+    cursor: pointer;
+}
+.btn-disable-small {
+    background: #CCCCCC;
+    max-width:100px; 
+    height:40px; 
+    border-radius: 4px; 
+    color: #fff; 
+    line-height: 40px; 
+    text-align: center; 
+    margin-bottom: 30px;
+    font-size: 14px; 
+    font-family: helvetica;
+    cursor: pointer;
+}
+.btn-type-small {
+    max-width:100px; 
+    height:40px; 
+    background: #0991CB; 
+    border-radius: 4px; 
+    color: #fff; 
+    line-height: 40px; 
+    text-align: center; 
+    margin-bottom: 30px;
+    font-size: 14px; 
+    font-family: helvetica;
+    cursor: pointer;
+}
