@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import './ip/style/Buttons/buttons.css'
+import './ip/style/Badges/badges.css'
+
 import './index.css';
 import { Catalog, pageLoader } from "catalog";
 import {
@@ -124,9 +126,9 @@ const pages = [
         content: pageLoader(() => import("./ip/style/Buttons/buttons.md"))
       },
       {
-        path: "ip/style/badges",
+        path: "ip/style/Badges",
         title: "Badges",
-        content: pageLoader(() => import("./ip/style/badges.md"))
+        content: pageLoader(() => import("./ip/style/Badges/badges.md"))
       },
       {
         path: "ip/style/brand",

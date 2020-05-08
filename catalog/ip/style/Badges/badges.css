@@ -1,0 +1,37 @@
+.tag {
+max-width: 120px;
+width: 20%;
+margin-right: 40px;
+float: left;
+
+border-radius: 90px;
+opacity: 1;
+text-align: center;
+font-size: 14px;
+padding: 3px 10px 3px 10px;
+line-height: 20px;
+font-family: Helvetica;
+letter-spacing: 0px;
+color: #FFFFFF;
+
+}
+
+.active-tag {
+    background: #059D4E 0% 0% no-repeat padding-box;
+}
+.pending-tag {
+    background: #CF4900 0% 0% no-repeat padding-box;
+
+    }
+
+    .inactive-tag {
+        background: #D52B1E 0% 0% no-repeat padding-box;;
+        
+    
+        }
+
+        .closed-tag {
+           background: #0F1411 0% 0% no-repeat padding-box;
+            
+        
+            }
