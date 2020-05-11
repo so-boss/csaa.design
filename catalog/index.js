@@ -1,5 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import './ip/style/Buttons/buttons.css'
+import './ip/style/Badges/badges.css'
+
+import './index.css';
 import { Catalog, pageLoader } from "catalog";
 import {
   // ELEMENTS
@@ -135,9 +139,24 @@ const pages = [
         content: pageLoader(() => import("./ip/style/messages.md"))
       },
       {
-        path: "ip/style/components/dropdown",
+        path: "ip/style/dropdown",
         title: "Dropdown",
         content: pageLoader(() => import("./ip/style/dropdown.md"))
+      },
+      {
+        path: "ip/style/Buttons/buttons",
+        title: "Button",
+        content: pageLoader(() => import("./ip/style/Buttons/buttons.md"))
+      },
+      {
+        path: "ip/style/Badges",
+        title: "Badges",
+        content: pageLoader(() => import("./ip/style/Badges/badges.md"))
+      },
+      {
+        path: "ip/style/brand",
+        title: "Brand",
+        content: pageLoader(() => import("./ip/style/brand.md"))
       }
     ]
   },
