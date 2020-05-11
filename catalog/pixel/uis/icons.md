@@ -1,4 +1,4 @@
-#### Vehicle
+#### Vehicle Icon w/ Custom Size
 ```table
 span: 2
 columns:
@@ -29,4 +29,68 @@ rows:
     hugeness="l"
   />
 </div>
+```
+
+#### Vehicle: Extra Small
+```table
+span: 2
+columns:
+  - Prop
+  - Type
+rows:
+  - Prop: 'id'
+    Type: '**"auto_xs"**'
+```
+```react|span-4
+<UI.Icon
+  id="auto_xs"
+/>
+```
+
+#### Vehicle: Small
+```table
+span: 2
+columns:
+  - Prop
+  - Type
+rows:
+  - Prop: 'id'
+    Type: '**"auto_small"**'
+```
+```react|span-4
+<UI.Icon
+  id="auto_small"
+/>
+```
+
+#### Vehicle: Medium
+```table
+span: 2
+columns:
+  - Prop
+  - Type
+rows:
+  - Prop: 'id'
+    Type: '**"auto_medium"**'
+```
+```react|span-4
+<UI.Icon
+  id="auto_medium"
+/>
+```
+
+#### Vehicle: Large
+```table
+span: 2
+columns:
+  - Prop
+  - Type
+rows:
+  - Prop: 'id'
+    Type: '**"auto_large"**'
+```
+```react|span-4
+<UI.Icon
+  id="auto_large"
+/>
 ```
