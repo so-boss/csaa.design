@@ -53,7 +53,7 @@ columns:
   - Type
 rows:
   - Prop: 'id'
-    Type: '**"FourLiner"**'
+    Type: '**"fourLiner"**'
   - Prop: 'lines'
     Type: '_array_'
 ```

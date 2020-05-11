@@ -72,17 +72,3 @@ rows:
 ```react|span-4
 <UI.Action id="next_link"/>
 ```
-
-#### Back
-```table
-span: 2
-columns:
-  - Prop
-  - Type
-rows:
-  - Prop: 'id'
-    Type: '**"back_link"**'
-```
-```react|span-4
-<UI.Action id="back_link"/>
-```
