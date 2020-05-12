@@ -339,38 +339,43 @@ const pages = [
     title: "Elements",
     pages: [
       {
+        path:"pixel/elements",
+        title:"Overview",
+        content: pageLoader(() => import("./pixel/elements/index.md"))
+      },
+      {
         path: "pixel/elements/block",  //path:"pixel/elements/block2", has the new tab approach
-        title: "Block",
+        title: "<Block />",
         content: pageLoader(() => import("./pixel/elements/block.md"))
       },
       {
         path: "pixel/elements/buttons",
-        title: "Buttons",
+        title: "<Buttons />",
         content: pageLoader(() => import("./pixel/elements/button.md"))
       },
       {
         path: "pixel/elements/field",
-        title: "Field",
+        title: "<Field />",
         content: pageLoader(() => import("./pixel/elements/field.md"))
       },
       {
         path: "pixel/elements/icon",
-        title: "Icon",
+        title: "<Icon />",
         content: pageLoader(() => import("./pixel/elements/icon.md"))
       },
       {
         path: "pixel/elements/label",
-        title: "Label",
+        title: "<Label />",
         content: pageLoader(() => import("./pixel/elements/label.md"))
       },
       {
         path: "pixel/elements/thing",
-        title: "Thing",
+        title: "<Thing />",
         content: pageLoader(() => import("./pixel/elements/thing.md"))
       },
       {
         path: "pixel/elements/title",
-        title: "Title",
+        title: "<Title />",
         content: pageLoader(() => import("./pixel/elements/title.md"))
       },
     ]
@@ -379,30 +384,35 @@ const pages = [
     title: "Wrappers",
     pages: [
       {
+        path:"pixel/wrappers",
+        title:"Overview",
+        content: pageLoader(() => import("./pixel/wrappers/index.md"))
+      },
+      {
         path:"pixel/wrappers/action",
-        title:"Action",
+        title:"<Action />",
         content: pageLoader(() => import("./pixel/wrappers/action.md"))
       },
       {
         path:"pixel/wrappers/actionBlock",
-        title:"Action Block",
+        title:"<ActionBlock />",
         content: pageLoader(() => import("./pixel/wrappers/actionBlock.md"))
       },
       {
         path:"pixel/wrappers/actionButton",
-        title:"Action Button",
+        title:"<ActionButton />",
         content: pageLoader(() => import("./pixel/wrappers/actionButton.md"))
       },
       {
         path:"pixel/wrappers/actionLink",
-        title:"Action Link",
+        title:"<ActionLink />",
         content: pageLoader(() => import("./pixel/wrappers/actionLink.md"))
       },
-      {
-        path:"pixel/wrappers/control",
-        title:"Control",
-        content: pageLoader(() => import("./pixel/wrappers/control.md"))
-      },
+      // {
+      //   path:"pixel/wrappers/control",
+      //   title:"Control",
+      //   content: pageLoader(() => import("./pixel/wrappers/control.md"))
+      // },
       // {
       //   path:"pixel/wrappers/container_wrappers",
       //   title:"Container Wrappers",
@@ -410,17 +420,17 @@ const pages = [
       // },
       {
         path:"pixel/wrappers/flag",
-        title:"Flag",
+        title:"<Flag />",
         content: pageLoader(() => import("./pixel/wrappers/flag.md"))
       },
       {
         path:"pixel/wrappers/tag",
-        title:"Tag",
+        title:"<Tag />",
         content: pageLoader(() => import("./pixel/wrappers/tag.md"))
       },
       {
         path:"pixel/wrappers/ui",
-        title:"UI",
+        title:"<UI />",
         content: pageLoader(() => import("./pixel/wrappers/ui.md"))
       },
     ]
@@ -429,40 +439,45 @@ const pages = [
     title: "Containers",
     pages: [
       {
+        path:"pixel/containers",
+        title:"Overview",
+        content: pageLoader(() => import("./pixel/containers/index.md"))
+      },
+      {
         path:"pixel/containers/app",
-        title:"App",
+        title:"<App />",
         content: pageLoader(() => import("./pixel/containers/app.md"))
       },
       {
         path:"pixel/containers/card",
-        title:"Card",
+        title:"<Card />",
         content: pageLoader(() => import("./pixel/containers/card.md"))
       },
       {
         path:"pixel/containers/drawer",
-        title:"Drawer",
+        title:"<Drawer />",
         content: pageLoader(() => import("./pixel/containers/drawer.md"))
       },
       {
         path:"pixel/containers/form",
-        title:"Form",
+        title:"<Form />",
         content: pageLoader(() => import("./pixel/containers/form.md"))
       },
       {
         path:"pixel/containers/group",
-        title:"Group",
+        title:"<Group />",
         content: pageLoader(() => import("./pixel/containers/group.md"))
       },
       {
         path:"pixel/containers/page",
-        title:"Page",
+        title:"<Page />",
         content: pageLoader(() => import("./pixel/containers/page.md"))
       },
-      {
-        path:"pixel/containers/panel",
-        title:"Panel",
-        content: pageLoader(() => import("./pixel/containers/panel.md"))
-      },
+      // {
+      //   path:"pixel/containers/panel",
+      //   title:"<Panel />",
+      //   content: pageLoader(() => import("./pixel/containers/panel.md"))
+      // },
     ]
   },
   {
