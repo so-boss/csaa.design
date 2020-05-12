@@ -29,8 +29,10 @@
     ]
   },
   "devDependencies": {
+    "formik": "^2.1.4",
     "prop-types": "^15.7.2",
     "reicons": "^0.4.7",
-    "svgcleaner": "^0.8.1-1"
+    "svgcleaner": "^0.8.1-1",
+    "yup": "^0.28.5"
   }
 }

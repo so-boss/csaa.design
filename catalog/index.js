@@ -42,6 +42,29 @@ import './pixel/module.css';
 import './pixel/globals.css';
 import './pixel/sprite.63d98036.svg'
 
+//import { Formik, Form } from 'formik';
+
+import * as Yup from 'yup';
+
+const validationSchema = Yup.object()
+.shape({
+  name_first: Yup.string()
+  .min(2, 'Too Short!')
+  .max(30, 'Too Long!')
+  .required('Required'),
+  name_last: Yup.string()
+  .min(2, 'Too Short!')
+  .max(30, 'Too Long!')
+  .required('Required'),
+  name_full: Yup.string()
+  .min(2, 'Too Short!')
+  .max(70, 'Too Long!')
+  .required('Required'),
+  email: Yup.string()
+  .email('Invalid email')
+  .required('Required'),
+});
+
 const pages = [
   {
     path: "/",
@@ -224,12 +247,92 @@ const pages = [
     ]
   },
   {
-    title: "PIXEL",
+    title: "WEB UI",
     pages: [
       {
         path: "hideme",
         title: "hideme",
         content: pageLoader(() => import("./ip/style/about.md"))
+      }
+    ]
+  },
+  {
+    title: "Actions",
+    pages: [
+      {
+        path: "pixel/ui/action/blocks",
+        title: "Blocks",
+        content: pageLoader(() => import("./pixel/uis/action_blocks.md"))
+      },
+      {
+        path: "pixel/ui/action/links",
+        title: "Links",
+        content: pageLoader(() => import("./pixel/uis/action_links.md"))
+      },
+      {
+        path: "pixel/ui/action/link_groups",
+        title: "Link Groups",
+        content: pageLoader(() => import("./pixel/uis/action_link_groups.md"))
+      },
+    ]
+  },
+  {
+    path: "pixel/ui/blocks",
+    title: "Blocks",
+    content: pageLoader(() => import("./pixel/uis/blocks.md"))
+  },
+  {
+    title: "Bubbles",
+    pages: [
+      {
+        path: "pixel/ui/bubbles/flag",
+        title: "Flag",
+        content: pageLoader(() => import("./pixel/uis/flags.md"))
+      },
+      {
+        path: "pixel/ui/bubbles/tags",
+        title: "Tags",
+        content: pageLoader(() => import("./pixel/uis/tags.md"))
+      },
+    ]
+  },
+  {
+    title: "Fields",
+    pages: [
+      {
+        path: "pixel/ui/fields/standalone",
+        title: "Input",
+        content: pageLoader(() => import("./pixel/uis/fields.md"))
+      },
+      {
+        path: "pixel/ui/fields/groups",
+        title: "Groups",
+        content: pageLoader(() => import("./pixel/uis/field_groups.md"))
+      },
+    ]
+  },
+  {
+    path: "pixel/ui/icons",
+    title: "Icons",
+    content: pageLoader(() => import("./pixel/uis/icons.md"))
+  },
+  {
+    path: "pixel/ui/interviews",
+    title: "Interviews",
+    content: pageLoader(() => import("./pixel/uis/interviews.md"))
+  },
+  {
+    path: "pixel/ui/questions",
+    title: "Questions",
+    content: pageLoader(() => import("./pixel/uis/questions.md"))
+  },
+  {
+    title: "PIXEL",
+    pages: [
+      {
+        path: "hideme",
+        title: "hideme",
+        content: pageLoader(() => import("./pixel/elements/block.md"))
       }
     ]
   },
@@ -421,7 +524,9 @@ ReactDOM.render(
       Drawer,
       Group,
       Page,
-      UI
+      UI,
+      Yup,
+      validationSchema
     }}
     title="CSAA"
     theme={{
