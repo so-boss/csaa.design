@@ -38,9 +38,15 @@ import {
   Page,
   UI
 } from "./pixel/module";
+
 import './pixel/module.css';
+
+
 import './globals.css';
 import './pixel/sprite.63d98036.svg'
+
+import jQuery from "jquery";
+window.$ = window.jQuery = jQuery;
 
 //import { Formik, Form } from 'formik';
 
@@ -77,58 +83,84 @@ const pages = [
     ]
   },
   {
-    path: "/",
+    path:"/",
+    title:"Overview",
+    hideFromMenu:true,
+    content: pageLoader(() => import("./team/team.md"))
+  },
+  {
     title: "Team",
-    content: pageLoader(() => import("./team/team.md")),
+    pages: [
+      {
+        path:"team/members",
+        title:"Designers",
+        content: pageLoader(() => import("./team/profiles.md"))
+      },
+      {
+        path:"team/roles",
+        title:"Assignments",
+        content: pageLoader(() => import("./team/roles.md"))
+      },
+      {
+        path:"team/capabilities",
+        title:"Service Menu",
+        content: pageLoader(() => import("./team/capabilities.md"))
+      },
+    ]
   },
   {
     title: "Principals",
     pages: [
       {
-        path:"principles/alignment",
+        path:"team/principles/alignment",
         title:"Alignment",
         content: pageLoader(() => import("./team/principles/alignment.md"))
       },
       {
-        path:"principles/contrast",
+        path:"team/principles/contrast",
         title:"Contrast",
         content: pageLoader(() => import("./team/principles/contrast.md"))
       },
       {
-        path:"principles/repetition",
+        path:"team/principles/repetition",
         title:"Repetition",
         content: pageLoader(() => import("./team/principles/repetition.md"))
       },
       {
-        path:"principles/direct",
+        path:"team/principles/direct",
         title:"Make it Direct",
         content: pageLoader(() => import("./team/principles/direct.md"))
       },
       {
-        path:"principles/stay",
+        path:"team/principles/stay",
         title:"Stay on the Page",
         content: pageLoader(() => import("./team/principles/stay.md"))
       },
       {
-        path:"principles/Keep it Lightweight",
+        path:"team/principles/Keep it Lightweight",
         title:"Lightweight",
         content: pageLoader(() => import("./team/principles/lightweight.md"))
       },
       {
-        path:"principles/invitation",
+        path:"team/principles/invitation",
         title:"Provide an Invitation",
         content: pageLoader(() => import("./team/principles/invitation.md"))
       },      {
-        path:"principles/transitions",
+        path:"team/principles/transitions",
         title:"Use Transitions",
         content: pageLoader(() => import("./team/principles/transitions.md"))
       },
       {
-        path:"principles/react",
+        path:"team/principles/react",
         title:"React Immediately",
         content: pageLoader(() => import("./team/principles/react.md"))
       }
     ]
+  },
+  {
+    path: "/team/gallery",
+    title: "Gallery",
+    content: pageLoader(() => import("./team/gallery.md")),
   },
   {
     title: "CSAA",
@@ -146,6 +178,7 @@ const pages = [
       {
         path: "mypolicy/style/about",
         title: "About",
+        hideFromMenu: true,
         content: pageLoader(() => import("./mypolicy/style/about.md"))
       },
       {
@@ -164,7 +197,8 @@ const pages = [
     title: "Insurance Portal",
     pages: [
       {
-        path: "ip/style/about",
+        path: "ip/about",
+        hideFromMenu: true,
         title: "About",
         content: pageLoader(() => import("./ip/style/about.md"))
       },
@@ -179,37 +213,42 @@ const pages = [
         content: pageLoader(() => import("./ip/style/typography.md"))
       },
       {
-        path: "ip/style/messages",
+        path: "ip/legacy",
+        title: "> > Legacy",
+        content: pageLoader(() => import("./ip/style/color.md"))
+      },
+      {
+        path: "ip/legacy/messages",
         title: "Messages",
         content: pageLoader(() => import("./ip/style/messages.md"))
       },
       {
-        path: "ip/style/dropdown",
+        path: "ip/legacy/dropdown",
         title: "Dropdown",
         content: pageLoader(() => import("./ip/style/dropdown.md"))
       },
       {
-        path: "ip/style/Buttons/buttons",
+        path: "ip/legacy/Buttons/buttons",
         title: "Button",
         content: pageLoader(() => import("./ip/style/Buttons/buttons.md"))
       },
       {
-        path: "ip/style/Buttons/IconButton/iconButton",
+        path: "ip/legacy/Buttons/IconButton/iconButton",
         title: "Icon Button",
         content: pageLoader(() => import("./ip/style/Buttons/IconButton/iconButton.md"))
       },
       {
-        path: "ip/style/Buttons/Links/links",
+        path: "ip/legacy/Buttons/Links/links",
         title: "Links",
         content: pageLoader(() => import("./ip/style/Buttons/Links/links.md"))
       },
       {
-        path: "ip/style/Badges",
+        path: "ip/legacy/Badges",
         title: "Badges",
         content: pageLoader(() => import("./ip/style/Badges/badges.md"))
       },
       {
-        path: "ip/style/brand",
+        path: "ip/legacy/brand",
         title: "Brand",
         content: pageLoader(() => import("./ip/style/brand.md"))
       }
@@ -341,6 +380,7 @@ const pages = [
       {
         path:"pixel/elements",
         title:"Overview",
+        hideFromMenu: true,
         content: pageLoader(() => import("./pixel/elements/index.md"))
       },
       {
@@ -386,6 +426,7 @@ const pages = [
       {
         path:"pixel/wrappers",
         title:"Overview",
+        hideFromMenu: true,
         content: pageLoader(() => import("./pixel/wrappers/index.md"))
       },
       {
@@ -441,6 +482,7 @@ const pages = [
       {
         path:"pixel/containers",
         title:"Overview",
+        hideFromMenu: true,
         content: pageLoader(() => import("./pixel/containers/index.md"))
       },
       {
@@ -504,18 +546,23 @@ const pages = [
     title: "Content & Data",
     pages: [
       {
+        path: "pixel/data",
+        title: "> > Data",
+        content: pageLoader(() => import("./pixel/data/about.md"))
+      },
+      {
         path: "pixel/data/entry",
-        title: "Data Entry",
+        title: "Input",
         content: pageLoader(() => import("./pixel/data/about.md"))
       },
       {
         path: "pixel/data/display",
-        title: "Data Display",
+        title: "Output / Display",
         content: pageLoader(() => import("./pixel/data/display.md"))
       },
       {
         path: "pixel/data/formatting",
-        title: "Data Formatting",
+        title: "Formatting",
         content: pageLoader(() => import("./pixel/data/formatting.md"))
       },
       {
@@ -570,7 +617,8 @@ ReactDOM.render(
       Page,
       UI,
       Yup,
-      validationSchema
+      validationSchema,
+      jQuery
     }}
     title="CSAA"
     theme={{
@@ -580,6 +628,7 @@ ReactDOM.render(
         sidebarColorTextActive:"#ED1C2E",
         linkColor:"#ED1C2E"
     }}
+    scripts={["/js/nav.js"]}
     logoSrc="/aaa-logo.svg"
     useBrowserHistory={true}
     pages={pages}

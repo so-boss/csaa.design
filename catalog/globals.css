@@ -13,6 +13,7 @@
  */
 li > div [href] {
   cursor: pointer;
+  /* TODO: Implement autoprefixer when switching to postcss to avoid all this extra style*/
   -webkit-touch-callout: none;
   /* iOS Safari */
   -webkit-user-select: none;
@@ -42,5 +43,12 @@ li > div > [href="/hideme"] {
     color: black; }
   li > div > [href="/hideme"] + ul {
     display: none; }
+
+div[menu=sub] {
+  padding: 0px 24px 0px 60px; }
+  div[menu=sub] a {
+    padding: 8px 0px 8px 0px; }
+  div[menu=sub] > div > [items] {
+    padding-left: 24px; }
 
 /*# sourceMappingURL=globals.css.map */

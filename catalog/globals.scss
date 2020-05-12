@@ -16,6 +16,7 @@ li > div {
   [href] {
     cursor: pointer;
 
+    /* TODO: Implement autoprefixer when switching to postcss to avoid all this extra style*/
     &::selection {
       background: transparent;
     }
@@ -50,6 +51,50 @@ li > div {
       display:none;
     }
   }
+}
 
+div[menu=sub] {
+  padding: 0px 24px 0px 60px;
 
+  a {
+    //font-style: normal;
+    //font-weight: 400;
+    //text-rendering: optimizeLegibility;
+    //-webkit-font-smoothing: antialiased;
+    //-moz-osx-font-smoothing: grayscale;
+    //-webkit-letter-spacing: normal;
+    //-moz-letter-spacing: normal;
+    //-ms-letter-spacing: normal;
+    //letter-spacing: normal;
+    //color: #00529A;
+    //font-family: 'Roboto',sans-serif;
+    //font-size: 1rem;
+    //line-height: 1.44;
+    //background: none;
+    //border: none;
+    //-webkit-transition: none;
+    //transition: none;
+    //border-top: 1px solid #EBEBEB;
+    //cursor: pointer;
+    //display: block;
+    //margin: 0;
+    //-webkit-text-decoration: none;
+    //text-decoration: none;
+    //border-top: none;
+    //border-bottom: none;
+    padding: 8px 0px 8px 0px;
+  }
+
+  > div {
+
+    a {
+      //color:black;
+    }
+    > [items] {
+      padding-left:24px;
+      > a {
+
+      }
+    }
+  }
 }
