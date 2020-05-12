@@ -10,8 +10,11 @@
         
     <div class="btn-type">
             <span class="btn-type-text">Primary Buttons</span>
-                            <p class="btn-type-info">Use for primary actions such as save, submit, print etc. Should be a “call to action” that advances to another flow.</p>
-
+                <ul>
+                        <li class="btn-type-info">Use for primary actions such as save, submit, print etc. Should be a “call to action” that advances to another flow.</li>
+                            <li class="btn-type-info">Use primary buttons for your most important actions</li>
+                            <li class="btn-type-info">Generally, primary buttons indicate next steps and secondary buttons are actions that happen on the same page</li>
+</ul>
     </div>
     <div class="btn btn-default">
             Default
@@ -29,6 +32,9 @@
         <div class="btn-wrapper-left">
                 <div class="btn-type">
                         <span class="btn-type-text">Small Buttons</span>
+                        <ul>
+                                <li class="btn-type-info"> Small buttons are having max-width of 100px. It should not go wider than that.</li>
+                                </ul>
                         </div>
     <div class="btn-small btn-small-default">
             Default
@@ -64,7 +70,10 @@
 
 <div class="btn-type">
 <span class="btn-type-text">Secondary Buttons</span>
-<p class="btn-type-info"> Use for secondary actions or action opposite to a primary action such as Cancel.</p>
+<ul>
+<li class="btn-type-info"> Use for secondary actions or action opposite to a primary action such as Cancel.</li>
+<li class="btn-type-info">Use secondary buttons or links for actions that are repeated on a page or for actions that are less popular user paths</li>
+</ul>
 </div>
     
     <div>
@@ -77,6 +86,9 @@
     <div class="btn-wrapper-left">
                 <div class="btn-type">
                         <span class="btn-type-text">Small Buttons</span>
+                        <ul>
+                                <li class="btn-type-info"> Small buttons are having max-width of 100px. It should not go wider than that.</li>
+</ul>
                         </div>
     <div class="btn-small btn-small-secondary">
             Default
@@ -107,14 +119,4 @@
 ####	•	Avoid using <div> or <img> tags to make buttons due to screen readers not recognizing this as a button
 ####	•	For buttons with dependencies, use a disabled state when a user has not performed an action to make a button active. Disable buttons can be used when filling out forms. The button will remain disabled until all conditions have been met.
 
-### Useability
 
-####	•	Use primary buttons for your most important actions
-####	•	Use secondary buttons or links for actions that are repeated on a page or for actions that are less popular user paths
-####	•	Generally, primary buttons indicate next steps and secondary buttons are actions that happen on the same page
-####	•	Size is another important factor in determining primary focus. The larger the button, the more attention it will grab. 
-####	•	Make sure buttons look clickable - use a color variation to differentiate it from body copy or non actionable items
-####	•	Avoid too many buttons on one page
-####	•	Button labels should be succinct and use the fewest possible words to describe the outcome of the action. Avoid generic phrases such as “Submit”. Try making the first word a verb.
-####	•	Icons may help add clarity and scanabiltyode header areas in the accordion as buttons or menu items so that they are usable with both screen readers and the keyboard.
-####	•	Buttons should state if  if expanded="true". The expanded="false" attribute will be added to other buttons when the accordion is initialized.

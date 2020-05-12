@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import './ip/style/Buttons/buttons.css'
 import './ip/style/Badges/badges.css'
-
+import './ip/style/Buttons/IconButton/IconButton.css'
+import './ip/style/Buttons/Links/links.css'
 import './index.css';
 import { Catalog, pageLoader } from "catalog";
 import {
@@ -124,6 +125,16 @@ const pages = [
         path: "ip/style/Buttons/buttons",
         title: "Button",
         content: pageLoader(() => import("./ip/style/Buttons/buttons.md"))
+      },
+      {
+        path: "ip/style/Buttons/IconButton/iconButton",
+        title: "Icon Button",
+        content: pageLoader(() => import("./ip/style/Buttons/IconButton/iconButton.md"))
+      },
+      {
+        path: "ip/style/Buttons/Links/links",
+        title: "Links",
+        content: pageLoader(() => import("./ip/style/Buttons/Links/links.md"))
       },
       {
         path: "ip/style/Badges",
