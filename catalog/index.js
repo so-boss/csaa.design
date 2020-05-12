@@ -67,33 +67,77 @@ const validationSchema = Yup.object()
 
 const pages = [
   {
-    path: "/",
-    title: "Digital Design Team",
-    content: pageLoader(() => import("./csaa.md"))
-  },
-  {
-    title: "Mobilitas",
+    title: "DIGITAL DESIGN",
     pages: [
       {
-        path: "mobilitas/style/color",
-        title: "Color",
-        content: pageLoader(() => import("./mobilitas/style/color.md"))
+        path: "hideme",
+        title: "Team",
+        content: pageLoader(() => import("./csaa.md")),
+      }
+    ]
+  },
+  {
+    path: "/",
+    title: "Team",
+    content: pageLoader(() => import("./csaa.md")),
+  },
+  {
+    title: "Principals",
+    pages: [
+      {
+        path:"principles/alignment",
+        title:"Alignment",
+        content: pageLoader(() => import("./principles/alignment.md"))
       },
       {
-        path: "mobilitas/style/typography",
-        title: "Typography",
-        content: pageLoader(() => import("./mobilitas/style/typography.md"))
+        path:"principles/contrast",
+        title:"Contrast",
+        content: pageLoader(() => import("./principles/contrast.md"))
       },
       {
-        path: "mobilitas/style/icons",
-        title: "Icons",
-        content: pageLoader(() => import("./mobilitas/style/icons.md"))
+        path:"principles/repetition",
+        title:"Repetition",
+        content: pageLoader(() => import("./principles/repetition.md"))
       },
       {
-        path: "mobilitas/style/icon-library",
-        title: "Icon Library",
-        content: pageLoader(() => import("./mobilitas/style/icon-library.js"))
+        path:"principles/direct",
+        title:"Make it Direct",
+        content: pageLoader(() => import("./principles/direct.md"))
       },
+      {
+        path:"principles/stay",
+        title:"Stay on the Page",
+        content: pageLoader(() => import("./principles/stay.md"))
+      },
+      {
+        path:"principles/Keep it Lightweight",
+        title:"Lightweight",
+        content: pageLoader(() => import("./principles/lightweight.md"))
+      },
+      {
+        path:"principles/invitation",
+        title:"Provide an Invitation",
+        content: pageLoader(() => import("./principles/invitation.md"))
+      },      {
+        path:"principles/transitions",
+        title:"Use Transitions",
+        content: pageLoader(() => import("./principles/transitions.md"))
+      },
+      {
+        path:"principles/react",
+        title:"React Immediately",
+        content: pageLoader(() => import("./principles/react.md"))
+      }
+    ]
+  },
+  {
+    title: "CSAA",
+    pages: [
+      {
+        path: "hideme",
+        title: "mobilitas",
+        content: pageLoader(() => import("./csaa.md")),
+      }
     ]
   },
   {
@@ -172,78 +216,33 @@ const pages = [
     ]
   },
   {
-    title: "Principals",
+    title: "MOBILITAS",
     pages: [
       {
-        path:"principles/alignment",
-        title:"Alignment",
-        content: pageLoader(() => import("./principles/alignment.md"))
-      },
-      {
-        path:"principles/contrast",
-        title:"Contrast",
-        content: pageLoader(() => import("./principles/contrast.md"))
-      },
-      {
-        path:"principles/repetition",
-        title:"Repetition",
-        content: pageLoader(() => import("./principles/repetition.md"))
-      },
-      {
-        path:"principles/direct",
-        title:"Make it Direct",
-        content: pageLoader(() => import("./principles/direct.md"))
-      },
-      {
-        path:"principles/stay",
-        title:"Stay on the Page",
-        content: pageLoader(() => import("./principles/stay.md"))
-      },
-      {
-        path:"principles/Keep it Lightweight",
-        title:"Lightweight",
-        content: pageLoader(() => import("./principles/lightweight.md"))
-      },
-      {
-        path:"principles/invitation",
-        title:"Provide an Invitation",
-        content: pageLoader(() => import("./principles/invitation.md"))
-      },      {
-        path:"principles/transitions",
-        title:"Use Transitions",
-        content: pageLoader(() => import("./principles/transitions.md"))
-      },
-      {
-        path:"principles/react",
-        title:"React Immediately",
-        content: pageLoader(() => import("./principles/react.md"))
+        path: "hideme",
+        title: "mobilitas",
+        content: pageLoader(() => import("./csaa.md")),
       }
     ]
   },
   {
-    title: "Global Rules",
+    title: "Rideshare",
     pages: [
       {
-        path: "rules/dataentry",
-        title: "Data Entry",
-        content: pageLoader(() => import("./ip/style/about.md"))
+        path: "mobilitas/style/color",
+        title: "Color",
+        content: pageLoader(() => import("./mobilitas/style/color.md"))
       },
       {
-        path: "rules/dataentry",
-        title: "Data Display",
-        content: pageLoader(() => import("./ip/style/about.md"))
+        path: "mobilitas/style/typography",
+        title: "Typography",
+        content: pageLoader(() => import("./mobilitas/style/typography.md"))
       },
       {
-        path: "rules/dataentry",
-        title: "Data Formatting",
-        content: pageLoader(() => import("./ip/style/about.md"))
+        path: "mobilitas/style/icons",
+        title: "Icons",
+        content: pageLoader(() => import("./mobilitas/style/icons.md"))
       },
-      {
-        path: "rules/dataentry",
-        title: "Copywriting",
-        content: pageLoader(() => import("./ip/style/about.md"))
-      }
-
     ]
   },
   {
@@ -467,7 +466,7 @@ const pages = [
     ]
   },
   {
-    title: "Style",
+    title: "Spec / CSS",
     pages: [
       {
         path:"pixel/style/tokens",
@@ -484,6 +483,32 @@ const pages = [
         title: "CSS Variables",
         content: pageLoader(() => import("./essentials/dictionary/css.md"))
       }
+    ]
+  },
+  {
+    title: "Data / Content",
+    pages: [
+      {
+        path: "rules/dataentry",
+        title: "Data Entry",
+        content: pageLoader(() => import("./ip/style/about.md"))
+      },
+      {
+        path: "rules/dataentry",
+        title: "Data Display",
+        content: pageLoader(() => import("./ip/style/about.md"))
+      },
+      {
+        path: "rules/dataentry",
+        title: "Data Formatting",
+        content: pageLoader(() => import("./ip/style/about.md"))
+      },
+      {
+        path: "rules/dataentry",
+        title: "Copywriting",
+        content: pageLoader(() => import("./ip/style/about.md"))
+      }
+
     ]
   }
 ];
