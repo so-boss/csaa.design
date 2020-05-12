@@ -44,7 +44,7 @@ collapsed: true
 ```
 
 
-## Variants
+## Variations
 **Additional Lines**
 Add up to four lines of text. Multi-line text should go on line 4.
 ```code|lang-jsx,span-3

@@ -403,11 +403,11 @@ const pages = [
         title:"Control",
         content: pageLoader(() => import("./pixel/wrappers/control.md"))
       },
-      {
-        path:"pixel/wrappers/container_wrappers",
-        title:"Container Wrappers",
-        content: pageLoader(() => import("./pixel/wrappers/container_wrappers.md"))
-      },
+      // {
+      //   path:"pixel/wrappers/container_wrappers",
+      //   title:"Container Wrappers",
+      //   content: pageLoader(() => import("./pixel/wrappers/container_wrappers.md"))
+      // },
       {
         path:"pixel/wrappers/flag",
         title:"Flag",
