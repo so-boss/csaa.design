@@ -71,15 +71,15 @@ const pages = [
     pages: [
       {
         path: "hideme",
-        title: "Team",
-        content: pageLoader(() => import("./csaa.md")),
+        title: "hide me",
+        content: pageLoader(() => import("./team/team.md")),
       }
     ]
   },
   {
     path: "/",
     title: "Team",
-    content: pageLoader(() => import("./csaa.md")),
+    content: pageLoader(() => import("./team/team.md")),
   },
   {
     title: "Principals",
@@ -87,46 +87,46 @@ const pages = [
       {
         path:"principles/alignment",
         title:"Alignment",
-        content: pageLoader(() => import("./principles/alignment.md"))
+        content: pageLoader(() => import("./team/principles/alignment.md"))
       },
       {
         path:"principles/contrast",
         title:"Contrast",
-        content: pageLoader(() => import("./principles/contrast.md"))
+        content: pageLoader(() => import("./team/principles/contrast.md"))
       },
       {
         path:"principles/repetition",
         title:"Repetition",
-        content: pageLoader(() => import("./principles/repetition.md"))
+        content: pageLoader(() => import("./team/principles/repetition.md"))
       },
       {
         path:"principles/direct",
         title:"Make it Direct",
-        content: pageLoader(() => import("./principles/direct.md"))
+        content: pageLoader(() => import("./team/principles/direct.md"))
       },
       {
         path:"principles/stay",
         title:"Stay on the Page",
-        content: pageLoader(() => import("./principles/stay.md"))
+        content: pageLoader(() => import("./team/principles/stay.md"))
       },
       {
         path:"principles/Keep it Lightweight",
         title:"Lightweight",
-        content: pageLoader(() => import("./principles/lightweight.md"))
+        content: pageLoader(() => import("./team/principles/lightweight.md"))
       },
       {
         path:"principles/invitation",
         title:"Provide an Invitation",
-        content: pageLoader(() => import("./principles/invitation.md"))
+        content: pageLoader(() => import("./team/principles/invitation.md"))
       },      {
         path:"principles/transitions",
         title:"Use Transitions",
-        content: pageLoader(() => import("./principles/transitions.md"))
+        content: pageLoader(() => import("./team/principles/transitions.md"))
       },
       {
         path:"principles/react",
         title:"React Immediately",
-        content: pageLoader(() => import("./principles/react.md"))
+        content: pageLoader(() => import("./team/principles/react.md"))
       }
     ]
   },
@@ -135,8 +135,8 @@ const pages = [
     pages: [
       {
         path: "hideme",
-        title: "mobilitas",
-        content: pageLoader(() => import("./csaa.md")),
+        title: "hide me",
+        content: pageLoader(() => import("./mypolicy/style/about.md")),
       }
     ]
   },
@@ -220,8 +220,8 @@ const pages = [
     pages: [
       {
         path: "hideme",
-        title: "mobilitas",
-        content: pageLoader(() => import("./csaa.md")),
+        title: "hide me",
+        content: pageLoader(() => import("./mobilitas/style/color.md")),
       }
     ]
   },
@@ -330,7 +330,7 @@ const pages = [
     pages: [
       {
         path: "hideme",
-        title: "hideme",
+        title: "hide me",
         content: pageLoader(() => import("./pixel/elements/block.md"))
       }
     ]
@@ -340,7 +340,7 @@ const pages = [
     pages: [
       {
         path: "pixel/elements/block",  //path:"pixel/elements/block2", has the new tab approach
-        title: "‣ Block",
+        title: "Block",
         content: pageLoader(() => import("./pixel/elements/block.md"))
       },
       {
@@ -380,17 +380,17 @@ const pages = [
     pages: [
       {
         path:"pixel/containers/drawer",
-        title:"⅓ Drawer",
+        title:"Drawer",
         content: pageLoader(() => import("./pixel/containers/drawer.md"))
       },
       {
         path:"pixel/containers/group",
-        title:"‣ Group",
+        title:"Group",
         content: pageLoader(() => import("./pixel/containers/group.md"))
       },
       {
         path:"pixel/containers/page",
-        title:"‣ Page",
+        title:"Page",
         content: pageLoader(() => import("./pixel/containers/page.md"))
       },
       {
@@ -415,32 +415,32 @@ const pages = [
       },
       {
         path:"pixel/containers/ui",
-        title:"¾ UI",
+        title:"UI",
         content: pageLoader(() => import("./pixel/containers/ui.md"))
       }
     ]
   },
   {
-    title: "Wrapper",
+    title: "Wrappers",
     pages: [
       {
         path:"pixel/wrappers/action",
-        title:"‣ Action",
+        title:"Action",
         content: pageLoader(() => import("./pixel/wrappers/action.md"))
       },
       {
         path:"pixel/wrappers/actionBlock",
-        title:"‣ Action Block",
+        title:"Action Block",
         content: pageLoader(() => import("./pixel/wrappers/actionBlock.md"))
       },
       {
         path:"pixel/wrappers/actionButton",
-        title:"‣ Action Button",
+        title:"Action Button",
         content: pageLoader(() => import("./pixel/wrappers/actionButton.md"))
       },
       {
         path:"pixel/wrappers/actionLink",
-        title:"‣ Action Link",
+        title:"Action Link",
         content: pageLoader(() => import("./pixel/wrappers/actionLink.md"))
       },
       {
@@ -466,50 +466,54 @@ const pages = [
     ]
   },
   {
-    title: "Spec / CSS",
+    title: "Style",
     pages: [
       {
+        path: "essentials/dictionary/css",
+        title: "Dictionaries",
+        content: pageLoader(() => import("./pixel/style/dictionary/css.md"))
+      },
+      {
         path:"pixel/style/tokens",
-        title:"Tokens",
+        title:"CSS Tokens",
         content: pageLoader(() => import("./pixel/style/tokens.md"))
       },
       {
-        path: "essentials/dictionary/dev",
-        title: "Development",
-        content: pageLoader(() => import("./essentials/dictionary/development.md"))
+        path: "pixel/style/integration",
+        title: "Integration",
+        content: pageLoader(() => import("./pixel/style/dictionary/development.md"))
       },
-      {
-        path: "essentials/dictionary/css",
-        title: "CSS Variables",
-        content: pageLoader(() => import("./essentials/dictionary/css.md"))
-      }
     ]
   },
   {
-    title: "Data / Content",
+    title: "Content & Data",
     pages: [
       {
-        path: "rules/dataentry",
+        path: "pixel/data/entry",
         title: "Data Entry",
-        content: pageLoader(() => import("./ip/style/about.md"))
+        content: pageLoader(() => import("./pixel/data/about.md"))
       },
       {
-        path: "rules/dataentry",
+        path: "pixel/data/display",
         title: "Data Display",
-        content: pageLoader(() => import("./ip/style/about.md"))
+        content: pageLoader(() => import("./pixel/data/display.md"))
       },
       {
-        path: "rules/dataentry",
+        path: "pixel/data/formatting",
         title: "Data Formatting",
-        content: pageLoader(() => import("./ip/style/about.md"))
+        content: pageLoader(() => import("./pixel/data/formatting.md"))
       },
       {
-        path: "rules/dataentry",
-        title: "Copywriting",
-        content: pageLoader(() => import("./ip/style/about.md"))
+        path: "pixel/content",
+        title: "Content",
+        content: pageLoader(() => import("./pixel/content/index.md"))
       }
-
-    ]
+    ],
+  },
+  {
+    path: "pixel/development",
+    title: "Development",
+    content: pageLoader(() => import("./pixel/development/index.md"))
   }
 ];
 
