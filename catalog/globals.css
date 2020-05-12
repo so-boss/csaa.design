@@ -1,0 +1,46 @@
+/*
+  {
+    title: "CON",
+    pages: [
+      {
+        path: "hideme",
+        title: "hideme",
+        content: pageLoader(() => import("./ip/style/about.md"))
+      }
+    ]
+  },
+
+ */
+li > div [href] {
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */ }
+  li > div [href]::selection {
+    background: transparent; }
+  li > div [href]::-moz-selection {
+    background: transparent; }
+li > div > [href="/hideme"] {
+  color: black;
+  font-size: 14px;
+  line-height: 1.5715;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  pointer-events: none;
+  cursor: default; }
+  li > div > [href="/hideme"]:hover {
+    color: black; }
+  li > div > [href="/hideme"] + ul {
+    display: none; }
+
+/*# sourceMappingURL=globals.css.map */

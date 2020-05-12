@@ -39,7 +39,7 @@ import {
   UI
 } from "./pixel/module";
 import './pixel/module.css';
-import './pixel/globals.css';
+import './globals.css';
 import './pixel/sprite.63d98036.svg'
 
 //import { Formik, Form } from 'formik';
