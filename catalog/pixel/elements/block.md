@@ -356,9 +356,9 @@ noSource: true
 
 ## Tokens
 ```code|lang-scss,span-6
-  @mixin block {
+@mixin block {
 
-  }
+}
 ```
 
 ## Videos

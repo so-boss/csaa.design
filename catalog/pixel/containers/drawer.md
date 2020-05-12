@@ -1,174 +1,187 @@
-### ACTION > BLOCK + DRAWER
+Drawers are almost always attached to an <ActionBlock>. They are meant to reveal relevant, form based/interactive content, on request. Coupled with a secondary drawer, they function together, providing an intuitive mechanism for follow up.  Both have carefully curated motion sequences, that together, manage the speed at which  content is presented. All motion in Pixel, along with the <Drawer>, carefully follow the natural rules of physics.
+```hint
+  Requires: **Containers**
 
-```react|plain
-<UI.Action
-  id="vehicle_block"
-  vehicle="2006 HONDA ACCORD"
-  vin="KDIOPW29812934"
-  drawer="expanded"
->
-  <UI.Drawer id="interview">
-    <UI.Question
-      id="remove_driver_reason"
-      driver="Emily"
-    />
-  </UI.Drawer>
-</UI.Action>
+  Props: **type, children**
 ```
-```react|plain
-<ActionBlock
-  lines={[
-    'Emily Swanker',
-    'Removing driver from your policy',
-  ]}
-  drawer="expanded"
->
-  <UI.Drawer id="interview">
-    <UI.Question
-      id="remove_driver_reason"
-      driver="Emily"
-    />
-  </UI.Drawer>
-</ActionBlock>
-```
-```react|plain
-<ActionBlock
-  lines={[
-    'William Jones',
-    'Tell us about this driver',
-  ]}
-  drawer="expanded"
->
-  <UI.Drawer id="interview">
-    <UI.Question
-      id="state_licensed"
-      driver="William"
-    />
-  </UI.Drawer>
-</ActionBlock>
-```
-```react|plain
-<Action drawer="expanded">
-  <UI.Drawer id="interview">
-    <UI.Question
-      id="license_number"
-      driver="William"
-    />
-  </UI.Drawer>
-</Action>
-```
-```react|plain
-<Action drawer="expanded">
-  <UI.Drawer id="interview">
-    <UI.Question
-      id="age_licensed"
-      driver="William"
-    />
-  </UI.Drawer>
-</Action>
-```
-```react|plain
-<Action drawer="expanded">
-  <UI.Drawer id="interview">
-    <UI.Question
-      id="relationship_to"
-      driver="William"
-      driver2="Amanda"
-    />
-  </UI.Drawer>
-</Action>
-```
-```react|plain
-<Action drawer="expanded">
-  <UI.Drawer id="interview">
-    <UI.Question
-      id="marital_status"
-      driver="William"
-    />
-  </UI.Drawer>
-</Action>
-```
-```react|plain
-<Action drawer="expanded">
-  <UI.Drawer id="interview">
-    <UI.Question id="modifying_more"/>
-  </UI.Drawer>
-</Action>
-```
-```react|plain
-<ActionBlock
-  icon={{
-    id: 'core-auto',
-    size: 'm',
+
+## Basic Usage
+```code|lang-jsx,span-3
+<Drawer>
+  {{
+    body:(
+      <Wrapper>
+        <Group type='question'>
+          {{
+            header: (
+              <Title>Why are you removing Emily from your policy?</Title>
+            ),
+            body: 'select reason',
+          }}
+        </Group>
+      </Wrapper>
+    ),
+    footer:(
+      <React.Fragment>
+        <ActionLink>Back</ActionLink>
+        <ActionButton>Save</ActionButton>
+      </React.Fragment>
+    ),
   }}
-  lines={[
-    'CAAS100383547',
-    'Second line about this and that',
-    'Policy Period 12/31/2018 to 12/31/2019',
-  ]}
->
-  <Drawer>
-    {{
-      body: (
-        <Wrapper>
-          <Group id="1" type="step">
-            {{
-              header: (
-                <Title>Why are you removing Emily from your policy?</Title>
-              ),
-              body: 'select reason',
-            }}
-          </Group>
-        </Wrapper>
-      ),
-      footer: (
-        <React.Fragment>
-          <ActionLink>Back</ActionLink>
-          <ActionButton>Save</ActionButton>
-        </React.Fragment>
-      ),
-    }}
-  </Drawer>
-</ActionBlock>
+</Drawer>
+```
+```react|span-3
+noSource: true
+---
+<Drawer>
+  {{
+    body:(
+      <Wrapper>
+        <Group type='question'>
+          {{
+            header: (
+              <Title>Why are you removing Emily from your policy?</Title>
+            ),
+            body: 'select reason',
+          }}
+        </Group>
+      </Wrapper>
+    ),
+    footer:(
+      <React.Fragment>
+        <ActionLink>Back</ActionLink>
+        <ActionButton>Save</ActionButton>
+      </React.Fragment>
+    ),
+  }}
+</Drawer>
+```
+```code|lang-html,span-6
+collapsed: true
+---
+<drawer type="primary">
+  <wrapper>
+    <wrapper type="body">
+      <wrapper>
+        <group id="1">
+          <wrapper>
+            <wrapper type="header">
+              <wrapper type="title">
+                  <title>Why are you removing Emily from your policy?</title>
+              </wrapper>
+            </wrapper>
+            <wrapper type="body">select reason</wrapper>
+          </wrapper>
+        </group>
+      </wrapper>
+    </wrapper>
+    <wrapper type="footer">
+      <action type="link">
+        <thing>Back</thing>
+      </action>
+      <action type="button" theme="primary">
+        <button type="button">Save</button>
+      </action>
+    </wrapper>
+  </wrapper>
+</drawer>
 ```
 
+## Variations
+**All three Slots**
+Containers don't typically utilize all three sections, but here they do.
+```code|lang-jsx,span-3
 
-```react|plain
-<ActionBlock
-  lines={[
-    'Add Driver',
-    'Get coverage for another driver in your household',
-  ]}
->
-  <Drawer>
-    {{
-      body: (
-        <Wrapper>
-          <Group id="1" type="step">
-            {{
-              header: (
-                <Title>Pleasae enter the following information:</Title>
-              ),
-              body: (
-                <form>
-                  <input placeholder="First Name"/>
-                  <input placeholder="Middle"/>
-                  <input placeholder="Last Name"/>
-                  <input placeholder="Suffix"/>
-                  <input placeholder="Date of Birth"/>
-                </form>
-              ),
-            }}
-          </Group>
-        </Wrapper>
-      ),
-      footer: (
-        <React.Fragment>
-          <ActionLink>Back</ActionLink>
-          <ActionLink>Next</ActionLink>
-        </React.Fragment>
-      ),
-    }}
-  </Drawer>
-</ActionBlock>
+<Drawer>
+  {{
+    header:'This automatically gets wrapped by a Title',
+    body:(
+      <div>Or you can pass html</div>
+    ),
+    footer:(
+      <React.Fragment>
+        <ActionLink>Back</ActionLink>
+        <ActionButton>Save</ActionButton>
+      </React.Fragment>
+    ),
+  }}
+</Drawer>
 ```
+```react|span-3
+noSource: true
+---
+<Drawer>
+  {{
+    header:'This automatically gets wrapped by a Title',
+    body:(
+      <div>Or you can pass html</div>
+    ),
+    footer:(
+      <React.Fragment>
+        <ActionLink>Back</ActionLink>
+        <ActionButton>Save</ActionButton>
+      </React.Fragment>
+    ),
+  }}
+</Drawer>
+```
+
+## Definitions
+```code|lang-js,span-6
+{
+  drawer:{
+    border:{
+      radius:'0 0 3px 3px',
+    },
+    padding:'0 48px 0 48px',
+    header:{
+      padding:{
+        top: '40px',
+      },
+    },
+    body:{
+      padding:'40px 0 40px 0',
+    },
+    footer: {
+      height:{
+        min:'64px',
+      },
+      border:{
+        position:{
+          offset:'-48px'
+        }
+      }
+    },
+  }
+}
+```
+
+## Tokens
+```code|lang-scss,span-6
+@mixin drawer {
+  // → → returns <drawer> → <wrapper> → <wrapper> context
+
+  @mixin drawer_header {
+    // → → returns <wrapper type='header'> context
+  }
+
+  @mixin drawer_body {
+    // → → returns <wrapper type='body'> context
+  }
+
+  @mixin drawer_footer {
+    // → → returns <wrapper type='footer'> context
+
+    & > action[type] {
+      &:last-child {
+        @mixin flex right;
+      }
+    }
+  }
+}
+```
+
+## Videos
+
+## Examples
+
