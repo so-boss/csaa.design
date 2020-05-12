@@ -1,174 +1,122 @@
-### ACTION > BLOCK + DRAWER
+Groups let you create collections from a set of elements. They allow buttons to transform into complex segmented controls. When used in an <Interview>, they even provide out of the box functionality for carousel like behavior.
+```hint
+  Requires: **Container**
 
-```react|plain
-<UI.Action
-  id="vehicle_block"
-  vehicle="2006 HONDA ACCORD"
-  vin="KDIOPW29812934"
-  drawer="expanded"
->
-  <UI.Drawer id="interview">
-    <UI.Question
-      id="remove_driver_reason"
-      driver="Emily"
-    />
-  </UI.Drawer>
-</UI.Action>
+  Props: **type, children**
 ```
-```react|plain
-<ActionBlock
-  lines={[
-    'Emily Swanker',
-    'Removing driver from your policy',
-  ]}
-  drawer="expanded"
->
-  <UI.Drawer id="interview">
-    <UI.Question
-      id="remove_driver_reason"
-      driver="Emily"
-    />
-  </UI.Drawer>
-</ActionBlock>
+
+## Basic Usage
+```code|lang-jsx,span-3
+<Group id='1' type='step'>
+  {{
+  header: (
+    <Title>Please enter the following information:</Title>
+  ),
+  body: (
+    <form>
+      <input placeholder='First Name' />
+      <input placeholder='Last Name' />
+    </form>
+  ),
+}}
+</Group>
 ```
-```react|plain
-<ActionBlock
-  lines={[
-    'William Jones',
-    'Tell us about this driver',
-  ]}
-  drawer="expanded"
->
-  <UI.Drawer id="interview">
-    <UI.Question
-      id="state_licensed"
-      driver="William"
-    />
-  </UI.Drawer>
-</ActionBlock>
+```react|span-3
+noSource: true
+---
+<Group id='1' type='step'>
+  {{
+  header: (
+    <Title>Please enter the following information:</Title>
+  ),
+  body: (
+    <form>
+      <input placeholder='First Name' />
+      <input placeholder='Last Name' />
+    </form>
+  ),
+}}
+</Group>
 ```
-```react|plain
-<Action drawer="expanded">
-  <UI.Drawer id="interview">
-    <UI.Question
-      id="license_number"
-      driver="William"
-    />
-  </UI.Drawer>
-</Action>
+```code|lang-html,span-6
+collapsed: true
+---
+<group id="1" type="step">
+  <wrapper>
+    <wrapper type="header">
+      <wrapper type="title">
+→ →     <title>Please enter the following information:</title>
+      </wrapper>
+    </wrapper>
+    </wrapper>
+    <wrapper type="body">
+→ →   <form>
+→ → →   <input placeholder="First Name">
+→ → →   <input placeholder="Last Name">
+→ →   </form>
+    </wrapper>
+  </wrapper>
+</group>
 ```
-```react|plain
-<Action drawer="expanded">
-  <UI.Drawer id="interview">
-    <UI.Question
-      id="age_licensed"
-      driver="William"
-    />
-  </UI.Drawer>
-</Action>
-```
-```react|plain
-<Action drawer="expanded">
-  <UI.Drawer id="interview">
-    <UI.Question
-      id="relationship_to"
-      driver="William"
-      driver2="Amanda"
-    />
-  </UI.Drawer>
-</Action>
-```
-```react|plain
-<Action drawer="expanded">
-  <UI.Drawer id="interview">
-    <UI.Question
-      id="marital_status"
-      driver="William"
-    />
-  </UI.Drawer>
-</Action>
-```
-```react|plain
-<Action drawer="expanded">
-  <UI.Drawer id="interview">
-    <UI.Question id="modifying_more"/>
-  </UI.Drawer>
-</Action>
-```
-```react|plain
-<ActionBlock
-  icon={{
-    id: 'core-auto',
-    size: 'm',
+
+## Variations
+**Simple Text vs JSX**
+Container slots easily adapt between accepting simple text strings and HTML/JSX structure. Strings don't require any more syntax than a couple quote ticks. Header strings auto transform into titles (read up on this).
+```code|lang-jsx,span-3
+<Group id='1' type='step'>
+  {{
+    header: 'Why are you removing Emily from your policy?',
+    body: 'select reason',
   }}
-  lines={[
-    'CAAS100383547',
-    'Second line about this and that',
-    'Policy Period 12/31/2018 to 12/31/2019',
-  ]}
->
-  <Drawer>
-    {{
-      body: (
-        <Wrapper>
-          <Group id="1" type="step">
-            {{
-              header: (
-                <Title>Why are you removing Emily from your policy?</Title>
-              ),
-              body: 'select reason',
-            }}
-          </Group>
-        </Wrapper>
-      ),
-      footer: (
-        <React.Fragment>
-          <ActionLink>Back</ActionLink>
-          <ActionButton>Save</ActionButton>
-        </React.Fragment>
-      ),
-    }}
-  </Drawer>
-</ActionBlock>
+</Group>
+```
+```react|span-3
+noSource: true
+---
+<Group id='1' type='step'>
+  {{
+    header: 'Why are you removing Emily from your policy?',
+    body: 'select reason',
+  }}
+</Group>
+```
+```code|lang-html,span-6
+collapsed: true
+---
+<group id=“1” type=“step”>
+  <wrapper>
+    <wrapper type=“header”>
+→ →   <wrapper type=“title”>
+→ → → → <title>Why are you removing Emily from your policy?</title>
+→ →   </wrapper>
+    </wrapper>
+→ → <wrapper type=“body”>select reason</wrapper>
+  </wrapper>
+</group>
 ```
 
-
-```react|plain
-<ActionBlock
-  lines={[
-    'Add Driver',
-    'Get coverage for another driver in your household',
-  ]}
->
-  <Drawer>
-    {{
-      body: (
-        <Wrapper>
-          <Group id="1" type="step">
-            {{
-              header: (
-                <Title>Pleasae enter the following information:</Title>
-              ),
-              body: (
-                <form>
-                  <input placeholder="First Name"/>
-                  <input placeholder="Middle"/>
-                  <input placeholder="Last Name"/>
-                  <input placeholder="Suffix"/>
-                  <input placeholder="Date of Birth"/>
-                </form>
-              ),
-            }}
-          </Group>
-        </Wrapper>
-      ),
-      footer: (
-        <React.Fragment>
-          <ActionLink>Back</ActionLink>
-          <ActionLink>Next</ActionLink>
-        </React.Fragment>
-      ),
-    }}
-  </Drawer>
-</ActionBlock>
+## Definitions
+```code|lang-js,span-6
+{
+  group:{
+    header:{
+      title:{
+        margin:'0px 0px 16px 0px',
+      },
+    },
+  }
+}
 ```
+
+## Tokens
+```code|lang-scss,span-6
+
+@mixin group {
+  @mixin group_header;
+}
+```
+
+## Videos
+
+## Examples
+

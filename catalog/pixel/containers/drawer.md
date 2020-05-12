@@ -1,6 +1,6 @@
 Drawers are almost always attached to an <ActionBlock>. They are meant to reveal relevant, form based/interactive content, on request. Coupled with a secondary drawer, they function together, providing an intuitive mechanism for follow up.  Both have carefully curated motion sequences, that together, manage the speed at which  content is presented. All motion in Pixel, along with the <Drawer>, carefully follow the natural rules of physics.
 ```hint
-  Requires: **Containers**
+  Requires: **Container**
 
   Props: **type, children**
 ```
