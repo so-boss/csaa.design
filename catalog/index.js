@@ -349,9 +349,19 @@ const pages = [
         content: pageLoader(() => import("./pixel/elements/button.md"))
       },
       {
+        path: "pixel/elements/field",
+        title: "Field",
+        content: pageLoader(() => import("./pixel/elements/field.md"))
+      },
+      {
         path: "pixel/elements/icon",
         title: "Icon",
         content: pageLoader(() => import("./pixel/elements/icon.md"))
+      },
+      {
+        path: "pixel/elements/label",
+        title: "Label",
+        content: pageLoader(() => import("./pixel/elements/label.md"))
       },
       {
         path: "pixel/elements/thing",
@@ -363,61 +373,6 @@ const pages = [
         title: "Title",
         content: pageLoader(() => import("./pixel/elements/title.md"))
       },
-      {
-        path: "pixel/elements/field",
-        title: "Field",
-        content: pageLoader(() => import("./pixel/elements/field.md"))
-      },
-      {
-        path: "pixel/elements/label",
-        title: "Label",
-        content: pageLoader(() => import("./pixel/elements/label.md"))
-      },
-    ]
-  },
-  {
-    title: "Containers",
-    pages: [
-      {
-        path:"pixel/containers/drawer",
-        title:"Drawer",
-        content: pageLoader(() => import("./pixel/containers/drawer.md"))
-      },
-      {
-        path:"pixel/containers/group",
-        title:"Group",
-        content: pageLoader(() => import("./pixel/containers/group.md"))
-      },
-      {
-        path:"pixel/containers/page",
-        title:"Page",
-        content: pageLoader(() => import("./pixel/containers/page.md"))
-      },
-      {
-        path:"pixel/containers/app",
-        title:"App",
-        content: pageLoader(() => import("./pixel/containers/app.md"))
-      },
-      {
-        path:"pixel/containers/card",
-        title:"Card",
-        content: pageLoader(() => import("./pixel/containers/card.md"))
-      },
-      {
-        path:"pixel/containers/form",
-        title:"Form",
-        content: pageLoader(() => import("./pixel/containers/form.md"))
-      },
-      {
-        path:"pixel/containers/panel",
-        title:"Panel",
-        content: pageLoader(() => import("./pixel/containers/panel.md"))
-      },
-      {
-        path:"pixel/containers/ui",
-        title:"UI",
-        content: pageLoader(() => import("./pixel/containers/ui.md"))
-      }
     ]
   },
   {
@@ -444,6 +399,16 @@ const pages = [
         content: pageLoader(() => import("./pixel/wrappers/actionLink.md"))
       },
       {
+        path:"pixel/wrappers/control",
+        title:"Control",
+        content: pageLoader(() => import("./pixel/wrappers/control.md"))
+      },
+      {
+        path:"pixel/wrappers/container_wrappers",
+        title:"Container Wrappers",
+        content: pageLoader(() => import("./pixel/wrappers/container_wrappers.md"))
+      },
+      {
         path:"pixel/wrappers/flag",
         title:"Flag",
         content: pageLoader(() => import("./pixel/wrappers/flag.md"))
@@ -454,14 +419,49 @@ const pages = [
         content: pageLoader(() => import("./pixel/wrappers/tag.md"))
       },
       {
-        path:"pixel/wrappers/control",
-        title:"Control",
-        content: pageLoader(() => import("./pixel/wrappers/control.md"))
+        path:"pixel/wrappers/ui",
+        title:"UI",
+        content: pageLoader(() => import("./pixel/wrappers/ui.md"))
+      },
+    ]
+  },
+  {
+    title: "Containers",
+    pages: [
+      {
+        path:"pixel/containers/app",
+        title:"App",
+        content: pageLoader(() => import("./pixel/containers/app.md"))
       },
       {
-        path:"pixel/wrappers/container_wrappers",
-        title:"Container Wrappers",
-        content: pageLoader(() => import("./pixel/wrappers/container_wrappers.md"))
+        path:"pixel/containers/card",
+        title:"Card",
+        content: pageLoader(() => import("./pixel/containers/card.md"))
+      },
+      {
+        path:"pixel/containers/drawer",
+        title:"Drawer",
+        content: pageLoader(() => import("./pixel/containers/drawer.md"))
+      },
+      {
+        path:"pixel/containers/form",
+        title:"Form",
+        content: pageLoader(() => import("./pixel/containers/form.md"))
+      },
+      {
+        path:"pixel/containers/group",
+        title:"Group",
+        content: pageLoader(() => import("./pixel/containers/group.md"))
+      },
+      {
+        path:"pixel/containers/page",
+        title:"Page",
+        content: pageLoader(() => import("./pixel/containers/page.md"))
+      },
+      {
+        path:"pixel/containers/panel",
+        title:"Panel",
+        content: pageLoader(() => import("./pixel/containers/panel.md"))
       },
     ]
   },
