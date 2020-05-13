@@ -29,6 +29,6 @@ rows:
     Size: "max-width: 180px"
     Background color: "#0096D6"
     Text Color: "#FFFFFF"
-    Icon Size: "20x20"
+    Icon Size: "16x16"
   
 ```
