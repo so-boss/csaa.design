@@ -37,8 +37,11 @@
     color: #95989A;
     float:right; 
     background-image: url('../../static/arrow-up-grey.svg') ;
-    height: 13px;
-    width: 20px;
+    height: 19px;
+    width: 14px;
+    background-repeat: repeat-x;
+    position: relative;
+    top: 4px;
 }
 
 
