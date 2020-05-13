@@ -26,9 +26,9 @@
 span: 4
 rows:
   - Button: Button with Icon
-    Size: max-width - 180px
-    Background color: 0096D6
-    Text Color: FFF
-    Icon Size: 20x20
+    Size: "max-width: 180px"
+    Background color: "#0096D6"
+    Text Color: "#FFFFFF"
+    Icon Size: "20x20"
   
 ```

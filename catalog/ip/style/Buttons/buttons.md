@@ -36,20 +36,20 @@
 span: 4
 rows:
   - Button: Default
-    Size: max-width - 140
-    Color: 0991CB
+    Size: "max-width: 140px"
+    Color: "#0991CB"
     Shadow: NA
   - Button: Hover
-    Size: max-width - 140
-    Color: 0991CB
+    Size: "max-width: 140px"
+    Color: "#0991CB"
     Shadow: 0px 3px 6px 00000029
   - Button: Active
-    Size: max-width - 140
-    Color: 0991CB
+    Size: "max-width: 140px"
+    Color: "#0991CB"
     Shadow: NA
   - Button: Disable
-    Size: max-width -140
-    Color: CCCCCC
+    Size: "max-width: 140px"
+    Color: "#CCCCCC"
     Shadow: NA
 ```
  ```html
@@ -93,20 +93,20 @@ rows:
 span: 4
 rows:
   - Button: Default
-    Size: max-width - 100
-    Color: 0991CB
+    Size: "max-width: 100px"
+    Color: "#0991CB"
     Shadow: NA
   - Button: Hover
-    Size: max-width - 100
-    Color: 0991CB
+    Size: "max-width: 100px"
+    Color: "#0991CB"
     Shadow: 0px 3px 6px 00000029
   - Button: Active
-    Size: max-width - 100
-    Color: 0991CB
+    Size: "max-width: 100px"
+    Color: "#0991CB"
     Shadow: NA
   - Button: Disable
-    Size: max-width -100
-    Color: CCCCCC
+    Size: "max-width: 100px"
+    Color: "#CCCCCC"
     Shadow: NA
 ```
 ### Secondary Buttons

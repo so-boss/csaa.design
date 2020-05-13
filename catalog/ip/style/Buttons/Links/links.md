@@ -22,12 +22,13 @@
 
     ```
 ```table
-span: 4
+span: 5
 rows:
   - Button: Links
-    Size: max-width - 100px
+    Size: "max-width: 100px"
     Font Weight: Normal
     Font Size: 14px
     Line Height: 10
     Text Transform: uppercase
+    Color: "#0096D6"
 ```
