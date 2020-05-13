@@ -15,6 +15,10 @@
     /* width: 60%; */
    
     }
+    .btn-type > ul {
+      padding-left: 18px;
+}
+    
     
 .btn-type-text {
     max-width:140px; 
@@ -54,6 +58,7 @@
 .btn-default {
     background: #0991CB;
 }
+
 
 .btn-disable{
     background: #CCCCCC;
@@ -130,3 +135,7 @@
 .btn-secondary-hover {
     border: 1px solid #0991CB;
 }
+
+
+
+

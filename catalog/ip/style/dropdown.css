@@ -1,0 +1,46 @@
+.dropdown-wrapper {
+    padding: 15px; 
+    border: 1px solid #D4D4D5; 
+    height: 50px;
+}
+.dropdown-wrapper:active {
+    border: 3px solid #0096D6;
+}
+
+.drop-menu {
+    width: 400px; 
+    height: 280px; 
+    background: #fff; 
+    border: 1px solid #D4D4D5; 
+    border-radius: 3.5px;  
+    color: #0096D6;
+    display: block;
+   
+}
+
+.drop-menu-option {
+    height: 56px; 
+    border-bottom: 1px solid #D4D4D5; 
+    padding:20px; 
+    cursor: pointer;
+}
+.drop-menu-option:hover {
+    background: #F8F9FB;
+
+}
+.drop-menu-option:active {
+    border: 1px solid #0096D6;
+     
+}
+.arrow-icon {
+    color: #95989A;
+    float:right; 
+    background-image: url('../../static/arrow-up-grey.svg') ;
+    height: 19px;
+    width: 14px;
+    background-repeat: repeat-x;
+    position: relative;
+    top: 4px;
+}
+
+

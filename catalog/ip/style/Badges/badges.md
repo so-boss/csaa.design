@@ -16,3 +16,23 @@
     </div>
 ```
 
+```table
+span: 4
+rows:
+  - Flag Name: Active
+    BackgroundColor: "#059D4E"
+    Color: "#FFFFFF"
+    Description: 
+  - Flag Name: Pending
+    BackgroundColor: "#CF4900"
+    Color: "#FFFFFF"
+    Description:
+  - Flag Name: Inactive
+    BackgroundColor: "#D52B1E"
+    Color: "#FFFFFF"
+    Description:
+  - Flag Name: Closed
+    BackgroundColor: "#D52B1E"
+    Color: "#FFFFFF"
+    Description:
+```
