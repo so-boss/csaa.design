@@ -14,11 +14,13 @@
                         <li class="btn-type-info">Use for primary actions such as save, submit, print etc. Should be a “call to action” that advances to another flow.</li>
                             <li class="btn-type-info">Use primary buttons for your most important actions</li>
                             <li class="btn-type-info">Generally, primary buttons indicate next steps and secondary buttons are actions that happen on the same page</li>
+                            <li class="btn-type-info">Max width for Primary button should not be more than 140px;  </li>
+                            <li class="btn-type-info">We have differnt states for buttons and colors corresponds to that.  </li>
 </ul>
     </div>
     <div class="btn btn-default">
             Default
-    </div>
+             </div>
 
       <div class="btn btn-default-hover">Hover</span>
     </div>
@@ -29,6 +31,28 @@
            Diabled
     </div>
         </div>
+ ```
+```table
+span: 4
+rows:
+  - Button: Default
+    Size: max-width - 140
+    Color: 0991CB
+    Shadow: NA
+  - Button: Hover
+    Size: max-width - 140
+    Color: 0991CB
+    Shadow: 0px 3px 6px 00000029
+  - Button: Active
+    Size: max-width - 140
+    Color: 0991CB
+    Shadow: NA
+  - Button: Disable
+    Size: max-width -140
+    Color: CCCCCC
+    Shadow: NA
+```
+ ```html
         <div class="btn-wrapper-left">
                 <div class="btn-type">
                         <span class="btn-type-text">Small Buttons</span>
@@ -62,6 +86,28 @@
             </ul>
             </div>
 </div> -->
+
+
+```
+```table
+span: 4
+rows:
+  - Button: Default
+    Size: max-width - 100
+    Color: 0991CB
+    Shadow: NA
+  - Button: Hover
+    Size: max-width - 100
+    Color: 0991CB
+    Shadow: 0px 3px 6px 00000029
+  - Button: Active
+    Size: max-width - 100
+    Color: 0991CB
+    Shadow: NA
+  - Button: Disable
+    Size: max-width -100
+    Color: CCCCCC
+    Shadow: NA
 ```
 ### Secondary Buttons
 
@@ -83,6 +129,8 @@
       <div class="btn btn-secondary"style=" ">
       <span class="btn btn-secondary-hover">Hover</span>
     </div>
+  
+    
     <div class="btn-wrapper-left">
                 <div class="btn-type">
                         <span class="btn-type-text">Small Buttons</span>
