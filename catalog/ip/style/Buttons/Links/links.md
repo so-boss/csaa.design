@@ -21,3 +21,13 @@
 
 
     ```
+```table
+span: 4
+rows:
+  - Button: Links
+    Size: max-width - 100px
+    Font Weight: Normal
+    Font Size: 14px
+    Line Height: 10
+    Text Transform: uppercase
+```
