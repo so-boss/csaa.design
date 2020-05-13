@@ -2,10 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import './ip/style/Buttons/buttons.css'
 import './ip/style/Badges/badges.css'
+import './ip/style/dropdown.css'
 import './ip/style/Buttons/IconButton/IconButton.css'
 import './ip/style/Buttons/Links/links.css'
 import './index.css';
 import { Catalog, pageLoader } from "catalog";
+import { Nav } from './mypolicy/style/Nav/nav.md'
 import {
   // ELEMENTS
   Block,
@@ -53,23 +55,23 @@ window.$ = window.jQuery = jQuery;
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object()
-.shape({
-  name_first: Yup.string()
-  .min(2, 'Too Short!')
-  .max(30, 'Too Long!')
-  .required('Required'),
-  name_last: Yup.string()
-  .min(2, 'Too Short!')
-  .max(30, 'Too Long!')
-  .required('Required'),
-  name_full: Yup.string()
-  .min(2, 'Too Short!')
-  .max(70, 'Too Long!')
-  .required('Required'),
-  email: Yup.string()
-  .email('Invalid email')
-  .required('Required'),
-});
+  .shape({
+    name_first: Yup.string()
+      .min(2, 'Too Short!')
+      .max(30, 'Too Long!')
+      .required('Required'),
+    name_last: Yup.string()
+      .min(2, 'Too Short!')
+      .max(30, 'Too Long!')
+      .required('Required'),
+    name_full: Yup.string()
+      .min(2, 'Too Short!')
+      .max(70, 'Too Long!')
+      .required('Required'),
+    email: Yup.string()
+      .email('Invalid email')
+      .required('Required'),
+  });
 
 const pages = [
   {
@@ -83,27 +85,27 @@ const pages = [
     ]
   },
   {
-    path:"/",
-    title:"Overview",
-    hideFromMenu:true,
+    path: "/",
+    title: "Overview",
+    hideFromMenu: true,
     content: pageLoader(() => import("./team/team.md"))
   },
   {
     title: "Team",
     pages: [
       {
-        path:"team/members",
-        title:"Designers",
+        path: "team/members",
+        title: "Designers",
         content: pageLoader(() => import("./team/profiles.md"))
       },
       {
-        path:"team/roles",
-        title:"Assignments",
+        path: "team/roles",
+        title: "Assignments",
         content: pageLoader(() => import("./team/roles.md"))
       },
       {
-        path:"team/capabilities",
-        title:"Service Menu",
+        path: "team/capabilities",
+        title: "Service Menu",
         content: pageLoader(() => import("./team/capabilities.md"))
       },
     ]
@@ -112,47 +114,47 @@ const pages = [
     title: "Principals",
     pages: [
       {
-        path:"team/principles/alignment",
-        title:"Alignment",
+        path: "team/principles/alignment",
+        title: "Alignment",
         content: pageLoader(() => import("./team/principles/alignment.md"))
       },
       {
-        path:"team/principles/contrast",
-        title:"Contrast",
+        path: "team/principles/contrast",
+        title: "Contrast",
         content: pageLoader(() => import("./team/principles/contrast.md"))
       },
       {
-        path:"team/principles/repetition",
-        title:"Repetition",
+        path: "team/principles/repetition",
+        title: "Repetition",
         content: pageLoader(() => import("./team/principles/repetition.md"))
       },
       {
-        path:"team/principles/direct",
-        title:"Make it Direct",
+        path: "team/principles/direct",
+        title: "Make it Direct",
         content: pageLoader(() => import("./team/principles/direct.md"))
       },
       {
-        path:"team/principles/stay",
-        title:"Stay on the Page",
+        path: "team/principles/stay",
+        title: "Stay on the Page",
         content: pageLoader(() => import("./team/principles/stay.md"))
       },
       {
-        path:"team/principles/Keep it Lightweight",
-        title:"Lightweight",
+        path: "team/principles/Keep it Lightweight",
+        title: "Lightweight",
         content: pageLoader(() => import("./team/principles/lightweight.md"))
       },
       {
-        path:"team/principles/invitation",
-        title:"Provide an Invitation",
+        path: "team/principles/invitation",
+        title: "Provide an Invitation",
         content: pageLoader(() => import("./team/principles/invitation.md"))
-      },      {
-        path:"team/principles/transitions",
-        title:"Use Transitions",
+      }, {
+        path: "team/principles/transitions",
+        title: "Use Transitions",
         content: pageLoader(() => import("./team/principles/transitions.md"))
       },
       {
-        path:"team/principles/react",
-        title:"React Immediately",
+        path: "team/principles/react",
+        title: "React Immediately",
         content: pageLoader(() => import("./team/principles/react.md"))
       }
     ]
@@ -190,7 +192,13 @@ const pages = [
         path: "mypolicy/style/typography",
         title: "Typography",
         content: pageLoader(() => import("./mypolicy/style/typography.md"))
+      },
+      {
+        path: "mypolicy/style/Nav/nav.md",
+        title: "Navigation",
+        content: pageLoader(() => import("./mypolicy/style/Nav/nav.md"))
       }
+
     ]
   },
   {
@@ -243,12 +251,12 @@ const pages = [
         content: pageLoader(() => import("./ip/style/Buttons/Links/links.md"))
       },
       {
-        path: "ip/legacy/Badges",
+        path: "ip/legacy/Badges/badges.md",
         title: "Badges",
         content: pageLoader(() => import("./ip/style/Badges/badges.md"))
       },
       {
-        path: "ip/legacy/brand",
+        path: "ip/legacy/brand.md",
         title: "Brand",
         content: pageLoader(() => import("./ip/style/brand.md"))
       }
@@ -378,8 +386,8 @@ const pages = [
     title: "Elements",
     pages: [
       {
-        path:"pixel/elements",
-        title:"Overview",
+        path: "pixel/elements",
+        title: "Overview",
         hideFromMenu: true,
         content: pageLoader(() => import("./pixel/elements/index.md"))
       },
@@ -424,29 +432,29 @@ const pages = [
     title: "Wrappers",
     pages: [
       {
-        path:"pixel/wrappers",
-        title:"Overview",
+        path: "pixel/wrappers",
+        title: "Overview",
         hideFromMenu: true,
         content: pageLoader(() => import("./pixel/wrappers/index.md"))
       },
       {
-        path:"pixel/wrappers/action",
-        title:"<Action />",
+        path: "pixel/wrappers/action",
+        title: "<Action />",
         content: pageLoader(() => import("./pixel/wrappers/action.md"))
       },
       {
-        path:"pixel/wrappers/actionBlock",
-        title:"<ActionBlock />",
+        path: "pixel/wrappers/actionBlock",
+        title: "<ActionBlock />",
         content: pageLoader(() => import("./pixel/wrappers/actionBlock.md"))
       },
       {
-        path:"pixel/wrappers/actionButton",
-        title:"<ActionButton />",
+        path: "pixel/wrappers/actionButton",
+        title: "<ActionButton />",
         content: pageLoader(() => import("./pixel/wrappers/actionButton.md"))
       },
       {
-        path:"pixel/wrappers/actionLink",
-        title:"<ActionLink />",
+        path: "pixel/wrappers/actionLink",
+        title: "<ActionLink />",
         content: pageLoader(() => import("./pixel/wrappers/actionLink.md"))
       },
       // {
@@ -460,18 +468,18 @@ const pages = [
       //   content: pageLoader(() => import("./pixel/wrappers/container_wrappers.md"))
       // },
       {
-        path:"pixel/wrappers/flag",
-        title:"<Flag />",
+        path: "pixel/wrappers/flag",
+        title: "<Flag />",
         content: pageLoader(() => import("./pixel/wrappers/flag.md"))
       },
       {
-        path:"pixel/wrappers/tag",
-        title:"<Tag />",
+        path: "pixel/wrappers/tag",
+        title: "<Tag />",
         content: pageLoader(() => import("./pixel/wrappers/tag.md"))
       },
       {
-        path:"pixel/wrappers/ui",
-        title:"<UI />",
+        path: "pixel/wrappers/ui",
+        title: "<UI />",
         content: pageLoader(() => import("./pixel/wrappers/ui.md"))
       },
     ]
@@ -480,39 +488,39 @@ const pages = [
     title: "Containers",
     pages: [
       {
-        path:"pixel/containers",
-        title:"Overview",
+        path: "pixel/containers",
+        title: "Overview",
         hideFromMenu: true,
         content: pageLoader(() => import("./pixel/containers/index.md"))
       },
       {
-        path:"pixel/containers/app",
-        title:"<App />",
+        path: "pixel/containers/app",
+        title: "<App />",
         content: pageLoader(() => import("./pixel/containers/app.md"))
       },
       {
-        path:"pixel/containers/card",
-        title:"<Card />",
+        path: "pixel/containers/card",
+        title: "<Card />",
         content: pageLoader(() => import("./pixel/containers/card.md"))
       },
       {
-        path:"pixel/containers/drawer",
-        title:"<Drawer />",
+        path: "pixel/containers/drawer",
+        title: "<Drawer />",
         content: pageLoader(() => import("./pixel/containers/drawer.md"))
       },
       {
-        path:"pixel/containers/form",
-        title:"<Form />",
+        path: "pixel/containers/form",
+        title: "<Form />",
         content: pageLoader(() => import("./pixel/containers/form.md"))
       },
       {
-        path:"pixel/containers/group",
-        title:"<Group />",
+        path: "pixel/containers/group",
+        title: "<Group />",
         content: pageLoader(() => import("./pixel/containers/group.md"))
       },
       {
-        path:"pixel/containers/page",
-        title:"<Page />",
+        path: "pixel/containers/page",
+        title: "<Page />",
         content: pageLoader(() => import("./pixel/containers/page.md"))
       },
       // {
@@ -531,8 +539,8 @@ const pages = [
         content: pageLoader(() => import("./pixel/style/dictionary/css.md"))
       },
       {
-        path:"pixel/style/tokens",
-        title:"CSS Tokens",
+        path: "pixel/style/tokens",
+        title: "CSS Tokens",
         content: pageLoader(() => import("./pixel/style/tokens.md"))
       },
       {
@@ -622,11 +630,11 @@ ReactDOM.render(
     }}
     title="CSAA"
     theme={{
-        pageHeadingBackground:"#00529A",
-        brandColor:"#00529A",
-        sidebarColorText:"#00529A",
-        sidebarColorTextActive:"#ED1C2E",
-        linkColor:"#ED1C2E"
+      pageHeadingBackground: "#00529A",
+      brandColor: "#00529A",
+      sidebarColorText: "#00529A",
+      sidebarColorTextActive: "#ED1C2E",
+      linkColor: "#ED1C2E"
     }}
     scripts={["/js/nav.js"]}
     logoSrc="/aaa-logo.svg"
