@@ -51,4 +51,20 @@ div[menu=sub] {
   div[menu=sub] > div > [items] {
     padding-left: 24px; }
 
+[layout=tabs] {
+  width: 100%;
+  background: white;
+  margin-bottom: 24px; }
+  [layout=tabs][type=card] {
+    background: transparent; }
+  [layout=tabs] > div {
+    padding: 24px; }
+
+.site-custom-tab-bar {
+  z-index: 1;
+  background: #fff; }
+
+[data-theme="dark"] .site-custom-tab-bar {
+  background: #141414; }
+
 /*# sourceMappingURL=globals.css.map */
