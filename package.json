@@ -4,11 +4,13 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.13",
+    "antd": "^4.2.2",
     "catalog": "^3.6.0",
     "jquery": "^3.5.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-sticky": "^6.0.3"
   },
   "scripts": {
     "catalog-start": "catalog start",

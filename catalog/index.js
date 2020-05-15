@@ -42,15 +42,12 @@ import {
 } from "./pixel/module";
 
 import './pixel/module.css';
-
-
+import './ant/antd.css';
 import './globals.css';
 import './pixel/sprite.63d98036.svg'
 
 import jQuery from "jquery";
 window.$ = window.jQuery = jQuery;
-
-//import { Formik, Form } from 'formik';
 
 import * as Yup from 'yup';
 
@@ -395,6 +392,11 @@ const pages = [
         path: "pixel/elements/block",  //path:"pixel/elements/block2", has the new tab approach
         title: "<Block />",
         content: pageLoader(() => import("./pixel/elements/block.md"))
+      },
+      {
+        path:"pixel/elements/block2",
+        title: "<BlockALT />",
+        content: pageLoader(() => import("./pixel/elements/block.js"))
       },
       {
         path: "pixel/elements/buttons",
