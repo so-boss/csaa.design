@@ -293,11 +293,6 @@ export default class extends React.Component {
             // subTitle="This is a subtitle"
             tags={<Tag color="blue">In Development</Tag>}
             extra={[
-              // <Button key="3">Operation</Button>,
-              // <Button key="2">Operation</Button>,
-              // <Button key="1" type="primary">
-              //   Primary
-              // </Button>,
               <DropdownMenu key="more"/>,
             ]}
             avatar={{
@@ -306,15 +301,7 @@ export default class extends React.Component {
             }}
             breadcrumb={{ routes }}
           >
-            <Content
-              // extraContent={
-              //   <img
-              //     src="https://gw.alipayobjects.com/zos/antfincdn/K%24NnlsB%26hz/pageHeader.svg"
-              //     alt="content"
-              //     width="100%"
-              //   />
-              // }
-            >
+            <Content>
               {content}
             </Content>
           </PageHeader>

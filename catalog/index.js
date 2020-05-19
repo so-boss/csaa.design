@@ -264,17 +264,17 @@ const pages = [
   {
     title: "MyPolicy",
     pages: [
-      {
-        path: "mypolicy/style/about",
-        title: "About",
-        hideFromMenu: true,
-        content: pageLoader(() => import("./mypolicy/style/about.md"))
-      },
-      {
-        path: "mypolicy/style/guide",
-        title: "Styleguide",
-        content: pageLoader(() => import("./mypolicy/style/styleguide.js"))
-      },
+      // {
+      //   path: "mypolicy/style/about",
+      //   title: "About",
+      //   hideFromMenu: true,
+      //   content: pageLoader(() => import("./mypolicy/style/about.md"))
+      // },
+      // {
+      //   path: "mypolicy/style/guide",
+      //   title: "Styleguide",
+      //   content: pageLoader(() => import("./mypolicy/style/styleguide.js"))
+      // },
       {
         path: "mypolicy/style/color",
         title: "Color",
@@ -296,12 +296,12 @@ const pages = [
   {
     title: "Insurance Portal",
     pages: [
-      {
-        path: "ip/about",
-        hideFromMenu: true,
-        title: "About",
-        content: pageLoader(() => import("./ip/style/about.md"))
-      },
+      // {
+      //   path: "ip/about",
+      //   hideFromMenu: true,
+      //   title: "About",
+      //   content: pageLoader(() => import("./ip/style/about.md"))
+      // },
       {
         path: "ip/style/color",
         title: "Color",
