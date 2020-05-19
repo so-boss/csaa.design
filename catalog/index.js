@@ -186,6 +186,11 @@ const pages = [
         content: pageLoader(() => import("./mypolicy/style/color.md"))
       },
       {
+        path: "mypolicy/style/color2",
+        title: "Color2",
+        content: pageLoader(() => import("./mypolicy/style/color.js"))
+      },
+      {
         path: "mypolicy/style/typography",
         title: "Typography",
         content: pageLoader(() => import("./mypolicy/style/typography.md"))

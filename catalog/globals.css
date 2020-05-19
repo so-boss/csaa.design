@@ -58,7 +58,13 @@ div[menu=sub] {
   [layout=tabs][type=card] {
     background: transparent; }
   [layout=tabs] > div {
-    padding: 24px; }
+    padding-top: 0px; }
+    [layout=tabs] > div > div {
+      width: 100%; }
+  [layout=tabs] .ant-tabs-nav .ant-tabs-tab-active {
+    color: #00529A; }
+  [layout=tabs] .ant-tabs-nav .ant-tabs-ink-bar {
+    background-color: #00529A; }
 
 .site-custom-tab-bar {
   z-index: 1;

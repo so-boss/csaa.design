@@ -84,8 +84,23 @@ div[menu=sub] {
     background:transparent;
   }
   > div {
-    padding:24px;
+    padding-top:0px;
+
+    > div {
+      width:100%;
+
+    }
   }
+
+  .ant-tabs-nav {
+    .ant-tabs-tab-active{
+      color:#00529A;
+    }
+    .ant-tabs-ink-bar {
+      background-color:#00529A;
+    }
+  }
+
 }
 .site-custom-tab-bar {
   z-index: 1;
