@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="420px" height="277px" viewBox="0 0 420 277" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>account-number-example-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="account-number-example-1">
+            <g id="routing-number-do" transform="translate(60.000000, 55.000000)">
+                <g id="Layer_1">
+                    <rect id="Rectangle-path" stroke="#0C96D4" x="0" y="0" width="300" height="44"></rect>
+                    <text id="12345678912345" fill="#333333" font-family="Helvetica" font-size="14" font-weight="normal">
+                        <tspan x="10" y="34.1091">12345678912345</tspan>
+                    </text>
+                    <text id="Account-Number" fill="#666666" font-family="Helvetica" font-size="10" font-weight="normal">
+                        <tspan x="10" y="16.1091">Account Number</tspan>
+                    </text>
+                    <path d="M276.2,9 C269.2,9 263.6,14.7 263.6,21.6 C263.6,28.6 269.3,34.2 276.2,34.2 C283.1,34.2 288.8,28.5 288.8,21.6 C288.8,14.6 283.1,9 276.2,9 L276.2,9 Z M276.2,27.2 C275.7,27.2 275.2,26.8 275.2,26.2 C275.2,25.6 275.6,25.2 276.2,25.2 C276.7,25.2 277.2,25.6 277.2,26.2 C277.1,26.7 276.7,27.2 276.2,27.2 L276.2,27.2 Z M279.4,21.4 C278.9,22.1 278.2,22.6 277.5,22.8 C277.3,22.9 277.1,23 277,23.1 L277,23.8 C277,24.2 276.6,24.6 276.2,24.6 C275.8,24.6 275.4,24.2 275.4,23.8 L275.4,23 C275.4,22.6 275.5,22.1 276.2,21.6 C276.5,21.4 276.8,21.3 276.9,21.2 L276.9,21.2 C277.9,20.9 278.5,20 278.5,19 C278.5,17.7 277.4,16.7 276.2,16.7 C274.9,16.7 273.9,17.8 273.9,19 C273.9,19.4 273.5,19.8 273.1,19.8 C272.7,19.8 272.3,19.4 272.3,19 C272.3,17.9 272.7,16.9 273.5,16.2 C274.2,15.5 275.2,15 276.3,15 C277.4,15 278.4,15.4 279.1,16.2 C279.8,16.9 280.3,17.9 280.3,19 C280.1,19.9 279.9,20.7 279.4,21.4 L279.4,21.4 Z" id="Shape" fill="#5F6062"></path>
+                    <rect id="Rectangle-path" fill="#EBEBEB" x="61.3" y="38.6" width="239" height="128.5"></rect>
+                    <rect id="Rectangle-path" fill="#EBEBEB" transform="translate(276.519400, 46.479090) rotate(-45.000000) translate(-276.519400, -46.479090) " x="265.169509" y="34.4292056" width="22.6997823" height="24.0997689"></rect>
+                    <rect id="Rectangle-path" stroke="#767676" fill="#FFFFFF" x="73.5" y="56.5" width="215.5" height="91.5"></rect>
+                    <rect id="Rectangle-path" fill="#CCCCCC" x="80" y="63.7" width="36.3" height="3.3"></rect>
+                    <rect id="Rectangle-path" stroke="#CCCCCC" x="244.1" y="82.5" width="38" height="10.5"></rect>
+                    <text id="$" fill="#CCCCCC" font-family="Helvetica" font-size="11.5348" font-weight="normal">
+                        <tspan x="235.4453" y="91.9277">$</tspan>
+                    </text>
+                    <text id="123456789" fill="#767676" opacity="0.669999957" font-family="Helvetica" font-size="9.063" font-weight="normal">
+                        <tspan x="84.2578" y="143.0908">123456789</tspan>
+                    </text>
+                    <text id="12345678912345" fill="#1778D3" font-family="Helvetica" font-size="9.063" font-weight="normal">
+                        <tspan x="149.7588" y="143.0908">12345678912345</tspan>
+                    </text>
+                    <path d="M281.6,73.4 L243.7,73.4" id="Shape" stroke="#CCCCCC"></path>
+                    <rect id="Rectangle-path" fill="#767676" x="79.7" y="137.5" width="1.7" height="4.5"></rect>
+                    <rect id="Rectangle-path" fill="#767676" x="82.4" y="137.2" width="1.3" height="1.3"></rect>
+                    <rect id="Rectangle-path" fill="#767676" x="82.4" y="140.9" width="1.3" height="1.3"></rect>
+                    <rect id="Rectangle-path" fill="#767676" x="134.7" y="137.5" width="1.7" height="4.5"></rect>
+                    <rect id="Rectangle-path" fill="#767676" x="224.1" y="137.5" width="3.9" height="3.9"></rect>
+                    <rect id="Rectangle-path" fill="#767676" x="132.3" y="137.3" width="1.3" height="1.3"></rect>
+                    <rect id="Rectangle-path" fill="#767676" x="132.3" y="141" width="1.3" height="1.3"></rect>
+                    <path d="M80,91.8 L202.4,91.8" id="Shape" stroke="#CCCCCC"></path>
+                    <path d="M80,70.4 L121.6,70.4" id="Shape" stroke="#CCCCCC"></path>
+                    <path d="M80,73.4 L114.8,73.4" id="Shape" stroke="#CCCCCC"></path>
+                    <path d="M80,105.8 L282.3,105.8" id="Shape" stroke="#CCCCCC"></path>
+                    <path d="M80,124.2 L150.6,124.2" id="Shape" stroke="#CCCCCC"></path>
+                    <path d="M176.8,124.2 L282.2,124.2" id="Shape" stroke="#CCCCCC"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

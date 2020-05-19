@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 420 159" style="enable-background:new 0 0 420 159;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#CCCCCC;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:1.3023;stroke-linecap:round;stroke-miterlimit:10;}
+	.st2{clip-path:url(#SVGID_2_);}
+	.st3{clip-path:url(#SVGID_4_);fill:#5F6062;}
+	.st4{clip-path:url(#SVGID_6_);}
+	.st5{clip-path:url(#SVGID_8_);fill:#5F6062;}
+	.st6{fill:#5F6062;}
+</style>
+<g>
+	<rect y="25.3" class="st0" width="420" height="88.4"/>
+</g>
+<path class="st1" d="M129,27.6v83.8"/>
+<path class="st1" d="M301,27.6v83.8"/>
+<g id="icon-arrow-right-hover_x2F_on-state">
+	<g>
+		<defs>
+			<rect id="SVGID_1_" x="399.6" y="60.5" width="10.4" height="18"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g class="st2">
+			<defs>
+				<rect id="SVGID_3_" x="399.6" y="60.5" width="10.4" height="18"/>
+			</defs>
+			<clipPath id="SVGID_4_">
+				<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+			</clipPath>
+			<path class="st3" d="M401.5,78.2l8.3-8.3c0.2-0.2,0.2-0.6,0-0.8l-8.3-8.3c-0.4-0.4-1.1-0.4-1.5,0l-0.1,0.1
+				c-0.4,0.4-0.4,1.1,0,1.5l6.7,6.7c0.2,0.2,0.2,0.6,0,0.8l-6.7,6.7c-0.4,0.4-0.4,1.1,0,1.5l0.1,0.1
+				C400.4,78.6,401.1,78.6,401.5,78.2"/>
+		</g>
+	</g>
+</g>
+<g id="icon-arrow-left-hover_x2F_on-state">
+	<g>
+		<defs>
+			<rect id="SVGID_5_" x="10" y="60.5" width="10.4" height="18"/>
+		</defs>
+		<clipPath id="SVGID_6_">
+			<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+		</clipPath>
+		<g class="st4">
+			<defs>
+				<rect id="SVGID_7_" x="10" y="60.5" width="10.4" height="18"/>
+			</defs>
+			<clipPath id="SVGID_8_">
+				<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
+			</clipPath>
+			<path class="st5" d="M18.5,78.2l-8.3-8.3c-0.2-0.2-0.2-0.6,0-0.8l8.3-8.3c0.4-0.4,1.1-0.4,1.5,0l0.1,0.1c0.4,0.4,0.4,1.1,0,1.5
+				l-6.7,6.7c-0.2,0.2-0.2,0.6,0,0.8l6.7,6.7c0.4,0.4,0.4,1.1,0,1.5L20,78.2C19.6,78.6,18.9,78.6,18.5,78.2"/>
+		</g>
+	</g>
+</g>
+<g>
+	<circle class="st6" cx="179.6" cy="137.3" r="6.7"/>
+	<circle class="st0" cx="210" cy="137.3" r="6.7"/>
+	<circle class="st6" cx="240.4" cy="137.3" r="6.7"/>
+</g>
+</svg>

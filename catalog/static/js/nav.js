@@ -1,7 +1,7 @@
 /*
   Hacky McHackerson
 
-  TODO: Refactor to use syntax that is less disruptive than GROUP::
+  TODO-DONE: Refactor to use syntax that is less disruptive than GROUP::
         Explore unicode arrow icon?
 */
 

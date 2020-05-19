@@ -42,15 +42,12 @@ import {
 } from "./pixel/module";
 
 import './pixel/module.css';
-
-
+import './ant/antd.css';
 import './globals.css';
 import './pixel/sprite.63d98036.svg'
 
 import jQuery from "jquery";
 window.$ = window.jQuery = jQuery;
-
-//import { Formik, Form } from 'formik';
 
 import * as Yup from 'yup';
 
@@ -74,96 +71,186 @@ const validationSchema = Yup.object()
   });
 
 const pages = [
-  {
-    title: "DIGITAL DESIGN",
-    pages: [
-      {
-        path: "hideme",
-        title: "hide me",
-        content: pageLoader(() => import("./team/team.md")),
-      }
-    ]
-  },
+  // {
+  //   title: "DIGITAL DESIGN",
+  //   pages: [
+  //     {
+  //       path: "hideme",
+  //       title: "hide me",
+  //       content: pageLoader(() => import("./team/team.md")),
+  //     }
+  //   ]
+  // },
+  // {
+  //   path: "/",
+  //   title: "Design",
+  //   content: pageLoader(() => import("./design/overview.md"))
+  // },
+  // {
+  //   title: "Design",
+  //   pages: [
+  //     {
+  //       hideFromMenu: true,
+  //       path: "design/overview",
+  //       title: "Digital Design Ecosystem",
+  //       content: pageLoader(() => import("./design/overview.md"))
+  //     },
+  //     {
+  //       path: "get-started/design",
+  //       title: "Design",
+  //       content: pageLoader(() => import("./guidelines/accessibility.js"))
+  //     },
+  //     {
+  //       path: "get-started/develop",
+  //       title: "Develop",
+  //       content: pageLoader(() => import("./guidelines/accessibility.js"))
+  //     }
+  //   ]
+  // },
   {
     path: "/",
-    title: "Overview",
-    hideFromMenu: true,
-    content: pageLoader(() => import("./team/team.md"))
+    title: "Color",
+    content: pageLoader(() => import("./guidelines/color.js"))
+  },
+  // {
+  //   path: "guidelines/content",
+  //   title: "Content",
+  //   content: pageLoader(() => import("./guidelines/content.md"))
+  // },
+  {
+    path: "guidelines/icons",
+    title: "Icons",
+    content: pageLoader(() => import("./guidelines/iconography.md"))
+  },
+  // {
+  //   path: "guidelines/grid",
+  //   title: "Grid",
+  //   content: pageLoader(() => import("./guidelines/grid.md"))
+  // },
+  {
+    path: "guidelines/layout",
+    title: "Layout",
+    content: pageLoader(() => import("./guidelines/responsive.md"))
   },
   {
-    title: "Team",
-    pages: [
-      {
-        path: "team/members",
-        title: "Designers",
-        content: pageLoader(() => import("./team/profiles.md"))
-      },
-      {
-        path: "team/roles",
-        title: "Assignments",
-        content: pageLoader(() => import("./team/roles.md"))
-      },
-      {
-        path: "team/capabilities",
-        title: "Service Menu",
-        content: pageLoader(() => import("./team/capabilities.md"))
-      },
-    ]
+    path: "guidelines/typography",
+    title: "Typography",
+    content: pageLoader(() => import("./guidelines/typography.md"))
   },
-  {
-    title: "Principals",
-    pages: [
-      {
-        path: "team/principles/alignment",
-        title: "Alignment",
-        content: pageLoader(() => import("./team/principles/alignment.md"))
-      },
-      {
-        path: "team/principles/contrast",
-        title: "Contrast",
-        content: pageLoader(() => import("./team/principles/contrast.md"))
-      },
-      {
-        path: "team/principles/repetition",
-        title: "Repetition",
-        content: pageLoader(() => import("./team/principles/repetition.md"))
-      },
-      {
-        path: "team/principles/direct",
-        title: "Make it Direct",
-        content: pageLoader(() => import("./team/principles/direct.md"))
-      },
-      {
-        path: "team/principles/stay",
-        title: "Stay on the Page",
-        content: pageLoader(() => import("./team/principles/stay.md"))
-      },
-      {
-        path: "team/principles/Keep it Lightweight",
-        title: "Lightweight",
-        content: pageLoader(() => import("./team/principles/lightweight.md"))
-      },
-      {
-        path: "team/principles/invitation",
-        title: "Provide an Invitation",
-        content: pageLoader(() => import("./team/principles/invitation.md"))
-      }, {
-        path: "team/principles/transitions",
-        title: "Use Transitions",
-        content: pageLoader(() => import("./team/principles/transitions.md"))
-      },
-      {
-        path: "team/principles/react",
-        title: "React Immediately",
-        content: pageLoader(() => import("./team/principles/react.md"))
-      }
-    ]
-  },
-  {
-    path: "/team/gallery",
-    title: "Gallery",
-    content: pageLoader(() => import("./team/gallery.md")),
-  },
+  // {
+  //   title: "Guidelines",
+  //   pages: [
+  //     // {
+  //     //   path: "guidelines/accessibility",
+  //     //   title: "Accessibility",
+  //     //   content: pageLoader(() => import("./guidelines/accessibility.md"))
+  //     // },
+  //     {
+  //       path: "/",
+  //       title: "Color",
+  //       content: pageLoader(() => import("./guidelines/color.js"))
+  //     },
+  //     // {
+  //     //   path: "guidelines/content",
+  //     //   title: "Content",
+  //     //   content: pageLoader(() => import("./guidelines/content.md"))
+  //     // },
+  //     {
+  //       path: "guidelines/icons",
+  //       title: "Icons",
+  //       content: pageLoader(() => import("./guidelines/iconography.md"))
+  //     },
+  //     // {
+  //     //   path: "guidelines/grid",
+  //     //   title: "Grid",
+  //     //   content: pageLoader(() => import("./guidelines/grid.md"))
+  //     // },
+  //     {
+  //       path: "guidelines/responsive.md",
+  //       title: "Responsive",
+  //       content: pageLoader(() => import("./guidelines/responsive.md"))
+  //     },
+  //     {
+  //       path: "guidelines/typography",
+  //       title: "Typography",
+  //       content: pageLoader(() => import("./guidelines/typography.md"))
+  //     }
+  //   ]
+  // },
+  // {
+  //   title: "Team",
+  //   pages: [
+  //     {
+  //       path: "team/members",
+  //       title: "Designers",
+  //       content: pageLoader(() => import("./team/profiles.md"))
+  //     },
+  //     {
+  //       path: "team/roles",
+  //       title: "Assignments",
+  //       content: pageLoader(() => import("./team/roles.md"))
+  //     },
+  //     {
+  //       path: "team/capabilities",
+  //       title: "Service Menu",
+  //       content: pageLoader(() => import("./team/capabilities.md"))
+  //     },
+  //   ]
+  // },
+  // {
+  //   title: "Principals",
+  //   pages: [
+  //     {
+  //       path: "team/principles/alignment",
+  //       title: "Alignment",
+  //       content: pageLoader(() => import("./team/principles/alignment.md"))
+  //     },
+  //     {
+  //       path: "team/principles/contrast",
+  //       title: "Contrast",
+  //       content: pageLoader(() => import("./team/principles/contrast.md"))
+  //     },
+  //     {
+  //       path: "team/principles/repetition",
+  //       title: "Repetition",
+  //       content: pageLoader(() => import("./team/principles/repetition.md"))
+  //     },
+  //     {
+  //       path: "team/principles/direct",
+  //       title: "Make it Direct",
+  //       content: pageLoader(() => import("./team/principles/direct.md"))
+  //     },
+  //     {
+  //       path: "team/principles/stay",
+  //       title: "Stay on the Page",
+  //       content: pageLoader(() => import("./team/principles/stay.md"))
+  //     },
+  //     {
+  //       path: "team/principles/Keep it Lightweight",
+  //       title: "Lightweight",
+  //       content: pageLoader(() => import("./team/principles/lightweight.md"))
+  //     },
+  //     {
+  //       path: "team/principles/invitation",
+  //       title: "Provide an Invitation",
+  //       content: pageLoader(() => import("./team/principles/invitation.md"))
+  //     }, {
+  //       path: "team/principles/transitions",
+  //       title: "Use Transitions",
+  //       content: pageLoader(() => import("./team/principles/transitions.md"))
+  //     },
+  //     {
+  //       path: "team/principles/react",
+  //       title: "React Immediately",
+  //       content: pageLoader(() => import("./team/principles/react.md"))
+  //     }
+  //   ]
+  // },
+  // {
+  //   path: "/team/gallery",
+  //   title: "Gallery",
+  //   content: pageLoader(() => import("./team/gallery.md")),
+  // },
   {
     title: "CSAA",
     pages: [
@@ -177,12 +264,17 @@ const pages = [
   {
     title: "MyPolicy",
     pages: [
-      {
-        path: "mypolicy/style/about",
-        title: "About",
-        hideFromMenu: true,
-        content: pageLoader(() => import("./mypolicy/style/about.md"))
-      },
+      // {
+      //   path: "mypolicy/style/about",
+      //   title: "About",
+      //   hideFromMenu: true,
+      //   content: pageLoader(() => import("./mypolicy/style/about.md"))
+      // },
+      // {
+      //   path: "mypolicy/style/guide",
+      //   title: "Styleguide",
+      //   content: pageLoader(() => import("./mypolicy/style/styleguide.js"))
+      // },
       {
         path: "mypolicy/style/color",
         title: "Color",
@@ -193,23 +285,23 @@ const pages = [
         title: "Typography",
         content: pageLoader(() => import("./mypolicy/style/typography.md"))
       },
-      {
-        path: "mypolicy/style/Nav/nav.md",
-        title: "Navigation",
-        content: pageLoader(() => import("./mypolicy/style/Nav/nav.md"))
-      }
+      // {
+      //   path: "mypolicy/style/Nav/nav.md",
+      //   title: "Navigation",
+      //   content: pageLoader(() => import("./mypolicy/style/Nav/nav.md"))
+      // }
 
     ]
   },
   {
     title: "Insurance Portal",
     pages: [
-      {
-        path: "ip/about",
-        hideFromMenu: true,
-        title: "About",
-        content: pageLoader(() => import("./ip/style/about.md"))
-      },
+      // {
+      //   path: "ip/about",
+      //   hideFromMenu: true,
+      //   title: "About",
+      //   content: pageLoader(() => import("./ip/style/about.md"))
+      // },
       {
         path: "ip/style/color",
         title: "Color",
@@ -223,22 +315,22 @@ const pages = [
       {
         path: "ip/legacy",
         title: "> > Legacy",
-        content: pageLoader(() => import("./ip/style/color.md"))
+        content: pageLoader(() => import("./ip/style/brand.md"))
       },
       {
-        path: "ip/legacy/messages",
-        title: "Messages",
-        content: pageLoader(() => import("./ip/style/messages.md"))
-      },
-      {
-        path: "ip/legacy/dropdown",
-        title: "Dropdown",
-        content: pageLoader(() => import("./ip/style/dropdown.md"))
+        path: "ip/legacy/Badges/badges.md",
+        title: "Badges",
+        content: pageLoader(() => import("./ip/style/Badges/badges.md"))
       },
       {
         path: "ip/legacy/Buttons/buttons",
         title: "Button",
         content: pageLoader(() => import("./ip/style/Buttons/buttons.md"))
+      },
+      {
+        path: "ip/legacy/dropdown",
+        title: "Dropdown",
+        content: pageLoader(() => import("./ip/style/dropdown.md"))
       },
       {
         path: "ip/legacy/Buttons/IconButton/iconButton",
@@ -256,14 +348,9 @@ const pages = [
         content: pageLoader(() => import("./ip/style/Buttons/Links/links.md"))
       },
       {
-        path: "ip/legacy/Badges/badges.md",
-        title: "Badges",
-        content: pageLoader(() => import("./ip/style/Badges/badges.md"))
-      },
-      {
-        path: "ip/legacy/brand.md",
-        title: "Brand",
-        content: pageLoader(() => import("./ip/style/brand.md"))
+        path: "ip/legacy/messages",
+        title: "Messages",
+        content: pageLoader(() => import("./ip/style/messages.md"))
       }
     ]
   },
@@ -400,6 +487,11 @@ const pages = [
         path: "pixel/elements/block",  //path:"pixel/elements/block2", has the new tab approach
         title: "<Block />",
         content: pageLoader(() => import("./pixel/elements/block.md"))
+      },
+      {
+        path:"pixel/elements/block2",
+        title: "<BlockALT />",
+        content: pageLoader(() => import("./pixel/elements/block.js"))
       },
       {
         path: "pixel/elements/buttons",
@@ -592,6 +684,10 @@ const pages = [
   }
 ];
 
+export const ListItem = ({children}) => (
+  <a>ss</a>
+)
+
 ReactDOM.render(
   <Catalog
     styles={[
@@ -633,7 +729,7 @@ ReactDOM.render(
       validationSchema,
       jQuery
     }}
-    title="CSAA"
+    title="Digital Commons"
     theme={{
       pageHeadingBackground: "#00529A",
       brandColor: "#00529A",

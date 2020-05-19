@@ -1,95 +1,115 @@
 import React from 'react';
+
 import {Page, ReactSpecimen} from 'catalog';
 
-import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
+import '../../ant/antd.css';
+import { Tabs, Collapse, Select } from 'antd';
+import { StickyContainer, Sticky } from 'react-sticky';
 
-// import Button from './../../components/Button/Button';
-//import {generateColorPalette} from './utils';
+// import { SettingOutlined } from '../../icons/components/Icons/';
 
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
 
-  return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box p={3}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
-    </div>
-  );
+//TABS
+const { TabPane } = Tabs;
+
+const renderTabBar = (props, DefaultTabBar) => (
+  <Sticky bottomOffset={80}>
+    {({ style }) => (
+      <DefaultTabBar {...props} className="site-custom-tab-bar" style={{ ...style }} />
+    )}
+  </Sticky>
+);
+
+
+//COLLAPSE
+const { Panel } = Collapse;
+const { Option } = Select;
+
+function callback(key) {
+  console.log(key);
 }
 
-TabPanel.propTypes = {
-  children: PropTypes.node,
-  index: PropTypes.any.isRequired,
-  value: PropTypes.any.isRequired,
-};
+const text = `
+  A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+`;
 
-function a11yProps(index) {
-  return {
-    id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
-  };
-}
+// const genExtra = () => (
+//   <SettingOutlined
+//     onClick={event => {
+//       // If you don't want click extra trigger collapse, you can prevent this:
+//       event.stopPropagation();
+//     }}
+//   />
+// );
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    backgroundColor: theme.palette.background.paper,
-  },
-}));
-
-
-export default () => {
-  const classes = useStyles();
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
+export default class extends React.Component {
+//export default () => {
+  state = {
+    expandIconPosition: 'left',
   };
 
-  return (
-    <Page>
-      <div className={classes.root}>
-        <AppBar position="static">
-          <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-            <Tab label="Item One" {...a11yProps(0)} />
-            <Tab label="Item Two" {...a11yProps(1)} />
-            <Tab label="Item Three" {...a11yProps(2)} />
+  onPositionChange = expandIconPosition => {
+    this.setState({ expandIconPosition });
+  };
+  render(){
+    const { expandIconPosition } = this.state;
+    return (
+      <Page>
+        <div layout="tabs">
+          <StickyContainer>
+            <Tabs
+              defaultActiveKey="1"
+              renderTabBar={renderTabBar}
+              size="large"
+            >
+              <TabPane tab="Tab 1" key="1" style={{ height: 200 }}>
+                Content of Tab Pane 1
+              </TabPane>
+              <TabPane tab="Tab 2" key="2">
+                Content of Tab Pane 2
+              </TabPane>
+              <TabPane tab="Tab 3" key="3">
+                Content of Tab Pane 3
+              </TabPane>
+            </Tabs>
+          </StickyContainer>
+        </div>
+        <div layout="tabs">
+          <Tabs
+            defaultActiveKey="1"
+            size="large"
+            type="card"
+          >
+            <TabPane tab="Tab 1" key="1">
+              Content of Tab Pane 1
+            </TabPane>
+            <TabPane tab="Tab 2" key="2">
+              Content of Tab Pane 2
+            </TabPane>
+            <TabPane tab="Tab 3" key="3">
+              Content of Tab Pane 3
+            </TabPane>
           </Tabs>
-        </AppBar>
-        <TabPanel value={value} index={0}>
-          Item One
-        </TabPanel>
-        <TabPanel value={value} index={1}>
-          Item Two
-        </TabPanel>
-        <TabPanel value={value} index={2}>
-          Item Three
-        </TabPanel>
-      </div>
+        </div>
 
-      <h2>My Buttons</h2>
-
-      <p>Are so nice</p>
-
-      <ul>
-        <li>Yes</li>
-        <li>or no?</li>
-      </ul>
-    </Page>
-  );
+        <Collapse
+          defaultActiveKey={['1']}
+          onChange={callback}
+          expandIconPosition={expandIconPosition}
+        >
+          <Panel header="This is panel header 1" key="1">
+            <div>{text}</div>
+          </Panel>
+          <Panel header="This is panel header 2" key="2">
+            <div>{text}</div>
+          </Panel>
+          <Panel header="This is panel header 3" key="3">
+            <div>{text}</div>
+          </Panel>
+        </Collapse>
+      </Page>
+    );
+  }
 }

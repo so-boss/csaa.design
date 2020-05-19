@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1024 535" style="enable-background:new 0 0 1024 535;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#263B86;}
+	.st1{fill:#FFFFFF;enable-background:new    ;}
+	.st2{opacity:0.8;fill:#015399;enable-background:new    ;}
+	.st3{opacity:0.8;fill:#87CADE;enable-background:new    ;}
+	.st4{fill:#FFFFFF;}
+	.st5{opacity:0.8;fill:none;stroke:#EB2030;stroke-width:2;stroke-miterlimit:10;enable-background:new    ;}
+	.st6{opacity:0.8;fill:#EB2030;enable-background:new    ;}
+	.st7{display:none;opacity:0.8;fill:#1C2E5C;enable-background:new    ;}
+	.st8{display:none;opacity:0.8;fill:#015399;enable-background:new    ;}
+	.st9{display:none;opacity:0.8;fill:#87CADE;enable-background:new    ;}
+	.st10{display:none;opacity:0.8;fill:#EB2030;enable-background:new    ;}
+	.st11{opacity:0.8;enable-background:new    ;}
+	.st12{fill:#EB2030;}
+</style>
+<g id="Layer_1">
+	<rect x="0.1" class="st0" width="1024" height="535"/>
+	<rect x="301.5" y="78.7" class="st1" width="423.9" height="376"/>
+	<rect x="301.5" y="78.7" class="st2" width="86.4" height="376"/>
+	<rect x="387.5" y="78.7" class="st3" width="338.6" height="376"/>
+</g>
+<g id="Layer_3">
+	<rect x="408.3" y="120.3" class="st4" width="297" height="256.8"/>
+	<rect x="408.3" y="79.1" class="st4" width="297" height="20"/>
+</g>
+<g id="Buttons">
+	<path class="st5" d="M544.8,315.1h-92c-2.2,0-4-1.8-4-4v-22c0-2.2,1.8-4,4-4h92c2.2,0,4,1.8,4,4v22
+		C548.8,313.3,547,315.1,544.8,315.1z"/>
+	<path class="st6" d="M660.8,315.1h-92c-2.2,0-4-1.8-4-4v-22c0-2.2,1.8-4,4-4h92c2.2,0,4,1.8,4,4v22
+		C664.8,313.3,663,315.1,660.8,315.1z"/>
+	<g>
+		<path class="st6" d="M575,181h-20c-8.3,0-15-6.7-15-15v0c0-8.3,6.7-15,15-15h20c8.3,0,15,6.7,15,15v0C590,174.3,583.3,181,575,181
+			z"/>
+		<path class="st6" d="M575,181L575,181c-8.3,0-15-6.7-15-15v0c0-8.3,6.7-15,15-15l0,0c8.3,0,15,6.7,15,15v0
+			C590,174.3,583.3,181,575,181z"/>
+	</g>
+	<circle class="st7" cx="130.3" cy="-139.8" r="115"/>
+	<circle class="st8" cx="308.4" cy="-139.8" r="115"/>
+	<circle class="st9" cx="486.5" cy="-139.8" r="115"/>
+	<circle class="st10" cx="800.7" cy="-139.8" r="115"/>
+	<g class="st11">
+		<rect x="685.2" y="414.2" class="st12" width="30" height="30"/>
+	</g>
+	<circle class="st6" cx="538.3" cy="361.3" r="5"/>
+	<circle class="st5" cx="556.8" cy="361.3" r="5"/>
+	<circle class="st5" cx="575.2" cy="361.3" r="5"/>
+	<g>
+		<path class="st5" d="M631.7,241.8h-142c-2.2,0-4-1.8-4-4v-22c0-2.2,1.8-4,4-4h142c2.2,0,4,1.8,4,4v22
+			C635.7,240,633.9,241.8,631.7,241.8z"/>
+		<rect x="535.3" y="212.6" class="st6" width="50.1" height="28.2"/>
+	</g>
+</g>
+</svg>

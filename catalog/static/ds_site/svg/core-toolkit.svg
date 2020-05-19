@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g id="grid" display="none">
+	<g display="inline">
+		
+			<line opacity="0.35" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#666666" stroke-width="0.5" x1="87" y1="7.4" x2="87" y2="92.6"/>
+		
+			<line opacity="0.35" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#666666" stroke-width="0.5" x1="7.4" y1="87" x2="92.6" y2="87"/>
+		
+			<line opacity="0.35" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#666666" stroke-width="0.5" x1="92.6" y1="7.4" x2="7.4" y2="92.6"/>
+		
+			<line opacity="0.35" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#666666" stroke-width="0.5" x1="92.6" y1="50" x2="7.4" y2="50"/>
+		
+			<line opacity="0.35" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#666666" stroke-width="0.5" x1="50" y1="7.4" x2="50" y2="92.6"/>
+		
+			<line opacity="0.35" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#666666" stroke-width="0.5" x1="92.6" y1="34.2" x2="7.4" y2="34.2"/>
+		
+			<line opacity="0.35" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#666666" stroke-width="0.5" x1="92.6" y1="65.8" x2="7.4" y2="65.8"/>
+		
+			<line opacity="0.35" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#666666" stroke-width="0.5" x1="34.2" y1="7.4" x2="34.2" y2="92.6"/>
+		
+			<line opacity="0.35" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#666666" stroke-width="0.5" x1="65.8" y1="7.4" x2="65.8" y2="92.6"/>
+		
+			<line opacity="0.35" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#666666" stroke-width="0.5" x1="13" y1="7.4" x2="13" y2="92.6"/>
+		
+			<line opacity="0.35" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#666666" stroke-width="0.5" x1="7.4" y1="13" x2="92.6" y2="13"/>
+		
+			<line opacity="0.35" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#666666" stroke-width="0.5" x1="7.4" y1="7.4" x2="92.6" y2="92.6"/>
+		
+			<rect x="17.8" y="17.8" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#FF0000" stroke-width="0.5" width="64.5" height="64.5"/>
+		
+			<rect x="22.5" y="13" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#FF0000" stroke-width="0.5" width="55" height="74"/>
+		
+			<rect x="13" y="22.5" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#FF0000" stroke-width="0.5" width="74" height="55"/>
+		
+			<rect x="22.5" y="13" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#FF0000" stroke-width="0.5" width="55" height="74"/>
+	</g>
+</g>
+<g id="icons">
+	<g>
+		<path fill="#5F6062" d="M82.1,37.2v-4.4c0-2.6-2.1-4.8-4.8-4.8H64.6v-3.4c0-3.9-3.2-7.1-7.1-7.1h-15c-3.9,0-7.1,3.2-7.1,7.1v3.4
+			H22.5c-2.6,0-4.8,2.1-4.8,4.8v4.4H82.1z M40,24.7c0-1.3,1.1-2.4,2.4-2.4h15c1.3,0,2.4,1.1,2.4,2.4v3.4H40V24.7z"/>
+		<path fill="#5F6062" d="M17.7,40.5v36.8c0,2.6,2.1,4.8,4.8,4.8h54.8c2.6,0,4.8-2.1,4.8-4.8V40.5H17.7z M61.8,61
+			c-2.1,2.1-5,2.8-7.7,2.1L43.9,73.4c-1.6,1.6-4.2,1.6-5.7,0h0c-1.6-1.6-1.6-4.2,0-5.7l10.2-10.2c-0.7-2.7,0-5.6,2.1-7.7
+			c2.4-2.4,6-3,8.9-1.6l-5.4,5.4c-0.4,0.4-0.4,1,0,1.4l2.7,2.7c0.4,0.4,1,0.4,1.4,0l5.4-5.4C64.8,55,64.3,58.6,61.8,61z"/>
+	</g>
+</g>
+</svg>
