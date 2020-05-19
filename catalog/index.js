@@ -128,8 +128,8 @@ const pages = [
   //   content: pageLoader(() => import("./guidelines/grid.md"))
   // },
   {
-    path: "guidelines/responsive.md",
-    title: "Responsive",
+    path: "guidelines/layout",
+    title: "Layout",
     content: pageLoader(() => import("./guidelines/responsive.md"))
   },
   {
@@ -678,6 +678,10 @@ const pages = [
     content: pageLoader(() => import("./pixel/development/index.md"))
   }
 ];
+
+export const ListItem = ({children}) => (
+  <a>ss</a>
+)
 
 ReactDOM.render(
   <Catalog
