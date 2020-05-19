@@ -308,7 +308,7 @@ export default class extends React.Component {
           <PageHeader
             title="Color"
             className="site-page-header"
-            tags={<Tag color="blue">In Development</Tag>}
+            tags={<Tag color="blue">Under Development</Tag>}
             extra={[
               <DropdownMenu key="more"/>,
             ]}
