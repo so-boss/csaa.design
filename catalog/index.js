@@ -83,31 +83,30 @@ const pages = [
   // },
   {
     path: "/",
-    title: "Digital Design",
-    hideFromMenu: true,
-    content: pageLoader(() => import("./team/capabilities.md"))
+    title: "Design",
+    content: pageLoader(() => import("./design/overview.md"))
   },
-  {
-    title: "Get Started",
-    pages: [
-      {
-        hideFromMenu: true,
-        path: "get-started/overview",
-        title: "About our Design System",
-        content: pageLoader(() => import("./guidelines/accessibility.js"))
-      },
-      {
-        path: "get-started/design",
-        title: "Design",
-        content: pageLoader(() => import("./guidelines/accessibility.js"))
-      },
-      {
-        path: "get-started/develop",
-        title: "Develop",
-        content: pageLoader(() => import("./guidelines/accessibility.js"))
-      }
-    ]
-  },
+  // {
+  //   title: "Design",
+  //   pages: [
+  //     {
+  //       hideFromMenu: true,
+  //       path: "design/overview",
+  //       title: "Digital Design Ecosystem",
+  //       content: pageLoader(() => import("./design/overview.md"))
+  //     },
+  //     {
+  //       path: "get-started/design",
+  //       title: "Design",
+  //       content: pageLoader(() => import("./guidelines/accessibility.js"))
+  //     },
+  //     {
+  //       path: "get-started/develop",
+  //       title: "Develop",
+  //       content: pageLoader(() => import("./guidelines/accessibility.js"))
+  //     }
+  //   ]
+  // },
   {
     title: "Guidelines",
     pages: [
@@ -119,7 +118,7 @@ const pages = [
       {
         path: "guidelines/color",
         title: "Color",
-        content: pageLoader(() => import("./guidelines/accessibility.js"))
+        content: pageLoader(() => import("./guidelines/colors.md"))
       },
       {
         path: "guidelines/content",
@@ -129,12 +128,17 @@ const pages = [
       {
         path: "guidelines/icons",
         title: "Icons",
-        content: pageLoader(() => import("./guidelines/accessibility.js"))
+        content: pageLoader(() => import("./guidelines/iconography.md"))
       },
       {
         path: "guidelines/grid",
         title: "Grid",
         content: pageLoader(() => import("./guidelines/accessibility.js"))
+      },
+      {
+        path: "guidelines/responsive.md",
+        title: "Responsive",
+        content: pageLoader(() => import("./guidelines/responsive.md"))
       },
       {
         path: "guidelines/typography",

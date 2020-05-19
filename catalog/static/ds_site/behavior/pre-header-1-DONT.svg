@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 420 220" style="enable-background:new 0 0 420 220;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#333333;}
+	.st1{font-family:'Helvetica-Bold';}
+	.st2{font-size:18px;}
+	.st3{font-family:'Helvetica';}
+	.st4{fill:#767676;}
+</style>
+<g>
+	<text transform="matrix(1 0 0 1 40 53.899)" class="st0 st1 st2">Name of email Sender</text>
+	<text transform="matrix(1 0 0 1 40 75.499)" class="st0 st3 st2">Subject of email</text>
+	<text transform="matrix(1 0 0 1 40 97.099)" class="st4 st3 st2">Subject of email. The pre-header content of </text>
+	<text transform="matrix(1 0 0 1 40 118.699)" class="st4 st3 st2">the email. This is what users sees in their </text>
+	<text transform="matrix(1 0 0 1 40 140.299)" class="st4 st3 st2">prefered email reader before the body. </text>
+	<text transform="matrix(1 0 0 1 40 161.899)" class="st4 st3 st2">Dear Recipient of this email, thank you for </text>
+	<text transform="matrix(1 0 0 1 40 183.499)" class="st4 st3 st2">reading it. We are thrilled to announce ...</text>
+</g>
+</svg>
