@@ -71,96 +71,152 @@ const validationSchema = Yup.object()
   });
 
 const pages = [
-  {
-    title: "DIGITAL DESIGN",
-    pages: [
-      {
-        path: "hideme",
-        title: "hide me",
-        content: pageLoader(() => import("./team/team.md")),
-      }
-    ]
-  },
+  // {
+  //   title: "DIGITAL DESIGN",
+  //   pages: [
+  //     {
+  //       path: "hideme",
+  //       title: "hide me",
+  //       content: pageLoader(() => import("./team/team.md")),
+  //     }
+  //   ]
+  // },
   {
     path: "/",
-    title: "Overview",
+    title: "Digital Design",
     hideFromMenu: true,
-    content: pageLoader(() => import("./team/team.md"))
+    content: pageLoader(() => import("./team/capabilities.md"))
   },
   {
-    title: "Team",
+    title: "Get Started",
     pages: [
       {
-        path: "team/members",
-        title: "Designers",
-        content: pageLoader(() => import("./team/profiles.md"))
+        hideFromMenu: true,
+        path: "get-started/overview",
+        title: "About our Design System",
+        content: pageLoader(() => import("./guidelines/accessibility.js"))
       },
       {
-        path: "team/roles",
-        title: "Assignments",
-        content: pageLoader(() => import("./team/roles.md"))
+        path: "get-started/design",
+        title: "Design",
+        content: pageLoader(() => import("./guidelines/accessibility.js"))
       },
       {
-        path: "team/capabilities",
-        title: "Service Menu",
-        content: pageLoader(() => import("./team/capabilities.md"))
-      },
-    ]
-  },
-  {
-    title: "Principals",
-    pages: [
-      {
-        path: "team/principles/alignment",
-        title: "Alignment",
-        content: pageLoader(() => import("./team/principles/alignment.md"))
-      },
-      {
-        path: "team/principles/contrast",
-        title: "Contrast",
-        content: pageLoader(() => import("./team/principles/contrast.md"))
-      },
-      {
-        path: "team/principles/repetition",
-        title: "Repetition",
-        content: pageLoader(() => import("./team/principles/repetition.md"))
-      },
-      {
-        path: "team/principles/direct",
-        title: "Make it Direct",
-        content: pageLoader(() => import("./team/principles/direct.md"))
-      },
-      {
-        path: "team/principles/stay",
-        title: "Stay on the Page",
-        content: pageLoader(() => import("./team/principles/stay.md"))
-      },
-      {
-        path: "team/principles/Keep it Lightweight",
-        title: "Lightweight",
-        content: pageLoader(() => import("./team/principles/lightweight.md"))
-      },
-      {
-        path: "team/principles/invitation",
-        title: "Provide an Invitation",
-        content: pageLoader(() => import("./team/principles/invitation.md"))
-      }, {
-        path: "team/principles/transitions",
-        title: "Use Transitions",
-        content: pageLoader(() => import("./team/principles/transitions.md"))
-      },
-      {
-        path: "team/principles/react",
-        title: "React Immediately",
-        content: pageLoader(() => import("./team/principles/react.md"))
+        path: "get-started/develop",
+        title: "Develop",
+        content: pageLoader(() => import("./guidelines/accessibility.js"))
       }
     ]
   },
   {
-    path: "/team/gallery",
-    title: "Gallery",
-    content: pageLoader(() => import("./team/gallery.md")),
+    title: "Guidelines",
+    pages: [
+      {
+        path: "guidelines/accessibility",
+        title: "Accessibility",
+        content: pageLoader(() => import("./guidelines/accessibility.js"))
+      },
+      {
+        path: "guidelines/color",
+        title: "Color",
+        content: pageLoader(() => import("./guidelines/accessibility.js"))
+      },
+      {
+        path: "guidelines/content",
+        title: "Content",
+        content: pageLoader(() => import("./guidelines/accessibility.js"))
+      },
+      {
+        path: "guidelines/icons",
+        title: "Icons",
+        content: pageLoader(() => import("./guidelines/accessibility.js"))
+      },
+      {
+        path: "guidelines/grid",
+        title: "Grid",
+        content: pageLoader(() => import("./guidelines/accessibility.js"))
+      },
+      {
+        path: "guidelines/typography",
+        title: "Typography",
+        content: pageLoader(() => import("./guidelines/accessibility.js"))
+      }
+    ]
   },
+  // {
+  //   title: "Team",
+  //   pages: [
+  //     {
+  //       path: "team/members",
+  //       title: "Designers",
+  //       content: pageLoader(() => import("./team/profiles.md"))
+  //     },
+  //     {
+  //       path: "team/roles",
+  //       title: "Assignments",
+  //       content: pageLoader(() => import("./team/roles.md"))
+  //     },
+  //     {
+  //       path: "team/capabilities",
+  //       title: "Service Menu",
+  //       content: pageLoader(() => import("./team/capabilities.md"))
+  //     },
+  //   ]
+  // },
+  // {
+  //   title: "Principals",
+  //   pages: [
+  //     {
+  //       path: "team/principles/alignment",
+  //       title: "Alignment",
+  //       content: pageLoader(() => import("./team/principles/alignment.md"))
+  //     },
+  //     {
+  //       path: "team/principles/contrast",
+  //       title: "Contrast",
+  //       content: pageLoader(() => import("./team/principles/contrast.md"))
+  //     },
+  //     {
+  //       path: "team/principles/repetition",
+  //       title: "Repetition",
+  //       content: pageLoader(() => import("./team/principles/repetition.md"))
+  //     },
+  //     {
+  //       path: "team/principles/direct",
+  //       title: "Make it Direct",
+  //       content: pageLoader(() => import("./team/principles/direct.md"))
+  //     },
+  //     {
+  //       path: "team/principles/stay",
+  //       title: "Stay on the Page",
+  //       content: pageLoader(() => import("./team/principles/stay.md"))
+  //     },
+  //     {
+  //       path: "team/principles/Keep it Lightweight",
+  //       title: "Lightweight",
+  //       content: pageLoader(() => import("./team/principles/lightweight.md"))
+  //     },
+  //     {
+  //       path: "team/principles/invitation",
+  //       title: "Provide an Invitation",
+  //       content: pageLoader(() => import("./team/principles/invitation.md"))
+  //     }, {
+  //       path: "team/principles/transitions",
+  //       title: "Use Transitions",
+  //       content: pageLoader(() => import("./team/principles/transitions.md"))
+  //     },
+  //     {
+  //       path: "team/principles/react",
+  //       title: "React Immediately",
+  //       content: pageLoader(() => import("./team/principles/react.md"))
+  //     }
+  //   ]
+  // },
+  // {
+  //   path: "/team/gallery",
+  //   title: "Gallery",
+  //   content: pageLoader(() => import("./team/gallery.md")),
+  // },
   {
     title: "CSAA",
     pages: [
@@ -181,14 +237,14 @@ const pages = [
         content: pageLoader(() => import("./mypolicy/style/about.md"))
       },
       {
+        path: "mypolicy/style/guide",
+        title: "Styleguide",
+        content: pageLoader(() => import("./mypolicy/style/styleguide.js"))
+      },
+      {
         path: "mypolicy/style/color",
         title: "Color",
         content: pageLoader(() => import("./mypolicy/style/color.md"))
-      },
-      {
-        path: "mypolicy/style/color2",
-        title: "Color2",
-        content: pageLoader(() => import("./mypolicy/style/color.js"))
       },
       {
         path: "mypolicy/style/typography",
