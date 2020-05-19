@@ -75,9 +75,11 @@ div[menu=sub] {
   [layout] .ant-tabs-nav .ant-tabs-ink-bar, .site-card-wrapper .ant-tabs-nav .ant-tabs-ink-bar {
     background-color: #00529A; }
   [layout] h4.ant-typography, .site-card-wrapper h4.ant-typography {
-    font-weight: 400;
-    font-size: 18px;
-    margin-top: 16px; }
+    font-weight: 300;
+    font-size: 17px;
+    margin-top: 32px;
+    margin-bottom: -20px;
+    opacity: 1; }
 
 .ant-page-header-heading-extra {
   display: flex; }

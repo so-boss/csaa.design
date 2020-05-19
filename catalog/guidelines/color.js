@@ -8,7 +8,7 @@ import { StickyContainer, Sticky } from 'react-sticky';
 import { EllipsisOutlined } from '@ant-design/icons';
 
 const { Paragraph, Title } = Typography;
-// const { TabPane } = Tabs;
+const { TabPane } = Tabs;
 const { Meta } = Card;
 //
 // const renderTabBar = (props, DefaultTabBar) => (
@@ -70,13 +70,32 @@ const routes = [
   }
 ];
 
-const IconLink = ({ src, text }) => (
-  <a className="example-link">
-    <img className="example-link-icon" src={src} alt={text} />
-    {text}
-  </a>
-);
-
+const BrandCards = () => (
+  <Row gutter={[16, 24]}>
+    <Col span={8}>
+      <a href="#csaa-brand">
+        <Card bordered={true} hoverable={true}>
+          <Meta
+            avatar={<Avatar src="/icons/csaa.png" />}
+            title="CSAA"
+            description="Core CSAA Brand Color Scheme"
+          />
+        </Card>
+      </a>
+    </Col>
+    <Col span={8}>
+      <a href="#mobilitas-brand">
+        <Card bordered={true} hoverable={true}>
+          <Meta
+            avatar={<Avatar src="/icons/mobilitas.png" />}
+            title="Mobilitas"
+            description="Unique Colors for Mobilitas Brand"
+          />
+        </Card>
+      </a>
+    </Col>
+  </Row>
+)
 
 const content = (
   <div>
@@ -88,35 +107,11 @@ const content = (
     </Paragraph>
     <div>
       <Title level={4}>Brands</Title>
-      <div className="site-card-wrapper">
-        <Row gutter={[16, 24]}>
-          <Col span={8}>
-            <a href="#csaa-brand">
-              <Card bordered={true} hoverable={true}>
-                <Meta
-                  avatar={<Avatar src="/icons/csaa.png" />}
-                  title="CSAA"
-                  description="Core CSAA Brand Color Scheme"
-                />
-              </Card>
-            </a>
-          </Col>
-          <Col span={8}>
-            <a href="#mobilitas-brand">
-              <Card bordered={true} hoverable={true}>
-                <Meta
-                  avatar={<Avatar src="/icons/mobilitas.png" />}
-                  title="Mobilitas"
-                  description="Unique Colors for Mobilitas Brand"
-                />
-              </Card>
-            </a>
-          </Col>
-        </Row>
-      </div>
     </div>
   </div>
 );
+
+
 
 const Content = ({ children, extraContent }) => {
   return (
@@ -159,9 +154,8 @@ ${<div className="site-card-wrapper">
   </Row>
 </div>}
 `
-
+*/
 const CSAA = ({onCardClick}) => markdown`
-## CSAA Brand
 The brand-level colors define the primary, neutral, & extended color palettes. The product-level color system matches the tone of the product in accordance with the requirements and function of the color.
 
 Brand color is one of the most intuitive visual elements that is used to embody product characteristics and communicate ideas. When selecting colors, it is important to understand how the brand color is used in the user interface.
@@ -215,7 +209,6 @@ ${<div className="site-card-wrapper">
 `
 
 const Mobilitas = () => markdown`
-## Mobilitas Brand
 The brand-level colors define the primary, neutral, & extended color palettes. The product-level color system matches the tone of the product in accordance with the requirements and function of the color.
 
 Brand color is one of the most intuitive visual elements that is used to embody product characteristics and communicate ideas. When selecting colors, it is important to understand how the brand color is used in the user interface.
@@ -233,7 +226,6 @@ ${<ColorPaletteSpecimen
   ]}
 />}
 `
-*/
 
 export default class extends React.Component {
   /*
@@ -290,7 +282,6 @@ export default class extends React.Component {
           <PageHeader
             title="Color"
             className="site-page-header"
-            // subTitle="This is a subtitle"
             tags={<Tag color="blue">In Development</Tag>}
             extra={[
               <DropdownMenu key="more"/>,
@@ -300,6 +291,39 @@ export default class extends React.Component {
               shape:'square'
             }}
             breadcrumb={{ routes }}
+            footer={
+              <Tabs defaultActiveKey="1">
+                <TabPane
+                  tab={
+                    <Card bordered={true} hoverable={true}>
+                      <Meta
+                        avatar={<Avatar src="/icons/csaa.png" />}
+                        title="CSAA"
+                        description="Core CSAA Brand Color Scheme"
+                      />
+                    </Card>
+                  }
+                  key="1"
+                >
+                  <CSAA />
+                </TabPane>
+
+                <TabPane
+                  tab={
+                    <Card bordered={true} hoverable={true}>
+                      <Meta
+                        avatar={<Avatar src="/icons/mobilitas.png" />}
+                        title="Mobilitas"
+                        description="Unique Colors for Mobilitas Brand"
+                      />
+                    </Card>
+                  }
+                  key="2"
+                >
+                  <Mobilitas />
+                </TabPane>
+              </Tabs>
+            }
           >
             <Content>
               {content}
