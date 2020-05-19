@@ -114,11 +114,35 @@ div[menu=sub] {
   }
 
   .ant-tabs-nav {
+    display:flex;
     .ant-tabs-tab-active{
       color:#00529A;
+
+      .ant-card {
+        background: #00529A;
+        border-color: #00529A;
+        color: #fff;
+
+        [class*='-meta-detail'] {
+          > div {
+            color:white;
+            &[class*=-description] {
+              color: #ffffff8c
+            }
+          }
+        }
+      }
     }
     .ant-tabs-ink-bar {
       background-color:#00529A;
+    }
+
+    > div {
+      flex:1;
+      width:100%;
+      > [role=tab] {
+        width:49%;
+      }
     }
   }
 
@@ -127,15 +151,24 @@ div[menu=sub] {
       font-weight: 300;
       font-size: 17px;
       margin-top: 32px;
-      margin-bottom: -20px;
       opacity: 1;
+    }
+    &.footer-title {
+      margin-bottom:-16px;
     }
   }
 
 }
+[role=tabpanel] {
+  [layout=panel] {
+    margin-top:24px;
+  }
+}
 
 
-
+.ant-page-header-footer .ant-tabs-bar .ant-tabs-nav .ant-tabs-tab {
+  margin-right:2px;
+}
 .ant-page-header-heading-extra {
   display:flex;
 }

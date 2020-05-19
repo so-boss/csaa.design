@@ -10,14 +10,14 @@ import { EllipsisOutlined } from '@ant-design/icons';
 const { Paragraph, Title } = Typography;
 const { TabPane } = Tabs;
 const { Meta } = Card;
-//
-// const renderTabBar = (props, DefaultTabBar) => (
-//   <Sticky bottomOffset={80}>
-//     {({ style }) => (
-//       <DefaultTabBar {...props} className="site-custom-tab-bar" style={{ ...style }} />
-//     )}
-//   </Sticky>
-// );
+
+const renderTabBar = (props, DefaultTabBar) => (
+  <Sticky bottomOffset={80}>
+    {({ style }) => (
+      <DefaultTabBar {...props} className="site-custom-tab-bar" style={{ ...style }} />
+    )}
+  </Sticky>
+);
 
 const menu = (
   <Menu>
@@ -72,7 +72,7 @@ const routes = [
 
 const BrandCards = () => (
   <Row gutter={[16, 24]}>
-    <Col span={8}>
+    <Col span={12}>
       <a href="#csaa-brand">
         <Card bordered={true} hoverable={true}>
           <Meta
@@ -83,7 +83,7 @@ const BrandCards = () => (
         </Card>
       </a>
     </Col>
-    <Col span={8}>
+    <Col span={12}>
       <a href="#mobilitas-brand">
         <Card bordered={true} hoverable={true}>
           <Meta
@@ -106,7 +106,7 @@ const content = (
       We prefer to design with the HEX & RGBA color model, as our core deliverables are web based.
     </Paragraph>
     <div>
-      <Title level={4}>Brands</Title>
+      <Title className="footer-title" level={4}>Brands</Title>
     </div>
   </div>
 );
@@ -155,77 +155,103 @@ ${<div className="site-card-wrapper">
 </div>}
 `
 */
-const CSAA = ({onCardClick}) => markdown`
-The brand-level colors define the primary, neutral, & extended color palettes. The product-level color system matches the tone of the product in accordance with the requirements and function of the color.
+const CSAA = () => (
+  <div layout="panel">
+    <Paragraph>The brand-level colors define the primary, neutral, & extended color palettes. The product-level color system matches the tone of the product in accordance with the requirements and function of the color. </Paragraph>
+    <Paragraph>Brand color is one of the most intuitive visual elements that is used to embody product characteristics and communicate ideas. When selecting colors, it is important to understand how the brand color is used in the user interface.</Paragraph>
 
-Brand color is one of the most intuitive visual elements that is used to embody product characteristics and communicate ideas. When selecting colors, it is important to understand how the brand color is used in the user interface.
-${<ColorPaletteSpecimen
-  span={6}
-  colors={[
-    {name: "01 / BLUE", value: "#00338D"},
-    {name: "02 / BLUE", value: "#0096D6"},
-    {name: "03 / BLUE", value: "#88CBDF"},
-    {name: "01 / YELLOW", value: "#FFC425"},
-    {name: "01 / RED", value: "#D52B1E"},
-  ]}
-/>}
+    <ColorPaletteSpecimen
 
-### Products
-${<div className="site-card-wrapper">
-  <Row gutter={[16, 24]}>
-    <Col span={8}>
-      <a href="/mypolicy/style/color">
-        <Card bordered={true} hoverable={true}>
-          <Meta
-            avatar={<Avatar src="/icons/b2c.png" />}
-            title="MyPolicy Portal"
-            description="Portal Description"
-          />
-        </Card>
-      </a>
-    </Col>
-    <Col span={8}>
-      <Card bordered={true} hoverable={true}>
-        <Meta
-          avatar={<Avatar src="/icons/b2c.png" />}
-          title="Quote"
-          description="Quote Description"
-        />
-      </Card>
-    </Col>
-  </Row>
-  <Row gutter={[16, 24]}>
-    <Col span={8}>
-    <Card bordered={true} hoverable={true}>
-      <Meta
-        avatar={<Avatar src="/icons/b2b.png" />}
-        title="Insurance Portal"
-        description="IP Description"
-      />
-    </Card>
-  </Col>
-  </Row>
-</div>}
-`
+      horizontal={false}
+      colors={[
+        {name: "01 / BLUE", value: "#00338D"},
+        {name: "02 / BLUE", value: "#0096D6"},
+        {name: "03 / BLUE", value: "#88CBDF"},
+        {name: "01 / YELLOW", value: "#FFC425"},
+        {name: "01 / RED", value: "#D52B1E"},
+      ]}
+    />
 
-const Mobilitas = () => markdown`
-The brand-level colors define the primary, neutral, & extended color palettes. The product-level color system matches the tone of the product in accordance with the requirements and function of the color.
+    <div className="site-card-wrapper">
+      <Divider />
+      <Title level={4}>Products</Title>
+      <Row gutter={[16, 24]}>
+        <Col span={12}>
+          <a href="/mypolicy/style/color">
+            <Card hoverable={true}>
+              <Meta
+                avatar={<Avatar src="/icons/b2c.png" />}
+                title="MyPolicy Portal"
+                description="Portal Description"
+              />
+            </Card>
+          </a>
+        </Col>
+        <Col span={12}>
+          <a href="/quote/style/color">
+            <Card bordered={true} hoverable={true}>
+              <Meta
+                avatar={<Avatar src="/icons/b2c.png" />}
+                title="Quote"
+                description="Quote Description"
+              />
+            </Card>
+          </a>
+        </Col>
+      </Row>
+      <Row gutter={[16, 24]}>
+        <Col span={12}>
+          <a href="/ip/style/color">
+            <Card bordered={true} hoverable={true}>
+              <Meta
+                avatar={<Avatar src="/icons/b2b.png" />}
+                title="Insurance Portal"
+                description="IP Description"
+              />
+            </Card>
+          </a>
+        </Col>
+      </Row>
+    </div>
+  </div>
+);
 
-Brand color is one of the most intuitive visual elements that is used to embody product characteristics and communicate ideas. When selecting colors, it is important to understand how the brand color is used in the user interface.
+const Mobilitas = () => (
+  <div layout="panel">
+    <Paragraph>The brand-level colors define the primary, neutral, & extended color palettes. The product-level color system matches the tone of the product in accordance with the requirements and function of the color.</Paragraph>
+    <Paragraph>Brand color is one of the most intuitive visual elements that is used to embody product characteristics and communicate ideas. When selecting colors, it is important to understand how the brand color is used in the user interface.</Paragraph>
+    <Paragraph>Mobilitas uses blue as the base color. It's Hex value is #14356F. Use-cases include: call to action, key actions, operational status, & highlighting important information.</Paragraph>
 
-Mobilitas uses blue as the base color. It's Hex value is **#14356F**. Use-cases include: call to action, key actions, operational status, & highlighting important information.
+    <ColorPaletteSpecimen
+      horizontal={false}
+      colors={[
+        {name: "070 / DARK", value: "#14356f"},
+        {name: "050 / LIGHT", value: "#047e8e"},
+        {name: "000 / LIGHT", value: "#f7f8fa"},
+        {name: "070 / DARK", value: "#3b4956"},
+        {name: "100 / BLACK", value: "#0c1014"}
+      ]}
+    />
 
-${<ColorPaletteSpecimen
-  span={6}
-  colors={[
-    {name: "070 / DARK", value: "#14356f"},
-    {name: "050 / LIGHT", value: "#047e8e"},
-    {name: "000 / LIGHT", value: "#f7f8fa"},
-    {name: "070 / DARK", value: "#3b4956"},
-    {name: "100 / BLACK", value: "#0c1014"}
-  ]}
-/>}
-`
+    <div className="site-card-wrapper">
+      <Divider />
+      <Title level={4}>Products</Title>
+      <Row gutter={[16, 24]}>
+        <Col span={12}>
+          <a href="/mobilitas/style/color">
+            <Card hoverable={true}>
+              <Meta
+                avatar={<Avatar src="/icons/b2c.png" />}
+                title="Rideshare"
+                description="Rideshare Description"
+              />
+            </Card>
+          </a>
+        </Col>
+      </Row>
+    </div>
+  </div>
+);
 
 export default class extends React.Component {
   /*
@@ -292,37 +318,39 @@ export default class extends React.Component {
             }}
             breadcrumb={{ routes }}
             footer={
-              <Tabs defaultActiveKey="1">
-                <TabPane
-                  tab={
-                    <Card bordered={true} hoverable={true}>
-                      <Meta
-                        avatar={<Avatar src="/icons/csaa.png" />}
-                        title="CSAA"
-                        description="Core CSAA Brand Color Scheme"
-                      />
-                    </Card>
-                  }
-                  key="1"
-                >
-                  <CSAA />
-                </TabPane>
+              <StickyContainer>
+                <Tabs renderTabBar={renderTabBar} defaultActiveKey="1">
+                  <TabPane
+                    tab={
+                      <Card hoverable={true}>
+                        <Meta
+                          avatar={<Avatar src="/icons/csaa.png" />}
+                          title="CSAA"
+                          description="Core CSAA Brand Color Scheme"
+                        />
+                      </Card>
+                    }
+                    key="1"
+                  >
+                    <CSAA />
+                  </TabPane>
 
-                <TabPane
-                  tab={
-                    <Card bordered={true} hoverable={true}>
-                      <Meta
-                        avatar={<Avatar src="/icons/mobilitas.png" />}
-                        title="Mobilitas"
-                        description="Unique Colors for Mobilitas Brand"
-                      />
-                    </Card>
-                  }
-                  key="2"
-                >
-                  <Mobilitas />
-                </TabPane>
-              </Tabs>
+                  <TabPane
+                    tab={
+                      <Card hoverable={true}>
+                        <Meta
+                          avatar={<Avatar src="/icons/mobilitas.png" />}
+                          title="Mobilitas"
+                          description="Unique Colors for Mobilitas Brand"
+                        />
+                      </Card>
+                    }
+                    key="2"
+                  >
+                    <Mobilitas />
+                  </TabPane>
+                </Tabs>
+              </StickyContainer>
             }
           >
             <Content>

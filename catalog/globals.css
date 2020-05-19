@@ -70,16 +70,38 @@ div[menu=sub] {
     padding-left: 0; }
     [layout] [class*='-page-header'] [class*='-heading-title'], .site-card-wrapper [class*='-page-header'] [class*='-heading-title'] {
       font-size: 32px; }
-  [layout] .ant-tabs-nav .ant-tabs-tab-active, .site-card-wrapper .ant-tabs-nav .ant-tabs-tab-active {
-    color: #00529A; }
-  [layout] .ant-tabs-nav .ant-tabs-ink-bar, .site-card-wrapper .ant-tabs-nav .ant-tabs-ink-bar {
-    background-color: #00529A; }
+  [layout] .ant-tabs-nav, .site-card-wrapper .ant-tabs-nav {
+    display: flex; }
+    [layout] .ant-tabs-nav .ant-tabs-tab-active, .site-card-wrapper .ant-tabs-nav .ant-tabs-tab-active {
+      color: #00529A; }
+      [layout] .ant-tabs-nav .ant-tabs-tab-active .ant-card, .site-card-wrapper .ant-tabs-nav .ant-tabs-tab-active .ant-card {
+        background: #00529A;
+        border-color: #00529A;
+        color: #fff; }
+        [layout] .ant-tabs-nav .ant-tabs-tab-active .ant-card [class*='-meta-detail'] > div, .site-card-wrapper .ant-tabs-nav .ant-tabs-tab-active .ant-card [class*='-meta-detail'] > div {
+          color: white; }
+          [layout] .ant-tabs-nav .ant-tabs-tab-active .ant-card [class*='-meta-detail'] > div[class*=-description], .site-card-wrapper .ant-tabs-nav .ant-tabs-tab-active .ant-card [class*='-meta-detail'] > div[class*=-description] {
+            color: #ffffff8c; }
+    [layout] .ant-tabs-nav .ant-tabs-ink-bar, .site-card-wrapper .ant-tabs-nav .ant-tabs-ink-bar {
+      background-color: #00529A; }
+    [layout] .ant-tabs-nav > div, .site-card-wrapper .ant-tabs-nav > div {
+      flex: 1;
+      width: 100%; }
+      [layout] .ant-tabs-nav > div > [role=tab], .site-card-wrapper .ant-tabs-nav > div > [role=tab] {
+        width: 49%; }
   [layout] h4.ant-typography, .site-card-wrapper h4.ant-typography {
     font-weight: 300;
     font-size: 17px;
     margin-top: 32px;
-    margin-bottom: -20px;
     opacity: 1; }
+  [layout] h4.footer-title, .site-card-wrapper h4.footer-title {
+    margin-bottom: -16px; }
+
+[role=tabpanel] [layout=panel] {
+  margin-top: 24px; }
+
+.ant-page-header-footer .ant-tabs-bar .ant-tabs-nav .ant-tabs-tab {
+  margin-right: 2px; }
 
 .ant-page-header-heading-extra {
   display: flex; }
