@@ -110,31 +110,31 @@ const pages = [
   {
     title: "Guidelines",
     pages: [
-      {
-        path: "guidelines/accessibility",
-        title: "Accessibility",
-        content: pageLoader(() => import("./guidelines/accessibility.js"))
-      },
+      // {
+      //   path: "guidelines/accessibility",
+      //   title: "Accessibility",
+      //   content: pageLoader(() => import("./guidelines/accessibility.md"))
+      // },
       {
         path: "guidelines/color",
         title: "Color",
-        content: pageLoader(() => import("./guidelines/colors.md"))
+        content: pageLoader(() => import("./guidelines/color.js"))
       },
-      {
-        path: "guidelines/content",
-        title: "Content",
-        content: pageLoader(() => import("./guidelines/accessibility.js"))
-      },
+      // {
+      //   path: "guidelines/content",
+      //   title: "Content",
+      //   content: pageLoader(() => import("./guidelines/content.md"))
+      // },
       {
         path: "guidelines/icons",
         title: "Icons",
         content: pageLoader(() => import("./guidelines/iconography.md"))
       },
-      {
-        path: "guidelines/grid",
-        title: "Grid",
-        content: pageLoader(() => import("./guidelines/accessibility.js"))
-      },
+      // {
+      //   path: "guidelines/grid",
+      //   title: "Grid",
+      //   content: pageLoader(() => import("./guidelines/grid.md"))
+      // },
       {
         path: "guidelines/responsive.md",
         title: "Responsive",
@@ -143,7 +143,7 @@ const pages = [
       {
         path: "guidelines/typography",
         title: "Typography",
-        content: pageLoader(() => import("./guidelines/accessibility.js"))
+        content: pageLoader(() => import("./guidelines/typography.md"))
       }
     ]
   },

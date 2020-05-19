@@ -1,4 +1,4 @@
-Our Digital Servies Design Style Guide offers and array of colors, iconography, typography, and other interface elements that are used across all our products.
+Our Digital Services Design Style Guide offers and array of colors, iconography, typography, and other interface elements that are used across all our products.
 
 The Design Ecosystem was created with a few key principles in mind: consistency, guidance, and resemblance.
 ### Consistency

@@ -51,19 +51,19 @@ div[menu=sub] {
   div[menu=sub] > div > [items] {
     padding-left: 24px; }
 
-[layout=tabs] {
+[layout=tabs], .site-card-wrapper {
   width: 100%;
   background: white;
   margin-bottom: 24px; }
-  [layout=tabs][type=card] {
+  [layout=tabs][type=card], .site-card-wrapper[type=card] {
     background: transparent; }
-  [layout=tabs] > div {
+  [layout=tabs] > div, .site-card-wrapper > div {
     padding-top: 0px; }
-    [layout=tabs] > div > div {
+    [layout=tabs] > div > div, .site-card-wrapper > div > div {
       width: 100%; }
-  [layout=tabs] .ant-tabs-nav .ant-tabs-tab-active {
+  [layout=tabs] .ant-tabs-nav .ant-tabs-tab-active, .site-card-wrapper .ant-tabs-nav .ant-tabs-tab-active {
     color: #00529A; }
-  [layout=tabs] .ant-tabs-nav .ant-tabs-ink-bar {
+  [layout=tabs] .ant-tabs-nav .ant-tabs-ink-bar, .site-card-wrapper .ant-tabs-nav .ant-tabs-ink-bar {
     background-color: #00529A; }
 
 .site-custom-tab-bar {
