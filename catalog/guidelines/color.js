@@ -17,13 +17,10 @@ const renderTabBar = (props, DefaultTabBar) => (
   </Sticky>
 );
 
-const Overview = () => markdown`
+const Overview = ({onCardClick}) => markdown`
 Design System is capable of being themed by any of the CSAA brands. 
 
 ${<div className="site-card-wrapper">
-  <Divider orientation="left" style={{ color: '#333', fontWeight: 'normal' }}>
-    Brands
-  </Divider>
   <Row gutter={[16, 24]}>
     <Col span={8}>
       <a href="#csaa-brand">
@@ -51,7 +48,7 @@ ${<div className="site-card-wrapper">
 </div>}
 `
 
-const CSAA = () => markdown`
+const CSAA = ({onCardClick}) => markdown`
 ## CSAA Brand
 The brand-level colors define the primary, neutral, & extended color palettes. The product-level color system matches the tone of the product in accordance with the requirements and function of the color.
 
@@ -69,9 +66,6 @@ ${<ColorPaletteSpecimen
 />}
 
 ${<div className="site-card-wrapper">
-  <Divider orientation="left" style={{ color: '#333', fontWeight: 'normal' }}>
-    Products
-  </Divider>
   <Row gutter={[16, 24]}>
     <Col span={8}>
       <a href="/mypolicy/style/color">
@@ -133,11 +127,18 @@ export default class extends React.Component {
 //export default () => {
   state = {
     expandIconPosition: 'left',
+    activeKey:1
   };
 
   onPositionChange = expandIconPosition => {
     this.setState({ expandIconPosition });
   };
+  onChange = (key) => {
+    window.location.hash = key;
+  }
+  onCardClick = (key) => {
+    this.setState({ activeKey: key });
+  }
   render(){
     const { expandIconPosition } = this.state;
     return (
@@ -145,17 +146,19 @@ export default class extends React.Component {
         <Page>
           <StickyContainer>
             <Tabs
-              defaultActiveKey="1"
+              defaultActiveKey="overview"
               renderTabBar={renderTabBar}
               size="large"
+              animated={false}
+              onChange={this.onChange}
             >
-              <TabPane tab="Overview" key="1">
+              <TabPane tab="Overview" key="overview">
                 <Overview></Overview>
               </TabPane>
-              <TabPane tab="CSAA" key="2">
+              <TabPane tab="CSAA" key="csaa-brand">
                 <CSAA></CSAA>
               </TabPane>
-              <TabPane tab="Mobilitas" key="3">
+              <TabPane tab="Mobilitas" key="mobilitas-brand">
                 <Mobilitas></Mobilitas>
               </TabPane>
             </Tabs>

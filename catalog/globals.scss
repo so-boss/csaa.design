@@ -92,6 +92,14 @@ div[menu=sub] {
     }
   }
 
+
+  [class*='-Page'] {
+
+    [class*='-Page'] {
+      margin-left:0px;
+    }
+  }
+
   .ant-tabs-nav {
     .ant-tabs-tab-active{
       color:#00529A;

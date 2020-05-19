@@ -61,6 +61,8 @@ div[menu=sub] {
     padding-top: 0px; }
     [layout=tabs] > div > div, .site-card-wrapper > div > div {
       width: 100%; }
+  [layout=tabs] [class*='-Page'] [class*='-Page'], .site-card-wrapper [class*='-Page'] [class*='-Page'] {
+    margin-left: 0px; }
   [layout=tabs] .ant-tabs-nav .ant-tabs-tab-active, .site-card-wrapper .ant-tabs-nav .ant-tabs-tab-active {
     color: #00529A; }
   [layout=tabs] .ant-tabs-nav .ant-tabs-ink-bar, .site-card-wrapper .ant-tabs-nav .ant-tabs-ink-bar {
