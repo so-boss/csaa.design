@@ -81,11 +81,11 @@ const pages = [
   //     }
   //   ]
   // },
-  {
-    path: "/",
-    title: "Design",
-    content: pageLoader(() => import("./design/overview.md"))
-  },
+  // {
+  //   path: "/",
+  //   title: "Design",
+  //   content: pageLoader(() => import("./design/overview.md"))
+  // },
   // {
   //   title: "Design",
   //   pages: [
@@ -108,45 +108,75 @@ const pages = [
   //   ]
   // },
   {
-    title: "Guidelines",
-    pages: [
-      // {
-      //   path: "guidelines/accessibility",
-      //   title: "Accessibility",
-      //   content: pageLoader(() => import("./guidelines/accessibility.md"))
-      // },
-      {
-        path: "guidelines/color",
-        title: "Color",
-        content: pageLoader(() => import("./guidelines/color.js"))
-      },
-      // {
-      //   path: "guidelines/content",
-      //   title: "Content",
-      //   content: pageLoader(() => import("./guidelines/content.md"))
-      // },
-      {
-        path: "guidelines/icons",
-        title: "Icons",
-        content: pageLoader(() => import("./guidelines/iconography.md"))
-      },
-      // {
-      //   path: "guidelines/grid",
-      //   title: "Grid",
-      //   content: pageLoader(() => import("./guidelines/grid.md"))
-      // },
-      {
-        path: "guidelines/responsive.md",
-        title: "Responsive",
-        content: pageLoader(() => import("./guidelines/responsive.md"))
-      },
-      {
-        path: "guidelines/typography",
-        title: "Typography",
-        content: pageLoader(() => import("./guidelines/typography.md"))
-      }
-    ]
+    path: "/",
+    title: "Color",
+    content: pageLoader(() => import("./guidelines/color.js"))
   },
+  // {
+  //   path: "guidelines/content",
+  //   title: "Content",
+  //   content: pageLoader(() => import("./guidelines/content.md"))
+  // },
+  {
+    path: "guidelines/icons",
+    title: "Icons",
+    content: pageLoader(() => import("./guidelines/iconography.md"))
+  },
+  // {
+  //   path: "guidelines/grid",
+  //   title: "Grid",
+  //   content: pageLoader(() => import("./guidelines/grid.md"))
+  // },
+  {
+    path: "guidelines/responsive.md",
+    title: "Responsive",
+    content: pageLoader(() => import("./guidelines/responsive.md"))
+  },
+  {
+    path: "guidelines/typography",
+    title: "Typography",
+    content: pageLoader(() => import("./guidelines/typography.md"))
+  },
+  // {
+  //   title: "Guidelines",
+  //   pages: [
+  //     // {
+  //     //   path: "guidelines/accessibility",
+  //     //   title: "Accessibility",
+  //     //   content: pageLoader(() => import("./guidelines/accessibility.md"))
+  //     // },
+  //     {
+  //       path: "/",
+  //       title: "Color",
+  //       content: pageLoader(() => import("./guidelines/color.js"))
+  //     },
+  //     // {
+  //     //   path: "guidelines/content",
+  //     //   title: "Content",
+  //     //   content: pageLoader(() => import("./guidelines/content.md"))
+  //     // },
+  //     {
+  //       path: "guidelines/icons",
+  //       title: "Icons",
+  //       content: pageLoader(() => import("./guidelines/iconography.md"))
+  //     },
+  //     // {
+  //     //   path: "guidelines/grid",
+  //     //   title: "Grid",
+  //     //   content: pageLoader(() => import("./guidelines/grid.md"))
+  //     // },
+  //     {
+  //       path: "guidelines/responsive.md",
+  //       title: "Responsive",
+  //       content: pageLoader(() => import("./guidelines/responsive.md"))
+  //     },
+  //     {
+  //       path: "guidelines/typography",
+  //       title: "Typography",
+  //       content: pageLoader(() => import("./guidelines/typography.md"))
+  //     }
+  //   ]
+  // },
   // {
   //   title: "Team",
   //   pages: [
