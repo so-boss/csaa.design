@@ -255,11 +255,11 @@ const pages = [
         title: "Typography",
         content: pageLoader(() => import("./mypolicy/style/typography.md"))
       },
-      {
-        path: "mypolicy/style/Nav/nav.md",
-        title: "Navigation",
-        content: pageLoader(() => import("./mypolicy/style/Nav/nav.md"))
-      }
+      // {
+      //   path: "mypolicy/style/Nav/nav.md",
+      //   title: "Navigation",
+      //   content: pageLoader(() => import("./mypolicy/style/Nav/nav.md"))
+      // }
 
     ]
   },
@@ -285,22 +285,22 @@ const pages = [
       {
         path: "ip/legacy",
         title: "> > Legacy",
-        content: pageLoader(() => import("./ip/style/color.md"))
+        content: pageLoader(() => import("./ip/style/brand.md"))
       },
       {
-        path: "ip/legacy/messages",
-        title: "Messages",
-        content: pageLoader(() => import("./ip/style/messages.md"))
-      },
-      {
-        path: "ip/legacy/dropdown",
-        title: "Dropdown",
-        content: pageLoader(() => import("./ip/style/dropdown.md"))
+        path: "ip/legacy/Badges/badges.md",
+        title: "Badges",
+        content: pageLoader(() => import("./ip/style/Badges/badges.md"))
       },
       {
         path: "ip/legacy/Buttons/buttons",
         title: "Button",
         content: pageLoader(() => import("./ip/style/Buttons/buttons.md"))
+      },
+      {
+        path: "ip/legacy/dropdown",
+        title: "Dropdown",
+        content: pageLoader(() => import("./ip/style/dropdown.md"))
       },
       {
         path: "ip/legacy/Buttons/IconButton/iconButton",
@@ -313,14 +313,9 @@ const pages = [
         content: pageLoader(() => import("./ip/style/Buttons/Links/links.md"))
       },
       {
-        path: "ip/legacy/Badges/badges.md",
-        title: "Badges",
-        content: pageLoader(() => import("./ip/style/Badges/badges.md"))
-      },
-      {
-        path: "ip/legacy/brand.md",
-        title: "Brand",
-        content: pageLoader(() => import("./ip/style/brand.md"))
+        path: "ip/legacy/messages",
+        title: "Messages",
+        content: pageLoader(() => import("./ip/style/messages.md"))
       }
     ]
   },

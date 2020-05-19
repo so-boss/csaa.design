@@ -20,6 +20,7 @@ const renderTabBar = (props, DefaultTabBar) => (
 const Overview = ({onCardClick}) => markdown`
 Design System is capable of being themed by any of the CSAA brands. 
 
+### Brands
 ${<div className="site-card-wrapper">
   <Row gutter={[16, 24]}>
     <Col span={8}>
@@ -28,7 +29,7 @@ ${<div className="site-card-wrapper">
           <Meta
             avatar={<Avatar src="/icons/csaa.png" />}
             title="CSAA"
-            description="CSAA Description"
+            description="Core CSAA Brand Color Scheme"
           />
         </Card>
       </a>
@@ -39,7 +40,7 @@ ${<div className="site-card-wrapper">
           <Meta
             avatar={<Avatar src="/icons/mobilitas.png" />}
             title="Mobilitas"
-            description="Mobilitas Description"
+            description="Unique Colors for Mobilitas Brand"
           />
         </Card>
       </a>
@@ -53,7 +54,6 @@ const CSAA = ({onCardClick}) => markdown`
 The brand-level colors define the primary, neutral, & extended color palettes. The product-level color system matches the tone of the product in accordance with the requirements and function of the color.
 
 Brand color is one of the most intuitive visual elements that is used to embody product characteristics and communicate ideas. When selecting colors, it is important to understand how the brand color is used in the user interface.
-
 ${<ColorPaletteSpecimen
   span={6}
   colors={[
@@ -65,6 +65,7 @@ ${<ColorPaletteSpecimen
   ]}
 />}
 
+### Products
 ${<div className="site-card-wrapper">
   <Row gutter={[16, 24]}>
     <Col span={8}>

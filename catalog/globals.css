@@ -51,6 +51,9 @@ div[menu=sub] {
   div[menu=sub] > div > [items] {
     padding-left: 24px; }
 
+#catalog [class*='-NavigationBar'] {
+  display: none; }
+
 [layout=tabs], .site-card-wrapper {
   width: 100%;
   background: white;
