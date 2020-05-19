@@ -720,7 +720,7 @@ ReactDOM.render(
       validationSchema,
       jQuery
     }}
-    title="CSAA"
+    title="Digital Commons"
     theme={{
       pageHeadingBackground: "#00529A",
       brandColor: "#00529A",

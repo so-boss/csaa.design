@@ -1,24 +1,135 @@
 import React from 'react';
-
+import ReactDOM from 'react-dom';
 import {Page, ReactSpecimen, ColorPaletteSpecimen, markdown} from 'catalog';
 
 import '../ant/antd.css';
-import { Tabs, Card, Col, Row, Avatar, Divider } from 'antd';
+import { Tabs, Card, Col, Row, Avatar, Divider, PageHeader, Menu, Dropdown, Button, Tag, Typography } from 'antd';
 import { StickyContainer, Sticky } from 'react-sticky';
+import { EllipsisOutlined } from '@ant-design/icons';
 
-const { TabPane } = Tabs;
+const { Paragraph, Title } = Typography;
+// const { TabPane } = Tabs;
 const { Meta } = Card;
+//
+// const renderTabBar = (props, DefaultTabBar) => (
+//   <Sticky bottomOffset={80}>
+//     {({ style }) => (
+//       <DefaultTabBar {...props} className="site-custom-tab-bar" style={{ ...style }} />
+//     )}
+//   </Sticky>
+// );
 
-const renderTabBar = (props, DefaultTabBar) => (
-  <Sticky bottomOffset={80}>
-    {({ style }) => (
-      <DefaultTabBar {...props} className="site-custom-tab-bar" style={{ ...style }} />
-    )}
-  </Sticky>
+const menu = (
+  <Menu>
+    <Menu.Item>
+      <a target="_blank" rel="noopener noreferrer" href="">
+        1st menu item
+      </a>
+    </Menu.Item>
+    <Menu.Item>
+      <a target="_blank" rel="noopener noreferrer" href="">
+        2nd menu item
+      </a>
+    </Menu.Item>
+    <Menu.Item>
+      <a target="_blank" rel="noopener noreferrer" href="">
+        3rd menu item
+      </a>
+    </Menu.Item>
+  </Menu>
 );
 
+const DropdownMenu = () => {
+  return (
+    <Dropdown key="more" overlay={menu}>
+      <Button
+        style={{
+          border: 'none',
+          padding: 0,
+        }}
+      >
+        <EllipsisOutlined
+          style={{
+            fontSize: 20,
+            verticalAlign: 'top',
+          }}
+        />
+      </Button>
+    </Dropdown>
+  );
+};
+
+const routes = [
+  {
+    path: 'index',
+    breadcrumbName: 'Design Guidelines',
+  },
+  {
+    path: 'first',
+    breadcrumbName: 'Color',
+  }
+];
+
+const IconLink = ({ src, text }) => (
+  <a className="example-link">
+    <img className="example-link-icon" src={src} alt={text} />
+    {text}
+  </a>
+);
+
+
+const content = (
+  <div>
+    <Paragraph>
+      Our color system complies with four tier inheritance; starting with brand level, colors overiding those of the brand, must belong to to one of the three remaining tiers (business, product, project).
+    </Paragraph>
+    <Paragraph>
+      We prefer to design with the HEX & RGBA color model, as our core deliverables are web based.
+    </Paragraph>
+    <div>
+      <Title level={4}>Brands</Title>
+      <div className="site-card-wrapper">
+        <Row gutter={[16, 24]}>
+          <Col span={8}>
+            <a href="#csaa-brand">
+              <Card bordered={true} hoverable={true}>
+                <Meta
+                  avatar={<Avatar src="/icons/csaa.png" />}
+                  title="CSAA"
+                  description="Core CSAA Brand Color Scheme"
+                />
+              </Card>
+            </a>
+          </Col>
+          <Col span={8}>
+            <a href="#mobilitas-brand">
+              <Card bordered={true} hoverable={true}>
+                <Meta
+                  avatar={<Avatar src="/icons/mobilitas.png" />}
+                  title="Mobilitas"
+                  description="Unique Colors for Mobilitas Brand"
+                />
+              </Card>
+            </a>
+          </Col>
+        </Row>
+      </div>
+    </div>
+  </div>
+);
+
+const Content = ({ children, extraContent }) => {
+  return (
+    <Row>
+      <div style={{ flex: 1 }}>{children}</div>
+      <div className="image">{extraContent}</div>
+    </Row>
+  );
+};
+
+/*
 const Overview = ({onCardClick}) => markdown`
-Design System is capable of being themed by any of the CSAA brands. 
+Design System is capable of being themed by any of the CSAA brands.
 
 ### Brands
 ${<div className="site-card-wrapper">
@@ -107,7 +218,7 @@ const Mobilitas = () => markdown`
 ## Mobilitas Brand
 The brand-level colors define the primary, neutral, & extended color palettes. The product-level color system matches the tone of the product in accordance with the requirements and function of the color.
 
-Brand color is one of the most intuitive visual elements that is used to embody product characteristics and communicate ideas. When selecting colors, it is important to understand how the brand color is used in the user interface. 
+Brand color is one of the most intuitive visual elements that is used to embody product characteristics and communicate ideas. When selecting colors, it is important to understand how the brand color is used in the user interface.
 
 Mobilitas uses blue as the base color. It's Hex value is **#14356F**. Use-cases include: call to action, key actions, operational status, & highlighting important information.
 
@@ -122,48 +233,91 @@ ${<ColorPaletteSpecimen
   ]}
 />}
 `
-
+*/
 
 export default class extends React.Component {
-//export default () => {
-  state = {
-    expandIconPosition: 'left',
-    activeKey:1
-  };
+  /*
+    state = {
+      expandIconPosition: 'left',
+      activeKey:1
+    };
 
-  onPositionChange = expandIconPosition => {
-    this.setState({ expandIconPosition });
-  };
-  onChange = (key) => {
-    window.location.hash = key;
-  }
-  onCardClick = (key) => {
-    this.setState({ activeKey: key });
-  }
-  render(){
-    const { expandIconPosition } = this.state;
+    onPositionChange = expandIconPosition => {
+      this.setState({ expandIconPosition });
+    };
+    onChange = (key) => {
+      window.location.hash = key;
+    }
+    onCardClick = (key) => {
+      this.setState({ activeKey: key });
+    }
+
+    render(){
+      const { expandIconPosition } = this.state;
+      return (
+        <div layout="tabs">
+          <Page>
+            <StickyContainer>
+              <Tabs
+                defaultActiveKey="overview"
+                renderTabBar={renderTabBar}
+                size="large"
+                animated={false}
+                onChange={this.onChange}
+              >
+                <TabPane tab="Overview" key="overview">
+                  <Overview></Overview>
+                </TabPane>
+                <TabPane tab="CSAA" key="csaa-brand">
+                  <CSAA></CSAA>
+                </TabPane>
+                <TabPane tab="Mobilitas" key="mobilitas-brand">
+                  <Mobilitas></Mobilitas>
+                </TabPane>
+              </Tabs>
+            </StickyContainer>
+          </Page>
+        </div>
+      )
+    }
+    */
+
+  render() {
+
     return (
-      <div layout="tabs">
+      <div layout="page">
         <Page>
-          <StickyContainer>
-            <Tabs
-              defaultActiveKey="overview"
-              renderTabBar={renderTabBar}
-              size="large"
-              animated={false}
-              onChange={this.onChange}
+          <PageHeader
+            title="Color"
+            className="site-page-header"
+            // subTitle="This is a subtitle"
+            tags={<Tag color="blue">In Development</Tag>}
+            extra={[
+              // <Button key="3">Operation</Button>,
+              // <Button key="2">Operation</Button>,
+              // <Button key="1" type="primary">
+              //   Primary
+              // </Button>,
+              <DropdownMenu key="more"/>,
+            ]}
+            avatar={{
+              src: '/icons/sprite/color_palette1.svg',
+              shape:'square'
+            }}
+            breadcrumb={{ routes }}
+          >
+            <Content
+              // extraContent={
+              //   <img
+              //     src="https://gw.alipayobjects.com/zos/antfincdn/K%24NnlsB%26hz/pageHeader.svg"
+              //     alt="content"
+              //     width="100%"
+              //   />
+              // }
             >
-              <TabPane tab="Overview" key="overview">
-                <Overview></Overview>
-              </TabPane>
-              <TabPane tab="CSAA" key="csaa-brand">
-                <CSAA></CSAA>
-              </TabPane>
-              <TabPane tab="Mobilitas" key="mobilitas-brand">
-                <Mobilitas></Mobilitas>
-              </TabPane>
-            </Tabs>
-          </StickyContainer>
+              {content}
+            </Content>
+          </PageHeader>
         </Page>
       </div>
     )
