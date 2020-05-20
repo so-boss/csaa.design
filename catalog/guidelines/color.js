@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Page, ReactSpecimen, ColorPaletteSpecimen, markdown } from 'catalog';
-
-// import '../ant/antd.css';
+import { Page, ColorPaletteSpecimen } from 'catalog';
 import { Tabs, Card, Col, Row, Avatar, Divider, PageHeader, Menu, Dropdown, Button, Tag, Typography } from 'antd';
 import { StickyContainer, Sticky } from 'react-sticky';
-import { EllipsisOutlined } from '@ant-design/icons';
+// import { EllipsisOutlined } from '@ant-design/icons';
 
 
 const { Paragraph, Title } = Typography;

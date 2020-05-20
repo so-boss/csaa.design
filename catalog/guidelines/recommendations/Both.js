@@ -1,11 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './do.css'
 import { Col, Row } from 'antd';
-import ButtonTest from './ButtonTest';
+// import ButtonTest from './ButtonTest';
 import Do from './do';
 import Dont from './dont';
-import Test from './test';
+// import Test from './test';
 
 
 
