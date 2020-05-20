@@ -6,7 +6,9 @@ import './ip/style/dropdown.css'
 import './ip/style/Buttons/IconButton/IconButton.css'
 import './ip/style/Buttons/GroupButtons/groupButton.css'
 import './ip/style/Buttons/Links/links.css'
+import './guidelines/recommendations/Both'
 import './index.css';
+import './guidelines/recommendations/do.css'
 import { Catalog, pageLoader } from "catalog";
 import {
   // ELEMENTS
@@ -112,6 +114,7 @@ const pages = [
     title: "Color",
     content: pageLoader(() => import("./guidelines/color.js"))
   },
+
   // {
   //   path: "guidelines/content",
   //   title: "Content",
@@ -136,6 +139,11 @@ const pages = [
     path: "guidelines/typography",
     title: "Typography",
     content: pageLoader(() => import("./guidelines/typography.md"))
+  },
+  {
+    path: "guidelines/recommendations/Both",
+    title: "Test React",
+    content: pageLoader(() => import("./guidelines/recommendations/Both"))
   },
   // {
   //   title: "Guidelines",
@@ -489,7 +497,7 @@ const pages = [
         content: pageLoader(() => import("./pixel/elements/block.md"))
       },
       {
-        path:"pixel/elements/block2",
+        path: "pixel/elements/block2",
         title: "<BlockALT />",
         content: pageLoader(() => import("./pixel/elements/block.js"))
       },
@@ -684,7 +692,7 @@ const pages = [
   }
 ];
 
-export const ListItem = ({children}) => (
+export const ListItem = ({ children }) => (
   <a>ss</a>
 )
 
