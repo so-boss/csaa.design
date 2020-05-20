@@ -6,9 +6,7 @@ import { Page, ReactSpecimen, ColorPaletteSpecimen, markdown } from 'catalog';
 import { Tabs, Card, Col, Row, Avatar, Divider, PageHeader, Menu, Dropdown, Button, Tag, Typography } from 'antd';
 import { StickyContainer, Sticky } from 'react-sticky';
 import { EllipsisOutlined } from '@ant-design/icons';
-import Do from './recommendations/do';
-import ButtonTest from './recommendations/ButtonTest';
-import Both from './recommendations/Both';
+
 
 const { Paragraph, Title } = Typography;
 const { TabPane } = Tabs;
@@ -298,7 +296,6 @@ export default class extends React.Component {
                     key="1"
                   >
                     <CSAA />
-                    <Both />
 
 
                   </TabPane>
