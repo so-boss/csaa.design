@@ -39,25 +39,25 @@ const menu = (
   </Menu>
 );
 
-const DropdownMenu = () => {
-  return (
-    <Dropdown key="more" overlay={menu}>
-      <Button
-        style={{
-          border: 'none',
-          padding: 0,
-        }}
-      >
-        <EllipsisOutlined
-          style={{
-            fontSize: 20,
-            verticalAlign: 'top',
-          }}
-        />
-      </Button>
-    </Dropdown>
-  );
-};
+// const DropdownMenu = () => {
+//   return (
+//     <Dropdown key="more" overlay={menu}>
+//       <Button
+//         style={{
+//           border: 'none',
+//           padding: 0,
+//         }}
+//       >
+//         <EllipsisOutlined
+//           style={{
+//             fontSize: 20,
+//             verticalAlign: 'top',
+//           }}
+//         />
+//       </Button>
+//     </Dropdown>
+//   );
+// };
 
 const routes = [
   {
@@ -99,12 +99,8 @@ const BrandCards = () => (
 
 const content = (
   <div>
-    <Paragraph>
-      Our color system complies with four tier inheritance; starting with brand level, colors overiding those of the brand, must belong to to one of the three remaining tiers (business, product, project).
-    </Paragraph>
-    <Paragraph>
-      We prefer to design with the HEX & RGBA color model, as our core deliverables are web based.
-    </Paragraph>
+    <Paragraph>Our color system complies with four tier inheritance; starting with brand level, colors overiding those of the brand, must belong to to one of the three remaining tiers (business, product, project).</Paragraph>
+    <Paragraph>We prefer to design with the HEX & RGBA color model, as our core deliverables are web based.</Paragraph>
     <div>
       <Title className="footer-title" level={4}>Brands</Title>
     </div>
@@ -122,39 +118,6 @@ const Content = ({ children, extraContent }) => {
   );
 };
 
-/*
-const Overview = ({onCardClick}) => markdown`
-Design System is capable of being themed by any of the CSAA brands.
-
-### Brands
-${<div className="site-card-wrapper">
-  <Row gutter={[16, 24]}>
-    <Col span={8}>
-      <a href="#csaa-brand">
-        <Card bordered={true} hoverable={true}>
-          <Meta
-            avatar={<Avatar src="/icons/csaa.png" />}
-            title="CSAA"
-            description="Core CSAA Brand Color Scheme"
-          />
-        </Card>
-      </a>
-    </Col>
-    <Col span={8}>
-      <a href="#mobilitas-brand">
-        <Card bordered={true} hoverable={true}>
-          <Meta
-            avatar={<Avatar src="/icons/mobilitas.png" />}
-            title="Mobilitas"
-            description="Unique Colors for Mobilitas Brand"
-          />
-        </Card>
-      </a>
-    </Col>
-  </Row>
-</div>}
-`
-*/
 const CSAA = () => (
   <div layout="panel">
     <Paragraph>The brand-level colors define the primary, neutral, & extended color palettes. The product-level color system matches the tone of the product in accordance with the requirements and function of the color. </Paragraph>
@@ -309,9 +272,6 @@ export default class extends React.Component {
             title="Color"
             className="site-page-header"
             tags={<Tag color="blue">Under Development</Tag>}
-            extra={[
-              <DropdownMenu key="more"/>,
-            ]}
             avatar={{
               src: '/icons/sprite/color_palette1.svg',
               shape:'square'
