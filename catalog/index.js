@@ -1,5 +1,9 @@
 import React from "react";
+//import { HashRouter as Router, Route, Switch, Link, withRouter } from 'react-router-dom';
+
 import ReactDOM from "react-dom";
+
+// TODO: Consolidate all this css importing
 import './ip/style/Buttons/buttons.css'
 import './ip/style/Badges/badges.css'
 import './ip/style/dropdown.css'
@@ -42,6 +46,7 @@ import {
   Page,
   UI
 } from "./pixel/module";
+//import { Breadcrumb, Alert } from 'antd';
 
 import './pixel/module.css';
 import './ant/antd.css';
@@ -71,6 +76,8 @@ const validationSchema = Yup.object()
       .email('Invalid email')
       .required('Required'),
   });
+
+
 
 const pages = [
   // {
