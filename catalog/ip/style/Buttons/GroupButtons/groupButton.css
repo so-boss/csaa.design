@@ -1,0 +1,28 @@
+.groupBtn-wrapper {
+    background: #fff;
+    border: 1px solid #0096D6;
+    margin-bottom: 20px;
+    height: 52px;
+    box-shadow: 0 4px 8px -2px rgba(51,51,51,.16), 0 4px 4px 0 rgba(51,51,51,.23);
+}
+
+.left-wrapper {
+    color: #0096d6;
+    padding: 13px;
+    text-align: right;
+    float: left;
+}
+ .text {
+    padding: 4px 0 10px 10px;
+    float: left;
+}
+.right-wrapper {
+    float: left;
+}
+.btn-cancel {
+    max-width: 140px;
+    color: #5c5c5c;
+    background: #fff;
+    border: 1px solid #d4d4d5;
+    margin-right: 20px;
+}

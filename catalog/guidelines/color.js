@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Page, ReactSpecimen, ColorPaletteSpecimen, markdown} from 'catalog';
-
-import '../ant/antd.css';
+import { Page, ColorPaletteSpecimen } from 'catalog';
 import { Tabs, Card, Col, Row, Avatar, Divider, PageHeader, Menu, Dropdown, Button, Tag, Typography } from 'antd';
 import { StickyContainer, Sticky } from 'react-sticky';
-import { EllipsisOutlined } from '@ant-design/icons';
+// import { EllipsisOutlined } from '@ant-design/icons';
+
 
 const { Paragraph, Title } = Typography;
 const { TabPane } = Tabs;
@@ -127,11 +126,11 @@ const CSAA = () => (
 
       horizontal={false}
       colors={[
-        {name: "01 / BLUE", value: "#00338D"},
-        {name: "02 / BLUE", value: "#0096D6"},
-        {name: "03 / BLUE", value: "#88CBDF"},
-        {name: "01 / YELLOW", value: "#FFC425"},
-        {name: "01 / RED", value: "#D52B1E"},
+        { name: "01 / BLUE", value: "#00338D" },
+        { name: "02 / BLUE", value: "#0096D6" },
+        { name: "03 / BLUE", value: "#88CBDF" },
+        { name: "01 / YELLOW", value: "#FFC425" },
+        { name: "01 / RED", value: "#D52B1E" },
       ]}
     />
 
@@ -179,6 +178,8 @@ const CSAA = () => (
   </div>
 );
 
+
+
 const Mobilitas = () => (
   <div layout="panel">
     <Paragraph>The brand-level colors define the primary, neutral, & extended color palettes. The product-level color system matches the tone of the product in accordance with the requirements and function of the color.</Paragraph>
@@ -188,11 +189,11 @@ const Mobilitas = () => (
     <ColorPaletteSpecimen
       horizontal={false}
       colors={[
-        {name: "070 / DARK", value: "#14356f"},
-        {name: "050 / LIGHT", value: "#047e8e"},
-        {name: "000 / LIGHT", value: "#f7f8fa"},
-        {name: "070 / DARK", value: "#3b4956"},
-        {name: "100 / BLACK", value: "#0c1014"}
+        { name: "070 / DARK", value: "#14356f" },
+        { name: "050 / LIGHT", value: "#047e8e" },
+        { name: "000 / LIGHT", value: "#f7f8fa" },
+        { name: "070 / DARK", value: "#3b4956" },
+        { name: "100 / BLACK", value: "#0c1014" }
       ]}
     />
 
@@ -274,7 +275,7 @@ export default class extends React.Component {
             tags={<Tag color="blue">Under Development</Tag>}
             avatar={{
               src: '/icons/sprite/color_palette1.svg',
-              shape:'square'
+              shape: 'square'
             }}
             breadcrumb={{ routes }}
             footer={
@@ -293,6 +294,8 @@ export default class extends React.Component {
                     key="1"
                   >
                     <CSAA />
+
+
                   </TabPane>
 
                   <TabPane
@@ -317,6 +320,7 @@ export default class extends React.Component {
               {content}
             </Content>
           </PageHeader>
+
         </Page>
       </div>
     )
