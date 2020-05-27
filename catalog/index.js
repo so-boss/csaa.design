@@ -696,6 +696,12 @@ const pages = [
     path: "pixel/development",
     title: "Development",
     content: pageLoader(() => import("./pixel/development/index.md"))
+  },
+  {
+    path: "tech/explorers",
+    hideFromMenu: true,
+    title: "Technology Explorers",
+    content: pageLoader(() => import("./team/tech-explorers.md"))
   }
 ];
 
