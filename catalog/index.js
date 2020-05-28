@@ -149,7 +149,7 @@ const pages = [
   },
   {
     path: "guidelines/recommendations/Both",
-    title: "Test React",
+    title: "Recommendation",
     content: pageLoader(() => import("./guidelines/recommendations/Both"))
   },
   // {
