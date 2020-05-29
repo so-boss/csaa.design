@@ -22,7 +22,7 @@
     background-color: #40a9ff;
     border-color: #40a9ff;
 }
-.component-wrapper{
+.child-wrapper{
     background-color: #efefef;
     height: 200px;
     justify-content: center;
@@ -60,4 +60,23 @@ align-items: center;
 }
 .both-container {
     width: 100%;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.dislike-image {
+    background-image: url('../../static/svg/dislike.svg');
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 60px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.like-image {
+    background-image: url('../../static/svg/like.svg');
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 60px;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
